@@ -17,7 +17,12 @@
     "check:lint": "turbo run check:lint",
     "check:format": "turbo run check:format",
     "check:types": "turbo run check:types",
-    "prepare": "husky"
+    "prepare": "husky",
+    "setup": "node scripts/setup.js",
+    "dev:full": "node scripts/dev.js",
+    "dev:infra": "docker compose -f docker-compose-local.yml up -d",
+    "dev:api": "cd apps/api && python manage.py runserver 0.0.0.0:8000 --settings=plane.settings.local",
+    "stop": "node scripts/stop.js"
   },
   "devDependencies": {
     "husky": "9.1.7",
