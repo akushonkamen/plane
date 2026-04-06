@@ -9,10 +9,10 @@ import { useEffect, useRef } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { useTheme } from "next-themes";
-import type { TLanguage } from "@plane/i18n";
-import { useTranslation } from "@plane/i18n";
+import type { TLanguage } from "@tracktor/i18n";
+import { useTranslation } from "@tracktor/i18n";
 // helpers
-import { applyCustomTheme, clearCustomTheme } from "@plane/utils";
+import { applyCustomTheme, clearCustomTheme } from "@tracktor/utils";
 // hooks
 import { useAppTheme } from "@/hooks/store/use-app-theme";
 import { useRouterParams } from "@/hooks/store/use-router-params";

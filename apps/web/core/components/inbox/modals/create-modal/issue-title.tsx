@@ -6,12 +6,12 @@
 
 import { observer } from "mobx-react";
 // plane imports
-import { ETabIndices } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { TIssue } from "@plane/types";
-import { Input } from "@plane/ui";
+import { ETabIndices } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import type { TIssue } from "@tracktor/types";
+import { Input } from "@tracktor/ui";
 // helpers
-import { getTabIndex } from "@plane/utils";
+import { getTabIndex } from "@tracktor/utils";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
 

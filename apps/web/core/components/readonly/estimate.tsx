@@ -6,10 +6,10 @@
 
 import { useEffect } from "react";
 import { observer } from "mobx-react";
-import { useTranslation } from "@plane/i18n";
-import { EstimatePropertyIcon } from "@plane/propel/icons";
-import { EEstimateSystem } from "@plane/types";
-import { cn, convertMinutesToHoursMinutesString } from "@plane/utils";
+import { useTranslation } from "@tracktor/i18n";
+import { EstimatePropertyIcon } from "@tracktor/propel/icons";
+import { EEstimateSystem } from "@tracktor/types";
+import { cn, convertMinutesToHoursMinutesString } from "@tracktor/utils";
 // hooks
 import { useProjectEstimates } from "@/hooks/store/estimates";
 import { useEstimate } from "@/hooks/store/estimates/use-estimate";

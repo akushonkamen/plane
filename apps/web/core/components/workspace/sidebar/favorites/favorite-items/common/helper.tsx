@@ -4,10 +4,10 @@
  * See the LICENSE file for details.
  */
 
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { PageIcon } from "@plane/propel/icons";
+import { Logo } from "@tracktor/propel/emoji-icon-picker";
+import { PageIcon } from "@tracktor/propel/icons";
 // plane imports
-import type { IFavorite, TLogoProps } from "@plane/types";
+import type { IFavorite, TLogoProps } from "@tracktor/types";
 // components
 // plane web constants
 import { FAVORITE_ITEM_ICONS, FAVORITE_ITEM_LINKS } from "@/constants/sidebar-favorites";

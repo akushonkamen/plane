@@ -9,8 +9,8 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import { History, MessageSquare } from "lucide-react";
 // plane imports
-import type { IUserActivityResponse } from "@plane/types";
-import { calculateTimeAgo, getFileURL } from "@plane/utils";
+import type { IUserActivityResponse } from "@tracktor/types";
+import { calculateTimeAgo, getFileURL } from "@tracktor/utils";
 // components
 import { ActivityIcon, ActivityMessage, IssueLink } from "@/components/core/activity";
 import { RichTextEditor } from "@/components/editor/rich-text";

@@ -6,11 +6,11 @@
 
 import React from "react";
 import { observer } from "mobx-react";
-import { StartDatePropertyIcon } from "@plane/propel/icons";
+import { StartDatePropertyIcon } from "@tracktor/propel/icons";
 // types
-import type { TIssue } from "@plane/types";
+import type { TIssue } from "@tracktor/types";
 // components
-import { getDate, renderFormattedPayloadDate } from "@plane/utils";
+import { getDate, renderFormattedPayloadDate } from "@tracktor/utils";
 import { DateDropdown } from "@/components/dropdowns/date";
 // helpers
 

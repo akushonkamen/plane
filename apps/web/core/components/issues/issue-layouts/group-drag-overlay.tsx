@@ -7,11 +7,11 @@
 import { useRef } from "react";
 import { AlertCircle } from "lucide-react";
 // plane imports
-import { ISSUE_ORDER_BY_OPTIONS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { TIssueOrderByOptions } from "@plane/types";
+import { ISSUE_ORDER_BY_OPTIONS } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import type { TIssueOrderByOptions } from "@tracktor/types";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@tracktor/utils";
 // plane web imports
 import { WorkFlowDisabledOverlay } from "@/plane-web/components/workflow";
 

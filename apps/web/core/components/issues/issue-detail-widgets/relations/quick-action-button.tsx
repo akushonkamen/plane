@@ -7,11 +7,11 @@
 import React from "react";
 import { observer } from "mobx-react";
 
-import { useTranslation } from "@plane/i18n";
-import { PlusIcon } from "@plane/propel/icons";
+import { useTranslation } from "@tracktor/i18n";
+import { PlusIcon } from "@tracktor/propel/icons";
 // plane imports
-import type { TIssueServiceType } from "@plane/types";
-import { CustomMenu } from "@plane/ui";
+import type { TIssueServiceType } from "@tracktor/types";
+import { CustomMenu } from "@tracktor/ui";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 // Plane-web
@@ -50,12 +50,12 @@ export const RelationActionButton = observer(function RelationActionButton(props
       maxHeight="lg"
       closeOnSelect
     >
-      {Object.values(ISSUE_RELATION_OPTIONS).map((item, index) => {
+      {Object.values(ISSUE_RELATION_OPTIONS).map((item) => {
         if (!item) return <></>;
 
         return (
           <CustomMenu.MenuItem
-            key={index}
+            key={item.key}
             onClick={() => {
               handleOnClick(item.key);
             }}

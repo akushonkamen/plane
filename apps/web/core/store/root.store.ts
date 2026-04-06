@@ -6,9 +6,9 @@
 
 import { enableStaticRendering } from "mobx-react";
 // plane imports
-import { FALLBACK_LANGUAGE, LANGUAGE_STORAGE_KEY } from "@plane/i18n";
-import type { IWorkItemFilterStore } from "@plane/shared-state";
-import { WorkItemFilterStore } from "@plane/shared-state";
+import { FALLBACK_LANGUAGE, LANGUAGE_STORAGE_KEY } from "@tracktor/i18n";
+import type { IWorkItemFilterStore } from "@tracktor/shared-state";
+import { WorkItemFilterStore } from "@tracktor/shared-state";
 // plane web store
 import type { IAnalyticsStore } from "@/plane-web/store/analytics.store";
 import { AnalyticsStore } from "@/plane-web/store/analytics.store";

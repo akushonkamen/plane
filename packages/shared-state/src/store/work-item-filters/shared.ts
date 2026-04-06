@@ -5,7 +5,7 @@
  */
 
 // plane imports
-import type { EIssuesStoreType, TWorkItemFilterExpression, TWorkItemFilterProperty } from "@plane/types";
+import type { EIssuesStoreType, TWorkItemFilterExpression, TWorkItemFilterProperty } from "@tracktor/types";
 // local imports
 import type { IFilterInstance } from "../rich-filters";
 

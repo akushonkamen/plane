@@ -12,12 +12,12 @@ import { createPortal } from "react-dom";
 import { usePopper } from "react-popper";
 import { Combobox } from "@headlessui/react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { CheckIcon, SearchIcon, SuspendedUserIcon } from "@plane/propel/icons";
-import { EPillSize, EPillVariant, Pill } from "@plane/propel/pill";
-import type { IUserLite } from "@plane/types";
-import { Avatar } from "@plane/ui";
-import { cn, getFileURL, sortByCurrentUserThenSelected } from "@plane/utils";
+import { useTranslation } from "@tracktor/i18n";
+import { CheckIcon, SearchIcon, SuspendedUserIcon } from "@tracktor/propel/icons";
+import { EPillSize, EPillVariant, Pill } from "@tracktor/propel/pill";
+import type { IUserLite } from "@tracktor/types";
+import { Avatar } from "@tracktor/ui";
+import { cn, getFileURL, sortByCurrentUserThenSelected } from "@tracktor/utils";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
 import { useUser } from "@/hooks/store/user";

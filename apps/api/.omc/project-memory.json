@@ -1,0 +1,181 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1775385986301,
+  "projectRoot": "/Users/yp1017/projects/plane/apps/api",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": ["package.json"]
+      },
+      {
+        "name": "Python",
+        "version": null,
+        "confidence": "high",
+        "markers": ["pyproject.toml", "requirements.txt"]
+      }
+    ],
+    "frameworks": [],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": "pytest",
+    "lintCommand": "ruff check",
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": ["bin"],
+    "gitBranches": {
+      "defaultBranch": "preview",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "bin": {
+      "path": "bin",
+      "purpose": "Executable scripts",
+      "fileCount": 5,
+      "lastAccessed": 1775385986285,
+      "keyFiles": [
+        "docker-entrypoint-api-local.sh",
+        "docker-entrypoint-api.sh",
+        "docker-entrypoint-beat.sh",
+        "docker-entrypoint-migrator.sh",
+        "docker-entrypoint-worker.sh"
+      ]
+    },
+    "plane": {
+      "path": "plane",
+      "purpose": null,
+      "fileCount": 5,
+      "lastAccessed": 1775385986285,
+      "keyFiles": ["__init__.py", "asgi.py", "celery.py", "urls.py", "wsgi.py"]
+    },
+    "requirements": {
+      "path": "requirements",
+      "purpose": null,
+      "fileCount": 4,
+      "lastAccessed": 1775385986285,
+      "keyFiles": ["base.txt", "local.txt", "production.txt", "test.txt"]
+    },
+    "templates": {
+      "path": "templates",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1775385986287,
+      "keyFiles": ["base.html", "csrf_failure.html"]
+    },
+    "venv": {
+      "path": "venv",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1775385986287,
+      "keyFiles": ["pyvenv.cfg"]
+    },
+    "plane/api": {
+      "path": "plane/api",
+      "purpose": "API routes",
+      "fileCount": 3,
+      "lastAccessed": 1775385986288,
+      "keyFiles": ["__init__.py", "apps.py", "rate_limit.py"]
+    },
+    "plane/app": {
+      "path": "plane/app",
+      "purpose": "Application code",
+      "fileCount": 2,
+      "lastAccessed": 1775385986288,
+      "keyFiles": ["__init__.py", "apps.py"]
+    },
+    "venv/bin": {
+      "path": "venv/bin",
+      "purpose": "Executable scripts",
+      "fileCount": 24,
+      "lastAccessed": 1775385986288,
+      "keyFiles": ["Activate.ps1", "activate", "activate.csh"]
+    },
+    "venv/lib": {
+      "path": "venv/lib",
+      "purpose": "Library code",
+      "fileCount": 0,
+      "lastAccessed": 1775385986288,
+      "keyFiles": []
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "plane",
+      "accessCount": 3,
+      "lastAccessed": 1775386223616,
+      "type": "directory"
+    },
+    {
+      "path": "plane/bgtasks/workspace_seed_task.py",
+      "accessCount": 2,
+      "lastAccessed": 1775386180396,
+      "type": "directory"
+    },
+    {
+      "path": "plane/settings",
+      "accessCount": 1,
+      "lastAccessed": 1775386052587,
+      "type": "directory"
+    },
+    {
+      "path": "plane/settings/common.py",
+      "accessCount": 1,
+      "lastAccessed": 1775386057286,
+      "type": "directory"
+    },
+    {
+      "path": "",
+      "accessCount": 1,
+      "lastAccessed": 1775386170937,
+      "type": "directory"
+    },
+    {
+      "path": "plane/seeds/data/states.json",
+      "accessCount": 1,
+      "lastAccessed": 1775386193433,
+      "type": "file"
+    },
+    {
+      "path": "plane/authentication/urls.py",
+      "accessCount": 1,
+      "lastAccessed": 1775386225951,
+      "type": "file"
+    },
+    {
+      "path": "plane/urls.py",
+      "accessCount": 1,
+      "lastAccessed": 1775386250013,
+      "type": "directory"
+    },
+    {
+      "path": "plane/authentication",
+      "accessCount": 1,
+      "lastAccessed": 1775386323170,
+      "type": "directory"
+    },
+    {
+      "path": "plane/authentication/views/app/email.py",
+      "accessCount": 1,
+      "lastAccessed": 1775386326593,
+      "type": "directory"
+    }
+  ],
+  "userDirectives": []
+}

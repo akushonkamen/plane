@@ -8,10 +8,10 @@ import React, { useCallback, useMemo } from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
-import { EUserPermissionsLevel, EUserPermissions } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { CycleIcon, IntakeIcon, ModuleIcon, PageIcon, ViewsIcon, WorkItemsIcon } from "@plane/propel/icons";
-import type { EUserProjectRoles } from "@plane/types";
+import { EUserPermissionsLevel, EUserPermissions } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { CycleIcon, IntakeIcon, ModuleIcon, PageIcon, ViewsIcon, WorkItemsIcon } from "@tracktor/propel/icons";
+import type { EUserProjectRoles } from "@tracktor/types";
 // plane ui
 // components
 import { SidebarNavItem } from "@/components/sidebar/sidebar-navigation";
@@ -147,7 +147,7 @@ export const ProjectNavigation = observer(function ProjectNavigation(props: TPro
     };
 
     // sort navigation items by sortOrder
-    const sortedNavigationItems = navigationItems(workspaceSlug, projectId).sort(
+    const sortedNavigationItems = navigationItems(workspaceSlug, projectId).toSorted(
       (a, b) => (a.sortOrder || 0) - (b.sortOrder || 0)
     );
 

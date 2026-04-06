@@ -7,7 +7,7 @@
 import { CirclePlus, Mails } from "lucide-react";
 import { observer } from "mobx-react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@tracktor/i18n";
 // components
 import { SettingsSidebarItem } from "@/components/settings/sidebar/item";
 import { WorkspaceLogo } from "@/components/workspace/logo";

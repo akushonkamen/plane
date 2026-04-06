@@ -8,8 +8,8 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { PlusIcon } from "@plane/propel/icons";
+import { useTranslation } from "@tracktor/i18n";
+import { PlusIcon } from "@tracktor/propel/icons";
 // hooks
 import { useSticky } from "@/hooks/use-stickies";
 // local imports

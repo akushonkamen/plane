@@ -7,8 +7,8 @@
 import type { FC } from "react";
 import { CalendarDays, LayersIcon, Paperclip } from "lucide-react";
 // types
-import { ISSUE_GROUP_BY_OPTIONS } from "@plane/constants";
-import type { ISvgIcons } from "@plane/propel/icons";
+import { ISSUE_GROUP_BY_OPTIONS } from "@tracktor/constants";
+import type { ISvgIcons } from "@tracktor/propel/icons";
 import {
   LinkIcon,
   CycleIcon,
@@ -20,14 +20,14 @@ import {
   LabelPropertyIcon,
   PriorityPropertyIcon,
   StartDatePropertyIcon,
-} from "@plane/propel/icons";
+} from "@tracktor/propel/icons";
 import type {
   IGroupByColumn,
   IIssueDisplayProperties,
   TGetColumns,
   TIssueGroupByOptions,
   TSpreadsheetColumn,
-} from "@plane/types";
+} from "@tracktor/types";
 // components
 import {
   SpreadsheetAssigneeColumn,

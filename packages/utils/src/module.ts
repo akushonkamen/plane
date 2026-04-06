@@ -6,7 +6,7 @@
 
 import { sortBy } from "lodash-es";
 // plane imports
-import type { IModule, TModuleDisplayFilters, TModuleFilters, TModuleOrderByOptions } from "@plane/types";
+import type { IModule, TModuleDisplayFilters, TModuleFilters, TModuleOrderByOptions } from "@tracktor/types";
 // local imports
 import { getDate } from "./datetime";
 import { satisfiesDateFilter } from "./filter";
@@ -30,8 +30,8 @@ export const orderModules = (modules: IModule[], orderByKey: TModuleOrderByOptio
   let orderedModules: IModule[] = [];
   if (modules.length === 0 || !orderByKey) return [];
 
-  if (orderByKey === "name") orderedModules = [...modules].sort((a, b) => naturalSort(a.name, b.name));
-  if (orderByKey === "-name") orderedModules = [...modules].sort((a, b) => naturalSort(b.name, a.name));
+  if (orderByKey === "name") orderedModules = [...modules].toSorted((a, b) => naturalSort(a.name, b.name));
+  if (orderByKey === "-name") orderedModules = [...modules].toSorted((a, b) => naturalSort(b.name, a.name));
   if (["progress", "-progress"].includes(orderByKey))
     orderedModules = sortBy(modules, [
       (m) => {

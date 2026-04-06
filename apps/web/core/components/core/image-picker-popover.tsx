@@ -13,13 +13,13 @@ import { Controller } from "react-hook-form";
 import useSWR from "swr";
 import { Popover } from "@headlessui/react";
 // plane imports
-import { ACCEPTED_COVER_IMAGE_MIME_TYPES_FOR_REACT_DROPZONE, MAX_FILE_SIZE } from "@plane/constants";
-import { useOutsideClickDetector } from "@plane/hooks";
-import { Tabs } from "@plane/propel/tabs";
-import { Button, getButtonStyling } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { EFileAssetType } from "@plane/types";
-import { Input, Loader } from "@plane/ui";
+import { ACCEPTED_COVER_IMAGE_MIME_TYPES_FOR_REACT_DROPZONE, MAX_FILE_SIZE } from "@tracktor/constants";
+import { useOutsideClickDetector } from "@tracktor/hooks";
+import { Tabs } from "@tracktor/propel/tabs";
+import { Button, getButtonStyling } from "@tracktor/propel/button";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import { EFileAssetType } from "@tracktor/types";
+import { Input, Loader } from "@tracktor/ui";
 // helpers
 import { STATIC_COVER_IMAGES, getCoverImageDisplayURL } from "@/helpers/cover-image.helper";
 // hooks

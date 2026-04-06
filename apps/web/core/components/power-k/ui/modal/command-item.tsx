@@ -7,9 +7,9 @@
 import React from "react";
 import { Command } from "cmdk";
 
-import { CheckIcon } from "@plane/propel/icons";
+import { CheckIcon } from "@tracktor/propel/icons";
 // plane imports
-import { cn } from "@plane/utils";
+import { cn } from "@tracktor/utils";
 // local imports
 import { KeySequenceBadge, ShortcutBadge } from "./command-item-shortcut-badge";
 

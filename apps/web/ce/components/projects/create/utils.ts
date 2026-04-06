@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-import { RANDOM_EMOJI_CODES } from "@plane/constants";
-import type { IProject } from "@plane/types";
+import { RANDOM_EMOJI_CODES } from "@tracktor/constants";
+import type { IProject } from "@tracktor/types";
 import { getRandomCoverImage } from "@/helpers/cover-image.helper";
 
 export const getProjectFormValues = (): Partial<IProject> => ({

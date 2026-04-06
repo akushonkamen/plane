@@ -16,7 +16,7 @@ import type {
   TSubIssuesStateDistribution,
   TIssueServiceType,
   TLoader,
-} from "@plane/types";
+} from "@tracktor/types";
 // services
 import { IssueService } from "@/services/issue";
 // store

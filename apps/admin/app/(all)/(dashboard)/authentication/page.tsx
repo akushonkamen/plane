@@ -9,10 +9,10 @@ import { observer } from "mobx-react";
 import { useTheme } from "next-themes";
 import useSWR from "swr";
 // plane internal packages
-import { setPromiseToast, setToast, TOAST_TYPE } from "@plane/propel/toast";
-import type { TInstanceConfigurationKeys, TInstanceAuthenticationModes } from "@plane/types";
-import { Loader, ToggleSwitch } from "@plane/ui";
-import { cn, resolveGeneralTheme } from "@plane/utils";
+import { setPromiseToast, setToast, TOAST_TYPE } from "@tracktor/propel/toast";
+import type { TInstanceConfigurationKeys, TInstanceAuthenticationModes } from "@tracktor/types";
+import { Loader, ToggleSwitch } from "@tracktor/ui";
+import { cn, resolveGeneralTheme } from "@tracktor/utils";
 // components
 import { PageWrapper } from "@/components/common/page-wrapper";
 import { AuthenticationMethodCard } from "@/components/authentication/authentication-method-card";

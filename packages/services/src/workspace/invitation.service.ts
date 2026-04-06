@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-import { API_BASE_URL } from "@plane/constants";
-import type { IWorkspaceMemberInvitation, IWorkspaceBulkInviteFormData, IWorkspaceMember } from "@plane/types";
+import { API_BASE_URL } from "@tracktor/constants";
+import type { IWorkspaceMemberInvitation, IWorkspaceBulkInviteFormData, IWorkspaceMember } from "@tracktor/types";
 import { APIService } from "../api.service";
 
 /**

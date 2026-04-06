@@ -8,10 +8,10 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // Plane imports
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IState } from "@plane/types";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import type { IState } from "@tracktor/types";
 // ui
-import { AlertModalCore } from "@plane/ui";
+import { AlertModalCore } from "@tracktor/ui";
 // hooks
 import { useProjectState } from "@/hooks/store/use-project-state";
 

@@ -7,13 +7,18 @@
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 // plane imports
-import { ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import type { IIssueDisplayFilterOptions, IIssueDisplayProperties, IWorkspaceView, IIssueFilters } from "@plane/types";
-import { EViewAccess, EIssueLayoutTypes, EIssuesStoreType } from "@plane/types";
-import { Input, TextArea } from "@plane/ui";
-import { getComputedDisplayFilters, getComputedDisplayProperties } from "@plane/utils";
+import { ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { Button } from "@tracktor/propel/button";
+import type {
+  IIssueDisplayFilterOptions,
+  IIssueDisplayProperties,
+  IWorkspaceView,
+  IIssueFilters,
+} from "@tracktor/types";
+import { EViewAccess, EIssueLayoutTypes, EIssuesStoreType } from "@tracktor/types";
+import { Input, TextArea } from "@tracktor/ui";
+import { getComputedDisplayFilters, getComputedDisplayProperties } from "@tracktor/utils";
 // components
 import { DisplayFiltersSelection, FiltersDropdown } from "@/components/issues/issue-layouts/filters";
 import { WorkspaceLevelWorkItemFiltersHOC } from "@/components/work-item-filters/filters-hoc/workspace-level";

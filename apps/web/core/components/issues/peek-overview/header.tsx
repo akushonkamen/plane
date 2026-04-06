@@ -9,14 +9,14 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { MoveDiagonal, MoveRight } from "lucide-react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { CenterPanelIcon, CopyLinkIcon, FullScreenPanelIcon, SidePanelIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TNameDescriptionLoader } from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
-import { CustomSelect } from "@plane/ui";
-import { copyUrlToClipboard, generateWorkItemLink } from "@plane/utils";
+import { useTranslation } from "@tracktor/i18n";
+import { CenterPanelIcon, CopyLinkIcon, FullScreenPanelIcon, SidePanelIcon } from "@tracktor/propel/icons";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import type { TNameDescriptionLoader } from "@tracktor/types";
+import { EIssuesStoreType } from "@tracktor/types";
+import { CustomSelect } from "@tracktor/ui";
+import { copyUrlToClipboard, generateWorkItemLink } from "@tracktor/utils";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useIssues } from "@/hooks/store/use-issues";
@@ -27,7 +27,7 @@ import { usePlatformOS } from "@/hooks/use-platform-os";
 import { IssueSubscription } from "../issue-detail/subscription";
 import { WorkItemDetailQuickActions } from "../issue-layouts/quick-action-dropdowns";
 import { NameDescriptionUpdateStatus } from "../issue-update-status";
-import { IconButton } from "@plane/propel/icon-button";
+import { IconButton } from "@tracktor/propel/icon-button";
 
 export type TPeekModes = "side-peek" | "modal" | "full-screen";
 

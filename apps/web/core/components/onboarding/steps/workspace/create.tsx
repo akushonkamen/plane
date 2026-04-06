@@ -9,13 +9,13 @@ import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { CircleCheck } from "lucide-react";
 // plane imports
-import { ORGANIZATION_SIZE, RESTRICTED_URLS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IUser, IWorkspace } from "@plane/types";
-import { Spinner } from "@plane/ui";
-import { cn, validateWorkspaceName, validateSlug } from "@plane/utils";
+import { ORGANIZATION_SIZE, RESTRICTED_URLS } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { Button } from "@tracktor/propel/button";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import type { IUser, IWorkspace } from "@tracktor/types";
+import { Spinner } from "@tracktor/ui";
+import { cn, validateWorkspaceName, validateSlug } from "@tracktor/utils";
 // hooks
 import { useInstance } from "@/hooks/store/use-instance";
 import { useWorkspace } from "@/hooks/store/use-workspace";

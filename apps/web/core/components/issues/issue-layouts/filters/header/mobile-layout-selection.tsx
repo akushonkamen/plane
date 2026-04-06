@@ -4,12 +4,12 @@
  * See the LICENSE file for details.
  */
 
-import { ISSUE_LAYOUTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { ChevronDownIcon } from "@plane/propel/icons";
-import type { EIssueLayoutTypes } from "@plane/types";
-import { CustomMenu } from "@plane/ui";
+import { ISSUE_LAYOUTS } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { Button } from "@tracktor/propel/button";
+import { ChevronDownIcon } from "@tracktor/propel/icons";
+import type { EIssueLayoutTypes } from "@tracktor/types";
+import { CustomMenu } from "@tracktor/ui";
 import { IssueLayoutIcon } from "../../layout-icon";
 
 export function MobileLayoutSelection({
@@ -39,9 +39,9 @@ export function MobileLayoutSelection({
       customButtonClassName="flex flex-grow justify-center text-secondary text-13"
       closeOnSelect
     >
-      {ISSUE_LAYOUTS.filter((l) => layouts.includes(l.key)).map((layout, index) => (
+      {ISSUE_LAYOUTS.filter((l) => layouts.includes(l.key)).map((layout) => (
         <CustomMenu.MenuItem
-          key={index}
+          key={layout.key}
           onClick={() => {
             onChange(layout.key);
           }}

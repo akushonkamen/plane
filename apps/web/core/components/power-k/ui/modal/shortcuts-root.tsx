@@ -7,8 +7,8 @@
 import { useState, Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 // plane imports
-import { CloseIcon, SearchIcon } from "@plane/propel/icons";
-import { Input } from "@plane/ui";
+import { CloseIcon, SearchIcon } from "@tracktor/propel/icons";
+import { Input } from "@tracktor/ui";
 // hooks
 import { usePowerK } from "@/hooks/store/use-power-k";
 // local imports

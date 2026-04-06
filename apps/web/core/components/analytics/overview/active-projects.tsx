@@ -9,8 +9,8 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
 // plane package imports
-import { useTranslation } from "@plane/i18n";
-import { Loader } from "@plane/ui";
+import { useTranslation } from "@tracktor/i18n";
+import { Loader } from "@tracktor/ui";
 // plane web hooks
 import { useAnalytics } from "@/hooks/store/use-analytics";
 import { useProject } from "@/hooks/store/use-project";

@@ -9,12 +9,12 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import useSWR from "swr";
 // plane types
-import { getButtonStyling } from "@plane/propel/button";
-import type { TSearchEntityRequestPayload, TWebhookConnectionQueryParams } from "@plane/types";
-import { EFileAssetType } from "@plane/types";
+import { getButtonStyling } from "@tracktor/propel/button";
+import type { TSearchEntityRequestPayload, TWebhookConnectionQueryParams } from "@tracktor/types";
+import { EFileAssetType } from "@tracktor/types";
 // plane ui
 // plane utils
-import { cn } from "@plane/utils";
+import { cn } from "@tracktor/utils";
 // components
 import { LogoSpinner } from "@/components/common/logo-spinner";
 import { PageHead } from "@/components/core/page-title";

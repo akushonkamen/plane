@@ -17,14 +17,14 @@ import {
   EUserPermissions,
   EUserPermissionsLevel,
   IS_FAVORITE_MENU_OPEN,
-} from "@plane/constants";
-import { useLocalStorage } from "@plane/hooks";
-import { WorkItemsIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setPromiseToast, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { IModule } from "@plane/types";
-import { Card, FavoriteStar, LinearProgressIndicator } from "@plane/ui";
-import { getDate, renderFormattedPayloadDate, generateQueryParams } from "@plane/utils";
+} from "@tracktor/constants";
+import { useLocalStorage } from "@tracktor/hooks";
+import { WorkItemsIcon } from "@tracktor/propel/icons";
+import { TOAST_TYPE, setPromiseToast, setToast } from "@tracktor/propel/toast";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import type { IModule } from "@tracktor/types";
+import { Card, FavoriteStar, LinearProgressIndicator } from "@tracktor/ui";
+import { getDate, renderFormattedPayloadDate, generateQueryParams } from "@tracktor/utils";
 // components
 import { DateRangeDropdown } from "@/components/dropdowns/date-range";
 import { ButtonAvatars } from "@/components/dropdowns/member/avatar";

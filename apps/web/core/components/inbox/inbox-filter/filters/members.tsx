@@ -8,11 +8,11 @@ import { useMemo, useState } from "react";
 import { sortBy } from "lodash-es";
 import { observer } from "mobx-react";
 // plane types
-import type { TInboxIssueFilterMemberKeys } from "@plane/types";
+import type { TInboxIssueFilterMemberKeys } from "@tracktor/types";
 // plane ui
-import { Avatar, Loader } from "@plane/ui";
+import { Avatar, Loader } from "@tracktor/ui";
 // components
-import { getFileURL } from "@plane/utils";
+import { getFileURL } from "@tracktor/utils";
 import { FilterHeader, FilterOption } from "@/components/issues/issue-layouts/filters";
 // helpers
 // hooks

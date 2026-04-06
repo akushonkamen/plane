@@ -7,11 +7,11 @@
 import React from "react";
 import { observer } from "mobx-react";
 // plane constants
-import { ISSUE_DISPLAY_PROPERTIES } from "@plane/constants";
+import { ISSUE_DISPLAY_PROPERTIES } from "@tracktor/constants";
 // plane i18n
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@tracktor/i18n";
 // types
-import type { IIssueDisplayProperties } from "@plane/types";
+import type { IIssueDisplayProperties } from "@tracktor/types";
 // components
 import { FilterHeader } from "../helpers/filter-header";
 
@@ -52,7 +52,10 @@ export const FilterDisplayProperties = observer(function FilterDisplayProperties
     }
   }).map((property) => {
     if (isEpic && property.key === "sub_issue_count") {
-      return { ...property, titleTranslationKey: "issue.display.properties.work_item_count" };
+      const modifiedProperty = property;
+      (modifiedProperty as typeof property & { titleTranslationKey: string }).titleTranslationKey =
+        "issue.display.properties.work_item_count";
+      return modifiedProperty;
     }
     return property;
   });

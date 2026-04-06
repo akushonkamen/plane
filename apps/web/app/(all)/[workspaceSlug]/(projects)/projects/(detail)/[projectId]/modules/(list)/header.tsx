@@ -7,12 +7,12 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // plane imports
-import { EUserPermissions, EUserPermissionsLevel, MODULE_TRACKER_ELEMENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
+import { EUserPermissions, EUserPermissionsLevel, MODULE_TRACKER_ELEMENTS } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
 // ui
-import { Button } from "@plane/propel/button";
-import { ModuleIcon } from "@plane/propel/icons";
-import { Breadcrumbs, Header } from "@plane/ui";
+import { Button } from "@tracktor/propel/button";
+import { ModuleIcon } from "@tracktor/propel/icons";
+import { Breadcrumbs, Header } from "@tracktor/ui";
 // components
 import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
 import { ModuleViewHeader } from "@/components/modules";

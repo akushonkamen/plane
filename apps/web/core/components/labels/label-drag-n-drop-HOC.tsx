@@ -14,10 +14,10 @@ import { attachInstruction } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree
 import { observer } from "mobx-react";
 import { createRoot } from "react-dom/client";
 // types
-import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import type { IIssueLabel, InstructionType } from "@plane/types";
+import { EUserPermissions, EUserPermissionsLevel } from "@tracktor/constants";
+import type { IIssueLabel, InstructionType } from "@tracktor/types";
 // ui
-import { DropIndicator } from "@plane/ui";
+import { DropIndicator } from "@tracktor/ui";
 // components
 import { useUserPermissions } from "@/hooks/store/user";
 import { LabelName } from "./label-block/label-name";
@@ -160,7 +160,7 @@ export const LabelDndHOC = observer(function LabelDndHOC(props: Props) {
         },
       })
     );
-  }, [labelRef?.current, dragHandleRef?.current, label, isChild, isGroup, isLastChild, onDrop]);
+  }, [label, isChild, isGroup, isLastChild, onDrop]);
 
   const isMakeChild = instruction == "make-child";
 

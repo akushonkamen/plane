@@ -8,8 +8,8 @@ import React from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // plane ui
-import { WorkItemsIcon } from "@plane/propel/icons";
-import { Breadcrumbs, Header } from "@plane/ui";
+import { WorkItemsIcon } from "@tracktor/propel/icons";
+import { Breadcrumbs, Header } from "@tracktor/ui";
 // components
 import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
 import { IssueDetailQuickActions } from "@/components/issues/issue-detail/issue-detail-quick-actions";

@@ -6,10 +6,10 @@
 
 import { observer } from "mobx-react";
 // plane ui
-import { ModuleIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
+import { ModuleIcon } from "@tracktor/propel/icons";
+import { Tooltip } from "@tracktor/propel/tooltip";
 // plane utils
-import { cn } from "@plane/utils";
+import { cn } from "@tracktor/utils";
 // hooks
 import { useModule } from "@/hooks/store/use-module";
 

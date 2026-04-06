@@ -6,11 +6,11 @@
 
 import React, { useEffect, useState, useCallback } from "react";
 // plane imports
-import { TOOLBAR_ITEMS } from "@plane/editor";
-import type { ToolbarMenuItem, EditorRefApi } from "@plane/editor";
-import { Button } from "@plane/propel/button";
-import { Tooltip } from "@plane/propel/tooltip";
-import { cn } from "@plane/utils";
+import { TOOLBAR_ITEMS } from "@tracktor/editor";
+import type { ToolbarMenuItem, EditorRefApi } from "@tracktor/editor";
+import { Button } from "@tracktor/propel/button";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import { cn } from "@tracktor/utils";
 
 type Props = {
   executeCommand: (item: ToolbarMenuItem) => void;

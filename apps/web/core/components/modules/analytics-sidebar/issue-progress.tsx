@@ -9,16 +9,16 @@ import { observer } from "mobx-react";
 import { useSearchParams } from "next/navigation";
 import { AlertCircle } from "lucide-react";
 import { Disclosure, Transition } from "@headlessui/react";
-import { EEstimateSystem } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { ChevronUpIcon, ChevronDownIcon } from "@plane/propel/icons";
-import type { TModulePlotType } from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
-import { CustomSelect, Spinner } from "@plane/ui";
+import { EEstimateSystem } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { ChevronUpIcon, ChevronDownIcon } from "@tracktor/propel/icons";
+import type { TModulePlotType } from "@tracktor/types";
+import { EIssuesStoreType } from "@tracktor/types";
+import { CustomSelect, Spinner } from "@tracktor/ui";
 // components
 // constants
 // helpers
-import { getDate } from "@plane/utils";
+import { getDate } from "@tracktor/utils";
 import ProgressChart from "@/components/core/sidebar/progress-chart";
 import { ModuleProgressStats } from "@/components/modules";
 // hooks

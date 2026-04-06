@@ -5,8 +5,8 @@
  */
 
 // plane imports
-import type { TFilterProperty } from "@plane/types";
-import { EQUALITY_OPERATOR, COLLECTION_OPERATOR } from "@plane/types";
+import type { TFilterProperty } from "@tracktor/types";
+import { EQUALITY_OPERATOR, COLLECTION_OPERATOR } from "@tracktor/types";
 // local imports
 import type { TCreateFilterConfig, TCreateUserFilterParams } from "../../../rich-filters";
 import { createFilterConfig, createOperatorConfigEntry, getMemberMultiSelectConfig } from "../../../rich-filters";

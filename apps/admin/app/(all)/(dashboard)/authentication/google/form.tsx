@@ -10,10 +10,10 @@ import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { Monitor } from "lucide-react";
 // plane internal packages
-import { API_BASE_URL } from "@plane/constants";
-import { Button, getButtonStyling } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IFormattedInstanceConfiguration, TInstanceGoogleAuthenticationConfigurationKeys } from "@plane/types";
+import { API_BASE_URL } from "@tracktor/constants";
+import { Button, getButtonStyling } from "@tracktor/propel/button";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import type { IFormattedInstanceConfiguration, TInstanceGoogleAuthenticationConfigurationKeys } from "@tracktor/types";
 // components
 import { CodeBlock } from "@/components/common/code-block";
 import { ConfirmDiscardModal } from "@/components/common/confirm-discard-modal";

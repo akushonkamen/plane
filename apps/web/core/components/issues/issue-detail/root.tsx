@@ -7,11 +7,11 @@
 import { useMemo } from "react";
 import { observer } from "mobx-react";
 // plane imports
-import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setPromiseToast, setToast } from "@plane/propel/toast";
-import type { TIssue } from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
+import { EUserPermissions, EUserPermissionsLevel } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { TOAST_TYPE, setPromiseToast, setToast } from "@tracktor/propel/toast";
+import type { TIssue } from "@tracktor/types";
+import { EIssuesStoreType } from "@tracktor/types";
 // assets
 import emptyIssue from "@/app/assets/empty-state/issue.svg?url";
 // components

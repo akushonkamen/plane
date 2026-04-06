@@ -8,9 +8,9 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
 // plane imports
-import { EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { EUserWorkspaceRoles } from "@plane/types";
+import { EUserPermissionsLevel } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import type { EUserWorkspaceRoles } from "@tracktor/types";
 // components
 import { SidebarNavItem } from "@/components/sidebar/sidebar-navigation";
 import { NotificationAppSidebarOption } from "@/components/workspace-notifications/notification-app-sidebar-option";

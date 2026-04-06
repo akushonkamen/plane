@@ -9,13 +9,13 @@ import { debounce } from "lodash-es";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // plane hooks
-import { useOutsideClickDetector } from "@plane/hooks";
+import { useOutsideClickDetector } from "@tracktor/hooks";
 // helpers
-import { useTranslation } from "@plane/i18n";
-import { SearchIcon, CloseIcon } from "@plane/propel/icons";
-import { cn } from "@plane/utils";
+import { useTranslation } from "@tracktor/i18n";
+import { SearchIcon, CloseIcon } from "@tracktor/propel/icons";
+import { cn } from "@tracktor/utils";
 import { useSticky } from "@/hooks/use-stickies";
-import { IconButton } from "@plane/propel/icon-button";
+import { IconButton } from "@tracktor/propel/icon-button";
 
 export const StickySearch = observer(function StickySearch() {
   // router

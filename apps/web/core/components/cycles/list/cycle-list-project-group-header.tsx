@@ -6,12 +6,12 @@
 
 import React from "react";
 import { observer } from "mobx-react";
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { ChevronRightIcon } from "@plane/propel/icons";
+import { Logo } from "@tracktor/propel/emoji-icon-picker";
+import { ChevronRightIcon } from "@tracktor/propel/icons";
 // icons
-import { Row } from "@plane/ui";
+import { Row } from "@tracktor/ui";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@tracktor/utils";
 import { useProject } from "@/hooks/store/use-project";
 
 type Props = {

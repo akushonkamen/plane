@@ -8,18 +8,18 @@ import React, { useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
 // icons
 import { ListFilter } from "lucide-react";
-import { useOutsideClickDetector } from "@plane/hooks";
-import { SearchIcon, CloseIcon } from "@plane/propel/icons";
+import { useOutsideClickDetector } from "@tracktor/hooks";
+import { SearchIcon, CloseIcon } from "@tracktor/propel/icons";
 // plane helpers
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@tracktor/utils";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
 import { useProjectView } from "@/hooks/store/use-project-view";
 import { FiltersDropdown } from "../issues/issue-layouts/filters";
 import { ViewFiltersSelection } from "./filters/filter-selection";
 import { ViewOrderByDropdown } from "./filters/order-by";
-import { IconButton } from "@plane/propel/icon-button";
+import { IconButton } from "@tracktor/propel/icon-button";
 
 export const ViewListHeader = observer(function ViewListHeader() {
   // states

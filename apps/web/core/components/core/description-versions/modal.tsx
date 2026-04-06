@@ -7,21 +7,21 @@
 import { useCallback, useRef } from "react";
 import { observer } from "mobx-react";
 // plane imports
-import type { EditorRefApi } from "@plane/editor";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { CopyIcon, ChevronLeftIcon, ChevronRightIcon } from "@plane/propel/icons";
-import { setToast, TOAST_TYPE } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TDescriptionVersion } from "@plane/types";
-import { Avatar, EModalPosition, EModalWidth, Loader, ModalCore } from "@plane/ui";
-import { calculateTimeAgo, cn, getFileURL } from "@plane/utils";
+import type { EditorRefApi } from "@tracktor/editor";
+import { useTranslation } from "@tracktor/i18n";
+import { Button } from "@tracktor/propel/button";
+import { CopyIcon, ChevronLeftIcon, ChevronRightIcon } from "@tracktor/propel/icons";
+import { setToast, TOAST_TYPE } from "@tracktor/propel/toast";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import type { TDescriptionVersion } from "@tracktor/types";
+import { Avatar, EModalPosition, EModalWidth, Loader, ModalCore } from "@tracktor/ui";
+import { calculateTimeAgo, cn, getFileURL } from "@tracktor/utils";
 // components
 import { RichTextEditor } from "@/components/editor/rich-text";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
 import { useWorkspace } from "@/hooks/store/use-workspace";
-import { IconButton } from "@plane/propel/icon-button";
+import { IconButton } from "@tracktor/propel/icon-button";
 
 type Props = {
   activeVersionDescription: string | undefined;

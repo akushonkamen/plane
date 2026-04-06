@@ -12,15 +12,15 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // plane helpers
 import { MoreHorizontal } from "lucide-react";
-import { useOutsideClickDetector } from "@plane/hooks";
+import { useOutsideClickDetector } from "@tracktor/hooks";
 // types
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TIssue, IIssueDisplayProperties, IIssueMap } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import type { TIssue, IIssueDisplayProperties, IIssueMap } from "@tracktor/types";
+import { EIssueServiceType } from "@tracktor/types";
 // ui
-import { ControlLink, DropIndicator } from "@plane/ui";
-import { cn, generateWorkItemLink } from "@plane/utils";
+import { ControlLink, DropIndicator } from "@tracktor/ui";
+import { cn, generateWorkItemLink } from "@tracktor/utils";
 // components
 import RenderIfVisible from "@/components/core/render-if-visible-HOC";
 import { HIGHLIGHT_CLASS, getIssueBlockId } from "@/components/issues/issue-layouts/utils";
@@ -246,7 +246,7 @@ export const KanbanIssueBlock = observer(function KanbanIssueBlock(props: IssueB
         },
       })
     );
-  }, [cardRef?.current, issue?.id, isDragAllowed, canDropOverIssue, setIsCurrentBlockDragging, setIsDraggingOverBlock]);
+  }, [issue?.id, isDragAllowed, canDropOverIssue, setIsCurrentBlockDragging, setIsDraggingOverBlock]);
 
   if (!issue) return null;
 

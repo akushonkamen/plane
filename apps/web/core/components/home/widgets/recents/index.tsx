@@ -7,10 +7,10 @@
 import { useRef, useState } from "react";
 import { observer } from "mobx-react";
 import useSWR from "swr";
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@tracktor/i18n";
 // plane types
-import { PageIcon, ProjectIcon, WorkItemsIcon } from "@plane/propel/icons";
-import type { TActivityEntityData, THomeWidgetProps, TRecentActivityFilterKeys } from "@plane/types";
+import { PageIcon, ProjectIcon, WorkItemsIcon } from "@tracktor/propel/icons";
+import type { TActivityEntityData, THomeWidgetProps, TRecentActivityFilterKeys } from "@tracktor/types";
 // plane ui
 // components
 import { ContentOverflowWrapper } from "@/components/core/content-overflow-HOC";

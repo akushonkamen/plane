@@ -9,8 +9,8 @@ import { observer } from "mobx-react";
 import { createPortal } from "react-dom";
 // plane imports
 // components
-import type { ChartDataType, IBlockUpdateData, IBlockUpdateDependencyData, TGanttViews } from "@plane/types";
-import { cn } from "@plane/utils";
+import type { ChartDataType, IBlockUpdateData, IBlockUpdateDependencyData, TGanttViews } from "@tracktor/types";
+import { cn } from "@tracktor/utils";
 import { GanttChartHeader, GanttChartMainContent } from "@/components/gantt-chart";
 // helpers
 // hooks

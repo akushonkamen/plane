@@ -6,10 +6,10 @@
 
 import { observer } from "mobx-react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import type { TIssueServiceType } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
-import { CircularProgressIndicator, CollapsibleButton } from "@plane/ui";
+import { useTranslation } from "@tracktor/i18n";
+import type { TIssueServiceType } from "@tracktor/types";
+import { EIssueServiceType } from "@tracktor/types";
+import { CircularProgressIndicator, CollapsibleButton } from "@tracktor/ui";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { SubWorkItemTitleActions } from "./title-actions";

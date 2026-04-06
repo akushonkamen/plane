@@ -5,8 +5,8 @@
  */
 
 import { MoveRight } from "lucide-react";
-import { Tooltip } from "@plane/propel/tooltip";
-import { Loader } from "@plane/ui";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import { Loader } from "@tracktor/ui";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
 

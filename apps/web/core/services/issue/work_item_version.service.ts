@@ -5,9 +5,9 @@
  */
 
 // plane imports
-import { API_BASE_URL } from "@plane/constants";
-import { EIssueServiceType } from "@plane/types";
-import type { TDescriptionVersionsListResponse, TDescriptionVersionDetails, TIssueServiceType } from "@plane/types";
+import { API_BASE_URL } from "@tracktor/constants";
+import { EIssueServiceType } from "@tracktor/types";
+import type { TDescriptionVersionsListResponse, TDescriptionVersionDetails, TIssueServiceType } from "@tracktor/types";
 // helpers
 // services
 import { APIService } from "@/services/api.service";

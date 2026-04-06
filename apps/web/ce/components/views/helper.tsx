@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-import type { EIssueLayoutTypes, IProjectView } from "@plane/types";
+import type { EIssueLayoutTypes, IProjectView } from "@tracktor/types";
 import type { TWorkspaceLayoutProps } from "@/components/views/helper";
 
 export type TLayoutSelectionProps = {

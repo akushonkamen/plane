@@ -13,12 +13,12 @@ import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
 import { Pin, PinOff } from "lucide-react";
 // plane imports
-import type { IWorkspaceSidebarNavigationItem } from "@plane/constants";
-import { EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Tooltip } from "@plane/propel/tooltip";
-import { DragHandle, DropIndicator } from "@plane/ui";
-import { cn } from "@plane/utils";
+import type { IWorkspaceSidebarNavigationItem } from "@tracktor/constants";
+import { EUserPermissionsLevel } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import { DragHandle, DropIndicator } from "@tracktor/ui";
+import { cn } from "@tracktor/utils";
 // components
 import { SidebarNavItem } from "@/components/sidebar/sidebar-navigation";
 // hooks

@@ -8,11 +8,11 @@ import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { Box, PenTool, Rocket, Monitor, RefreshCw } from "lucide-react";
 // plane imports
-import { Button } from "@plane/propel/button";
-import { CheckIcon, ViewsIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TUserProfile } from "@plane/types";
-import { EOnboardingSteps } from "@plane/types";
+import { Button } from "@tracktor/propel/button";
+import { CheckIcon, ViewsIcon } from "@tracktor/propel/icons";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import type { TUserProfile } from "@tracktor/types";
+import { EOnboardingSteps } from "@tracktor/types";
 // hooks
 import { useUserProfile } from "@/hooks/store/user";
 // local components
@@ -59,10 +59,7 @@ export const RoleSetupStep = observer(function RoleSetupStep({ handleStepChange 
       role: formData.role,
     };
     try {
-      await Promise.all([
-        updateUserProfile(profileUpdatePayload),
-        // totalSteps > 2 && stepChange({ profile_complete: true }),
-      ]);
+      [await updateUserProfile(profileUpdatePayload)];
       setToast({
         type: TOAST_TYPE.SUCCESS,
         title: "Success",

@@ -16,14 +16,14 @@ import {
   EUserPermissions,
   EUserPermissionsLevel,
   WORK_ITEM_TRACKER_ELEMENTS,
-} from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import { ModuleIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { ICustomSearchSelectOption, IIssueDisplayFilterOptions, IIssueDisplayProperties } from "@plane/types";
-import { EIssuesStoreType, EIssueLayoutTypes } from "@plane/types";
-import { Breadcrumbs, Header, BreadcrumbNavigationSearchDropdown } from "@plane/ui";
-import { cn } from "@plane/utils";
+} from "@tracktor/constants";
+import { Button } from "@tracktor/propel/button";
+import { ModuleIcon } from "@tracktor/propel/icons";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import type { ICustomSearchSelectOption, IIssueDisplayFilterOptions, IIssueDisplayProperties } from "@tracktor/types";
+import { EIssuesStoreType, EIssueLayoutTypes } from "@tracktor/types";
+import { Breadcrumbs, Header, BreadcrumbNavigationSearchDropdown } from "@tracktor/ui";
+import { cn } from "@tracktor/utils";
 // components
 import { WorkItemsModal } from "@/components/analytics/work-items/modal";
 import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
@@ -48,7 +48,7 @@ import useLocalStorage from "@/hooks/use-local-storage";
 import { usePlatformOS } from "@/hooks/use-platform-os";
 // plane web imports
 import { CommonProjectBreadcrumbs } from "@/plane-web/components/breadcrumbs/common";
-import { IconButton } from "@plane/propel/icon-button";
+import { IconButton } from "@tracktor/propel/icon-button";
 
 export const ModuleIssuesHeader = observer(function ModuleIssuesHeader() {
   // refs
@@ -74,7 +74,7 @@ export const ModuleIssuesHeader = observer(function ModuleIssuesHeader() {
   // local storage
   const { setValue, storedValue } = useLocalStorage("module_sidebar_collapsed", "false");
   // derived values
-  const isSidebarCollapsed = storedValue ? (storedValue === "true" ? true : false) : false;
+  const isSidebarCollapsed = storedValue === "true";
   const activeLayout = issueFilters?.displayFilters?.layout;
   const moduleDetails = moduleId ? getModuleById(moduleId) : undefined;
   const canUserCreateIssue = allowPermissions(

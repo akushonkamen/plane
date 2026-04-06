@@ -7,10 +7,10 @@
 import { useParams } from "next/navigation";
 // react-hook-form
 import { Controller, useForm } from "react-hook-form";
-import { Button } from "@plane/propel/button";
-import type { IProject } from "@plane/types";
+import { Button } from "@tracktor/propel/button";
+import type { IProject } from "@tracktor/types";
 // ui
-import { Input, EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
+import { Input, EModalPosition, EModalWidth, ModalCore } from "@tracktor/ui";
 
 // types
 type Props = {

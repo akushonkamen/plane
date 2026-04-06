@@ -7,13 +7,13 @@
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 // plane imports
-import { USE_CASES } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import { CheckIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TUserProfile } from "@plane/types";
-import { EOnboardingSteps } from "@plane/types";
-import { cn } from "@plane/utils";
+import { USE_CASES } from "@tracktor/constants";
+import { Button } from "@tracktor/propel/button";
+import { CheckIcon } from "@tracktor/propel/icons";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import type { TUserProfile } from "@tracktor/types";
+import { EOnboardingSteps } from "@tracktor/types";
+import { cn } from "@tracktor/utils";
 // hooks
 import { useUserProfile } from "@/hooks/store/user";
 // local imports
@@ -50,10 +50,7 @@ export const UseCaseSetupStep = observer(function UseCaseSetupStep({ handleStepC
       use_case: formData.use_case && formData.use_case.length > 0 ? formData.use_case.join(". ") : undefined,
     };
     try {
-      await Promise.all([
-        updateUserProfile(profileUpdatePayload),
-        // totalSteps > 2 && stepChange({ profile_complete: true }),
-      ]);
+      [await updateUserProfile(profileUpdatePayload)];
       setToast({
         type: TOAST_TYPE.SUCCESS,
         title: "Success",

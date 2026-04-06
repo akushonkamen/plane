@@ -7,11 +7,11 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import { observer } from "mobx-react";
 
-import { LinkIcon, CheckIcon } from "@plane/propel/icons";
+import { LinkIcon, CheckIcon } from "@tracktor/propel/icons";
 // plane imports
-import { Tooltip } from "@plane/propel/tooltip";
-import { IconButton } from "@plane/propel/icon-button";
-import { cn } from "@plane/utils";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import { IconButton } from "@tracktor/propel/icon-button";
+import { cn } from "@tracktor/utils";
 // hooks
 import { usePageOperations } from "@/hooks/use-page-operations";
 // store

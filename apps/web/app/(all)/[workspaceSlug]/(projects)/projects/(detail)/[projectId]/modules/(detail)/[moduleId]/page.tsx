@@ -7,7 +7,7 @@
 import { observer } from "mobx-react";
 import useSWR from "swr";
 // plane imports
-import { cn } from "@plane/utils";
+import { cn } from "@tracktor/utils";
 // assets
 import emptyModule from "@/app/assets/empty-state/module.svg?url";
 // components
@@ -32,7 +32,7 @@ function ModuleIssuesPage({ params }: Route.ComponentProps) {
   // const { issuesFilter } = useIssues(EIssuesStoreType.MODULE);
   // local storage
   const { setValue, storedValue } = useLocalStorage("module_sidebar_collapsed", "false");
-  const isSidebarCollapsed = storedValue ? (storedValue === "true" ? true : false) : false;
+  const isSidebarCollapsed = storedValue === "true";
   // fetching module details
   const { error } = useSWR(`CURRENT_MODULE_DETAILS_${moduleId}`, () =>
     fetchModuleDetails(workspaceSlug, projectId, moduleId)

@@ -6,9 +6,9 @@
 
 import { useMemo, useCallback } from "react";
 // plane imports
-import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import { CycleIcon, IntakeIcon, ModuleIcon, PageIcon, ViewsIcon, WorkItemsIcon } from "@plane/propel/icons";
-import type { EUserProjectRoles, IPartialProject } from "@plane/types";
+import { EUserPermissions, EUserPermissionsLevel } from "@tracktor/constants";
+import { CycleIcon, IntakeIcon, ModuleIcon, PageIcon, ViewsIcon, WorkItemsIcon } from "@tracktor/propel/icons";
+import type { EUserProjectRoles, IPartialProject } from "@tracktor/types";
 import type { TNavigationItem } from "@/components/navigation/tab-navigation-root";
 
 type UseNavigationItemsProps = {
@@ -108,7 +108,7 @@ export const useNavigationItems = ({
     });
 
     // Sort by sortOrder
-    return filteredItems.sort((a, b) => (a.sortOrder || 0) - (b.sortOrder || 0));
+    return filteredItems.toSorted((a, b) => (a.sortOrder || 0) - (b.sortOrder || 0));
   }, [workspaceSlug, projectId, baseNavigation, allowPermissions, project?.id]);
 
   return navigationItems;

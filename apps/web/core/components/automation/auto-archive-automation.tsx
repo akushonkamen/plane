@@ -9,10 +9,10 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { ArchiveRestore } from "lucide-react";
 // plane imports
-import { PROJECT_AUTOMATION_MONTHS, EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { IProject } from "@plane/types";
-import { CustomSelect, Loader, ToggleSwitch } from "@plane/ui";
+import { PROJECT_AUTOMATION_MONTHS, EUserPermissions, EUserPermissionsLevel } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import type { IProject } from "@tracktor/types";
+import { CustomSelect, Loader, ToggleSwitch } from "@tracktor/ui";
 // component
 import { SelectMonthModal } from "@/components/automation";
 import { SettingsControlItem } from "@/components/settings/control-item";

@@ -7,10 +7,10 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // plane imports
-import { EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { EmptyStateDetailed } from "@plane/propel/empty-state";
-import { EUserProjectRoles } from "@plane/types";
+import { EUserPermissionsLevel } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { EmptyStateDetailed } from "@tracktor/propel/empty-state";
+import { EUserProjectRoles } from "@tracktor/types";
 // components
 import { ListLayout } from "@/components/core/list";
 import { ViewListLoader } from "@/components/ui/loader/view-list-loader";

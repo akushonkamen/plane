@@ -11,13 +11,13 @@ import { Rocket } from "lucide-react";
 // headless ui
 import { Combobox } from "@headlessui/react";
 // i18n
-import { useTranslation } from "@plane/i18n";
-import { SearchIcon } from "@plane/propel/icons";
+import { useTranslation } from "@tracktor/i18n";
+import { SearchIcon } from "@tracktor/propel/icons";
 // types
-import type { ISearchIssueResponse } from "@plane/types";
+import type { ISearchIssueResponse } from "@tracktor/types";
 // ui
-import { Loader, EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
-import { generateWorkItemLink, getTabIndex } from "@plane/utils";
+import { Loader, EModalPosition, EModalWidth, ModalCore } from "@tracktor/ui";
+import { generateWorkItemLink, getTabIndex } from "@tracktor/utils";
 // components
 import { IssueSearchModalEmptyState } from "@/components/core/modals/issue-search-modal-empty-state";
 // helpers

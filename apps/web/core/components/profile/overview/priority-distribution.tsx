@@ -5,12 +5,12 @@
  */
 
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { BarChart } from "@plane/propel/charts/bar-chart";
-import { EmptyStateCompact } from "@plane/propel/empty-state";
-import type { IUserProfileData } from "@plane/types";
-import { Loader, Card } from "@plane/ui";
-import { capitalizeFirstLetter } from "@plane/utils";
+import { useTranslation } from "@tracktor/i18n";
+import { BarChart } from "@tracktor/propel/charts/bar-chart";
+import { EmptyStateCompact } from "@tracktor/propel/empty-state";
+import type { IUserProfileData } from "@tracktor/types";
+import { Loader, Card } from "@tracktor/ui";
+import { capitalizeFirstLetter } from "@tracktor/utils";
 
 type Props = {
   userProfile: IUserProfileData | undefined;

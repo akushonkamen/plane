@@ -6,10 +6,10 @@
 
 import { useEffect, useState } from "react";
 import { CircleCheck, XCircle } from "lucide-react";
-import { API_BASE_URL } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { Input, Spinner } from "@plane/ui";
+import { API_BASE_URL } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { Button } from "@tracktor/propel/button";
+import { Input, Spinner } from "@tracktor/ui";
 // constants
 // helpers
 import { EAuthModes } from "@/helpers/authentication.helper";

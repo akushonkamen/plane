@@ -13,13 +13,13 @@ import {
   ISSUE_DISPLAY_FILTERS_BY_PAGE,
   GLOBAL_VIEW_TRACKER_ELEMENTS,
   DEFAULT_GLOBAL_VIEWS_LIST,
-} from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { ViewsIcon } from "@plane/propel/icons";
-import type { IIssueDisplayFilterOptions, IIssueDisplayProperties, ICustomSearchSelectOption } from "@plane/types";
-import { EIssuesStoreType, EIssueLayoutTypes } from "@plane/types";
-import { Breadcrumbs, Header, BreadcrumbNavigationSearchDropdown } from "@plane/ui";
+} from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { Button } from "@tracktor/propel/button";
+import { ViewsIcon } from "@tracktor/propel/icons";
+import type { IIssueDisplayFilterOptions, IIssueDisplayProperties, ICustomSearchSelectOption } from "@tracktor/types";
+import { EIssuesStoreType, EIssueLayoutTypes } from "@tracktor/types";
+import { Breadcrumbs, Header, BreadcrumbNavigationSearchDropdown } from "@tracktor/ui";
 // components
 import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
 import { SwitcherLabel } from "@/components/common/switcher-label";

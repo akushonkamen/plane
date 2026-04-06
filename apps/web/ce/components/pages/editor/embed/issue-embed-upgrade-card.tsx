@@ -5,8 +5,8 @@
  */
 
 // plane imports
-import { getButtonStyling } from "@plane/propel/button";
-import { cn } from "@plane/utils";
+import { getButtonStyling } from "@tracktor/propel/button";
+import { cn } from "@tracktor/utils";
 // components
 import { ProIcon } from "@/components/common/pro-icon";
 

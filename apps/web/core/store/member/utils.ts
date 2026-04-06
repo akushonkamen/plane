@@ -5,8 +5,8 @@
  */
 
 // Types and utilities for member filtering
-import type { EUserPermissions, TMemberOrderByOptions } from "@plane/constants";
-import type { IUserLite, TProjectMembership } from "@plane/types";
+import type { EUserPermissions, TMemberOrderByOptions } from "@tracktor/constants";
+import type { IUserLite, TProjectMembership } from "@tracktor/types";
 
 export interface IMemberFilters {
   order_by?: TMemberOrderByOptions;
@@ -109,7 +109,7 @@ export const sortMembers = <T>(
 
   const { field, direction } = parseOrderKey(orderBy);
 
-  return [...members].sort((a, b) => {
+  return [...members].toSorted((a, b) => {
     const aKey = getMemberKey(a);
     const bKey = getMemberKey(b);
     const aMemberDetails = memberDetailsMap[aKey];

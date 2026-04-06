@@ -6,14 +6,14 @@
 
 import { useCallback, useMemo } from "react";
 import { observer } from "mobx-react";
-import { GANTT_TIMELINE_TYPE } from "@plane/types";
+import { GANTT_TIMELINE_TYPE } from "@tracktor/types";
 import type {
   IBaseLayoutsGanttItem,
   IBaseLayoutsGanttProps,
   TGanttBlockUpdateData,
   IBlockUpdateDependencyData,
-} from "@plane/types";
-import { cn } from "@plane/utils";
+} from "@tracktor/types";
+import { cn } from "@tracktor/utils";
 import { TimeLineTypeContext } from "@/components/gantt-chart/contexts";
 import { GanttChartRoot } from "@/components/gantt-chart/root";
 import { BaseGanttSidebar } from "./sidebar";

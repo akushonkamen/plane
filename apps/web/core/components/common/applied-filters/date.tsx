@@ -6,10 +6,10 @@
 
 import { observer } from "mobx-react";
 // icons
-import { DATE_BEFORE_FILTER_OPTIONS } from "@plane/constants";
-import { CloseIcon } from "@plane/propel/icons";
+import { DATE_BEFORE_FILTER_OPTIONS } from "@tracktor/constants";
+import { CloseIcon } from "@tracktor/propel/icons";
 // plane constants
-import { renderFormattedDate, capitalizeFirstLetter } from "@plane/utils";
+import { renderFormattedDate, capitalizeFirstLetter } from "@tracktor/utils";
 // helpers
 type Props = {
   editable: boolean | undefined;

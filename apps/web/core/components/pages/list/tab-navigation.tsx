@@ -6,9 +6,9 @@
 
 import Link from "next/link";
 // types
-import type { TPageNavigationTabs } from "@plane/types";
+import type { TPageNavigationTabs } from "@tracktor/types";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@tracktor/utils";
 
 type TPageTabNavigation = {
   workspaceSlug: string;

@@ -7,9 +7,9 @@
 import { useCallback, useEffect, useState } from "react";
 import { observer } from "mobx-react";
 // plane imports
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IWorkspaceMemberInvitation, TOnboardingStep, TOnboardingSteps, TUserProfile } from "@plane/types";
-import { EOnboardingSteps } from "@plane/types";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import type { IWorkspaceMemberInvitation, TOnboardingStep, TOnboardingSteps, TUserProfile } from "@tracktor/types";
+import { EOnboardingSteps } from "@tracktor/types";
 // hooks
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useUser, useUserProfile } from "@/hooks/store/user";

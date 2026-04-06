@@ -5,8 +5,8 @@
  */
 
 import { observer } from "mobx-react";
-import { useTranslation } from "@plane/i18n";
-import { cn } from "@plane/utils";
+import { useTranslation } from "@tracktor/i18n";
+import { cn } from "@tracktor/utils";
 import type { TQuickAddIssueForm } from "../root";
 
 export const GanttQuickAddIssueForm = observer(function GanttQuickAddIssueForm(props: TQuickAddIssueForm) {

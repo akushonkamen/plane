@@ -7,11 +7,11 @@
 import { useRef } from "react";
 import { observer } from "mobx-react";
 import { Menu } from "lucide-react";
-import { useOutsideClickDetector } from "@plane/hooks";
-import { useTranslation } from "@plane/i18n";
-import { ChevronRightIcon } from "@plane/propel/icons";
+import { useOutsideClickDetector } from "@tracktor/hooks";
+import { useTranslation } from "@tracktor/i18n";
+import { ChevronRightIcon } from "@tracktor/propel/icons";
 import { useUserSettings } from "@/hooks/store/user";
-import { IconButton } from "@plane/propel/icon-button";
+import { IconButton } from "@tracktor/propel/icon-button";
 
 type Props = {
   hamburgerContent: React.ComponentType<{ className?: string; isMobile?: boolean }>;

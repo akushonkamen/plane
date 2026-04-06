@@ -7,11 +7,11 @@
 import { observer } from "mobx-react";
 
 // components
-import type { TSupportedFilterTypeForUpdate } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { ChevronLeftIcon, ChevronRightIcon } from "@plane/propel/icons";
-import type { TSupportedFilterForUpdate } from "@plane/types";
-import { Row } from "@plane/ui";
+import type { TSupportedFilterTypeForUpdate } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { ChevronLeftIcon, ChevronRightIcon } from "@tracktor/propel/icons";
+import type { TSupportedFilterForUpdate } from "@tracktor/types";
+import { Row } from "@tracktor/ui";
 // icons
 import { useCalendarView } from "@/hooks/store/use-calendar-view";
 import type { ICycleIssuesFilter } from "@/store/issue/cycle";

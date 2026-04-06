@@ -14,8 +14,8 @@ import type {
   IBlockUpdateDependencyData,
   IGanttBlock,
   TGanttViews,
-} from "@plane/types";
-import { cn, getDate } from "@plane/utils";
+} from "@tracktor/types";
+import { cn, getDate } from "@tracktor/utils";
 // components
 import { MultipleSelectGroup } from "@/components/core/multiple-select";
 import { GanttChartSidebar, MonthChartView, QuarterChartView, WeekChartView } from "@/components/gantt-chart";
@@ -110,7 +110,7 @@ export const GanttChartMainContent = observer(function GanttChartMainContent(pro
         canScroll: ({ source }) => source.data.dragInstanceId === "GANTT_REORDER",
       })
     );
-  }, [ganttContainerRef?.current]);
+  }, []);
 
   // handling scroll functionality
   const onScroll = (e: React.UIEvent<HTMLDivElement, UIEvent>) => {

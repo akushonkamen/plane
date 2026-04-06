@@ -6,8 +6,8 @@
 
 import React from "react";
 import { observer } from "mobx-react";
-import type { TIssueServiceType } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
+import type { TIssueServiceType } from "@tracktor/types";
+import { EIssueServiceType } from "@tracktor/types";
 // local imports
 import { IssueAttachmentItemList } from "../../attachment/attachment-item-list";
 import { useAttachmentOperations } from "./helper";

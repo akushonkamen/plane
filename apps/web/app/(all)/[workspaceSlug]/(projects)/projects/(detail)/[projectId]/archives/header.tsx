@@ -6,11 +6,11 @@
 
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-import { ArchiveIcon, CycleIcon, ModuleIcon, WorkItemsIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import { EIssuesStoreType } from "@plane/types";
+import { ArchiveIcon, CycleIcon, ModuleIcon, WorkItemsIcon } from "@tracktor/propel/icons";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import { EIssuesStoreType } from "@tracktor/types";
 // ui
-import { Breadcrumbs, Header } from "@plane/ui";
+import { Breadcrumbs, Header } from "@tracktor/ui";
 // components
 import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
 // hooks

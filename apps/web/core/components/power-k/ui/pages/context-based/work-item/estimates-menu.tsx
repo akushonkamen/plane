@@ -8,11 +8,11 @@ import { Command } from "cmdk";
 import { observer } from "mobx-react";
 import { Triangle } from "lucide-react";
 // plane types
-import { useTranslation } from "@plane/i18n";
-import { EEstimateSystem } from "@plane/types";
-import type { TIssue } from "@plane/types";
-import { Spinner } from "@plane/ui";
-import { convertMinutesToHoursMinutesString } from "@plane/utils";
+import { useTranslation } from "@tracktor/i18n";
+import { EEstimateSystem } from "@tracktor/types";
+import type { TIssue } from "@tracktor/types";
+import { Spinner } from "@tracktor/ui";
+import { convertMinutesToHoursMinutesString } from "@tracktor/utils";
 // hooks
 import { useEstimate, useProjectEstimates } from "@/hooks/store/estimates";
 // local imports

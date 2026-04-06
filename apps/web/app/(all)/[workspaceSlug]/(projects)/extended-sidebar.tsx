@@ -8,8 +8,8 @@ import { useCallback, useMemo, useRef } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // plane imports
-import { WORKSPACE_SIDEBAR_DYNAMIC_NAVIGATION_ITEMS_LINKS, EUserPermissionsLevel } from "@plane/constants";
-import type { EUserWorkspaceRoles } from "@plane/types";
+import { WORKSPACE_SIDEBAR_DYNAMIC_NAVIGATION_ITEMS_LINKS, EUserPermissionsLevel } from "@tracktor/constants";
+import type { EUserWorkspaceRoles } from "@tracktor/types";
 // hooks
 import { useAppTheme } from "@/hooks/store/use-app-theme";
 import { useUserPermissions } from "@/hooks/store/user";
@@ -48,7 +48,7 @@ export const ExtendedAppSidebar = observer(function ExtendedAppSidebar() {
           is_pinned: preference?.is_pinned ?? false,
         };
       })
-      .sort((a, b) => {
+      .toSorted((a, b) => {
         // First sort by pinned status (pinned items first)
         if (a.is_pinned !== b.is_pinned) {
           return b.is_pinned ? 1 : -1;

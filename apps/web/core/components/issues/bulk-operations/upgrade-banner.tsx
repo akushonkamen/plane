@@ -4,9 +4,9 @@
  * See the LICENSE file for details.
  */
 
-import { MARKETING_PLANE_ONE_PAGE_LINK } from "@plane/constants";
-import { getButtonStyling } from "@plane/propel/button";
-import { cn } from "@plane/utils";
+import { MARKETING_PLANE_ONE_PAGE_LINK } from "@tracktor/constants";
+import { getButtonStyling } from "@tracktor/propel/button";
+import { cn } from "@tracktor/utils";
 
 type Props = {
   className?: string;

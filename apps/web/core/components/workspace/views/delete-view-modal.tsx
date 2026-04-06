@@ -8,10 +8,10 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // Plane Imports
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IWorkspaceView } from "@plane/types";
-import { AlertModalCore } from "@plane/ui";
+import { useTranslation } from "@tracktor/i18n";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import type { IWorkspaceView } from "@tracktor/types";
+import { AlertModalCore } from "@tracktor/ui";
 // hooks
 import { useGlobalView } from "@/hooks/store/use-global-view";
 

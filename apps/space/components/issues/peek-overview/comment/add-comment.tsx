@@ -8,10 +8,10 @@ import React, { useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { useForm, Controller } from "react-hook-form";
 // plane imports
-import type { EditorRefApi } from "@plane/editor";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { SitesFileService } from "@plane/services";
-import type { TIssuePublicComment } from "@plane/types";
+import type { EditorRefApi } from "@tracktor/editor";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import { SitesFileService } from "@tracktor/services";
+import type { TIssuePublicComment } from "@tracktor/types";
 // editor components
 import { LiteTextEditor } from "@/components/editor/lite-text-editor";
 // hooks

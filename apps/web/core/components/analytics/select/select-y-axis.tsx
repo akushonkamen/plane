@@ -6,11 +6,11 @@
 
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-import { EEstimateSystem } from "@plane/constants";
-import { ProjectIcon } from "@plane/propel/icons";
-import type { ChartYAxisMetric } from "@plane/types";
+import { EEstimateSystem } from "@tracktor/constants";
+import { ProjectIcon } from "@tracktor/propel/icons";
+import type { ChartYAxisMetric } from "@tracktor/types";
 // plane package imports
-import { CustomSelect } from "@plane/ui";
+import { CustomSelect } from "@tracktor/ui";
 // hooks
 import { useProjectEstimates } from "@/hooks/store/estimates";
 // plane web constants

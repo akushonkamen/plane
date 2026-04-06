@@ -9,11 +9,11 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // lucide icons
 import { Minimize2, Maximize2, Circle } from "lucide-react";
-import { PlusIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TIssue, ISearchIssueResponse, TIssueKanbanFilters, TIssueGroupByOptions } from "@plane/types";
+import { PlusIcon } from "@tracktor/propel/icons";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import type { TIssue, ISearchIssueResponse, TIssueKanbanFilters, TIssueGroupByOptions } from "@tracktor/types";
 // ui
-import { CustomMenu } from "@plane/ui";
+import { CustomMenu } from "@tracktor/ui";
 // components
 import { ExistingIssuesListModal } from "@/components/core/modals/existing-issues-list-modal";
 import { CreateUpdateIssueModal } from "@/components/issues/issue-modal/modal";

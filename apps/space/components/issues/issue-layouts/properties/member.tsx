@@ -7,11 +7,11 @@
 import { observer } from "mobx-react";
 // icons
 import type { LucideIcon } from "lucide-react";
-import { MembersPropertyIcon } from "@plane/propel/icons";
+import { MembersPropertyIcon } from "@tracktor/propel/icons";
 // plane ui
-import { Avatar, AvatarGroup } from "@plane/ui";
+import { Avatar, AvatarGroup } from "@tracktor/ui";
 // plane utils
-import { cn } from "@plane/utils";
+import { cn } from "@tracktor/utils";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
 //

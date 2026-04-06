@@ -5,8 +5,8 @@
  */
 
 import type { Hocuspocus } from "@hocuspocus/server";
-import { createRealtimeEvent } from "@plane/editor";
-import { logger } from "@plane/logger";
+import { createRealtimeEvent } from "@tracktor/editor";
+import { logger } from "@tracktor/logger";
 import type { HocusPocusServerContext } from "@/types";
 import { broadcastMessageToPage } from "./broadcast-message";
 

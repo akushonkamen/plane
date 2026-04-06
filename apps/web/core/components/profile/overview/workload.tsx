@@ -5,11 +5,11 @@
  */
 
 // plane imports
-import { STATE_GROUPS } from "@plane/constants";
+import { STATE_GROUPS } from "@tracktor/constants";
 // types
-import { useTranslation } from "@plane/i18n";
-import type { IUserStateDistribution } from "@plane/types";
-import { Card, ECardDirection, ECardSpacing } from "@plane/ui";
+import { useTranslation } from "@tracktor/i18n";
+import type { IUserStateDistribution } from "@tracktor/types";
+import { Card, ECardDirection, ECardSpacing } from "@tracktor/ui";
 // constants
 
 type Props = {

@@ -7,12 +7,12 @@
 import { useState } from "react";
 import { mutate } from "swr";
 // types
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { APITokenService } from "@plane/services";
-import type { IApiToken } from "@plane/types";
+import { useTranslation } from "@tracktor/i18n";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import { APITokenService } from "@tracktor/services";
+import type { IApiToken } from "@tracktor/types";
 // ui
-import { AlertModalCore } from "@plane/ui";
+import { AlertModalCore } from "@tracktor/ui";
 // fetch-keys
 import { API_TOKENS_LIST } from "@/constants/fetch-keys";
 

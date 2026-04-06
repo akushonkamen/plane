@@ -8,14 +8,14 @@ import type { FormEvent } from "react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
 // plane imports
-import { ETabIndices } from "@plane/constants";
-import type { EditorRefApi } from "@plane/editor";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TIssue } from "@plane/types";
-import { ToggleSwitch } from "@plane/ui";
-import { renderFormattedPayloadDate, getTabIndex } from "@plane/utils";
+import { ETabIndices } from "@tracktor/constants";
+import type { EditorRefApi } from "@tracktor/editor";
+import { useTranslation } from "@tracktor/i18n";
+import { Button } from "@tracktor/propel/button";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import type { TIssue } from "@tracktor/types";
+import { ToggleSwitch } from "@tracktor/ui";
+import { renderFormattedPayloadDate, getTabIndex } from "@tracktor/utils";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
 import { useProjectInbox } from "@/hooks/store/use-project-inbox";

@@ -9,10 +9,10 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { GripVertical, X } from "lucide-react";
 // plane imports
-import { WORKSPACE_SIDEBAR_DYNAMIC_NAVIGATION_ITEMS_LINKS, EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Checkbox, EModalPosition, EModalWidth, ModalCore, Sortable } from "@plane/ui";
-import { cn } from "@plane/utils";
+import { WORKSPACE_SIDEBAR_DYNAMIC_NAVIGATION_ITEMS_LINKS, EUserPermissionsLevel } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { Checkbox, EModalPosition, EModalWidth, ModalCore, Sortable } from "@tracktor/ui";
+import { cn } from "@tracktor/utils";
 // hooks
 import { useUserPermissions } from "@/hooks/store/user";
 import {
@@ -101,7 +101,7 @@ export const CustomizeNavigationDialog = observer(function CustomizeNavigationDi
       };
     });
 
-    return items.sort((a, b) => a.sortOrder - b.sortOrder);
+    return items.toSorted((a, b) => a.sortOrder - b.sortOrder);
   }, [workspaceSlug, allowPermissions, workspacePreferences]);
 
   // Handle checkbox toggle
@@ -150,7 +150,7 @@ export const CustomizeNavigationDialog = observer(function CustomizeNavigationDi
       };
     });
 
-    return items.sort((a, b) => a.sortOrder - b.sortOrder);
+    return items.toSorted((a, b) => a.sortOrder - b.sortOrder);
   }, [personalPreferences, filteredPersonalItems]);
 
   // Prevent typing invalid characters in number input

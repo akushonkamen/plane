@@ -9,9 +9,9 @@ import { debounce } from "lodash-es";
 import { observer } from "mobx-react";
 import { Minimize2 } from "lucide-react";
 // plane types
-import type { TSticky } from "@plane/types";
+import type { TSticky } from "@tracktor/types";
 // plane utils
-import { cn } from "@plane/utils";
+import { cn } from "@tracktor/utils";
 // hooks
 import { useSticky } from "@/hooks/use-stickies";
 // components

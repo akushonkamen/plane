@@ -8,13 +8,13 @@ import { useCallback, useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // plane imports
-import { EUserPermissions, EUserPermissionsLevel, PROJECT_TRACKER_ELEMENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { EmptyStateCompact } from "@plane/propel/empty-state";
-import { PlusIcon, SearchIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import { copyUrlToClipboard, orderJoinedProjects } from "@plane/utils";
+import { EUserPermissions, EUserPermissionsLevel, PROJECT_TRACKER_ELEMENTS } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { EmptyStateCompact } from "@tracktor/propel/empty-state";
+import { PlusIcon, SearchIcon } from "@tracktor/propel/icons";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import { copyUrlToClipboard, orderJoinedProjects } from "@tracktor/utils";
 // components
 import { CreateProjectModal } from "@/components/project/create-project-modal";
 import { SidebarProjectsListItem } from "@/components/workspace/sidebar/projects-list-item";

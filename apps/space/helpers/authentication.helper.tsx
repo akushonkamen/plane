@@ -6,7 +6,7 @@
 
 import { Link } from "react-router";
 // helpers
-import { SUPPORT_EMAIL } from "@plane/constants";
+import { SUPPORT_EMAIL } from "@tracktor/constants";
 
 export enum EPageTypes {
   INIT = "INIT",

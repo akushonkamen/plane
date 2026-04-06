@@ -8,12 +8,12 @@ import { useCallback, useState } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // plane imports
-import { EIssueFilterType, ISSUE_LAYOUTS, ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { CalendarLayoutIcon, BoardLayoutIcon, ListLayoutIcon, ChevronDownIcon } from "@plane/propel/icons";
-import type { IIssueDisplayFilterOptions, IIssueDisplayProperties, EIssueLayoutTypes } from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
-import { CustomMenu } from "@plane/ui";
+import { EIssueFilterType, ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { CalendarLayoutIcon, BoardLayoutIcon, ListLayoutIcon, ChevronDownIcon } from "@tracktor/propel/icons";
+import type { IIssueDisplayFilterOptions, IIssueDisplayProperties, EIssueLayoutTypes } from "@tracktor/types";
+import { EIssuesStoreType } from "@tracktor/types";
+import { CustomMenu } from "@tracktor/ui";
 // components
 import { WorkItemsModal } from "@/components/analytics/work-items/modal";
 import { DisplayFiltersSelection, FiltersDropdown } from "@/components/issues/issue-layouts/filters";
@@ -107,15 +107,15 @@ export const CycleIssuesMobileHeader = observer(function CycleIssuesMobileHeader
           customButtonClassName="flex flex-grow justify-center text-secondary text-13"
           closeOnSelect
         >
-          {SUPPORTED_LAYOUTS.map((layout, index) => (
+          {SUPPORTED_LAYOUTS.map((layout) => (
             <CustomMenu.MenuItem
-              key={ISSUE_LAYOUTS[index].key}
+              key={layout.key}
               onClick={() => {
-                handleLayoutChange(ISSUE_LAYOUTS[index].key);
+                handleLayoutChange(layout.key);
               }}
               className="flex items-center gap-2"
             >
-              <IssueLayoutIcon layout={ISSUE_LAYOUTS[index].key} className="h-3 w-3" />
+              <IssueLayoutIcon layout={layout.key} className="h-3 w-3" />
               <div className="text-tertiary">{t(layout.titleTranslationKey)}</div>
             </CustomMenu.MenuItem>
           ))}
@@ -146,12 +146,12 @@ export const CycleIssuesMobileHeader = observer(function CycleIssuesMobileHeader
           </FiltersDropdown>
         </div>
 
-        <span
+        <button
           onClick={() => setAnalyticsModal(true)}
-          className="flex flex-grow justify-center border-l border-subtle text-13 text-secondary"
+          className="flex flex-grow justify-center border-l border-subtle bg-transparent text-13 text-secondary"
         >
           {t("common.analytics")}
-        </span>
+        </button>
       </div>
     </>
   );

@@ -6,10 +6,10 @@
 
 // plane imports
 import { isRouteErrorResponse } from "react-router";
-import { Banner } from "@plane/propel/banner";
-import { Button } from "@plane/propel/button";
-import { Card, ECardVariant } from "@plane/propel/card";
-import { InfoFillIcon } from "@plane/propel/icons";
+import { Banner } from "@tracktor/propel/banner";
+import { Button } from "@tracktor/propel/button";
+import { Card, ECardVariant } from "@tracktor/propel/card";
+import { InfoFillIcon } from "@tracktor/propel/icons";
 
 interface ErrorActionsProps {
   onGoHome: () => void;

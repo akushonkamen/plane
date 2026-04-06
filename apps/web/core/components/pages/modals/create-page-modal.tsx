@@ -6,10 +6,10 @@
 
 import { useEffect, useState } from "react";
 // constants
-import type { EPageAccess } from "@plane/constants";
-import type { TPage } from "@plane/types";
+import type { EPageAccess } from "@tracktor/constants";
+import type { TPage } from "@tracktor/types";
 // ui
-import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
+import { EModalPosition, EModalWidth, ModalCore } from "@tracktor/ui";
 // hooks
 import { useAppRouter } from "@/hooks/use-app-router";
 // plane web hooks

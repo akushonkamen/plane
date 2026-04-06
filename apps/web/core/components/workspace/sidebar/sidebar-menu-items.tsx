@@ -14,10 +14,10 @@ import {
   WORKSPACE_SIDEBAR_STATIC_NAVIGATION_ITEMS,
   WORKSPACE_SIDEBAR_STATIC_NAVIGATION_ITEMS_LINKS,
   WORKSPACE_SIDEBAR_STATIC_PINNED_NAVIGATION_ITEMS_LINKS,
-} from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { ChevronRightIcon } from "@plane/propel/icons";
-import { cn } from "@plane/utils";
+} from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { ChevronRightIcon } from "@tracktor/propel/icons";
+import { cn } from "@tracktor/utils";
 // components
 import { SidebarNavItem } from "@/components/sidebar/sidebar-navigation";
 // store hooks

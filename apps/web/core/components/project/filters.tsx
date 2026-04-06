@@ -9,9 +9,9 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { ListFilter } from "lucide-react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import type { TProjectFilters } from "@plane/types";
-import { cn, calculateTotalFilters } from "@plane/utils";
+import { useTranslation } from "@tracktor/i18n";
+import type { TProjectFilters } from "@tracktor/types";
+import { cn, calculateTotalFilters } from "@tracktor/utils";
 // components
 import { FiltersDropdown } from "@/components/issues/issue-layouts/filters";
 // hooks

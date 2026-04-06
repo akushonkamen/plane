@@ -8,8 +8,8 @@ import React from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // plane imports
-import { DraftIcon, HomeIcon, PiChatLogo, YourWorkIcon, DashboardIcon } from "@plane/propel/icons";
-import { EUserWorkspaceRoles } from "@plane/types";
+import { DraftIcon, HomeIcon, PiChatLogo, YourWorkIcon, DashboardIcon } from "@tracktor/propel/icons";
+import { EUserWorkspaceRoles } from "@tracktor/types";
 // hooks
 import { useUserPermissions, useUser } from "@/hooks/store/user";
 // local imports

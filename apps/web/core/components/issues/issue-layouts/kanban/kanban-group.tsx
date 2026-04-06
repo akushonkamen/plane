@@ -11,11 +11,11 @@ import { dropTargetForElements } from "@atlaskit/pragmatic-drag-and-drop/element
 import { autoScrollForElements } from "@atlaskit/pragmatic-drag-and-drop-auto-scroll/element";
 import { observer } from "mobx-react";
 // plane constants
-import { DRAG_ALLOWED_GROUPS } from "@plane/constants";
+import { DRAG_ALLOWED_GROUPS } from "@tracktor/constants";
 // i18n
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@tracktor/i18n";
 //types
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
 import type {
   TGroupedIssues,
   TIssue,
@@ -24,9 +24,9 @@ import type {
   TSubGroupedIssues,
   TIssueGroupByOptions,
   TIssueOrderByOptions,
-} from "@plane/types";
-import { EIssueLayoutTypes } from "@plane/types";
-import { cn } from "@plane/utils";
+} from "@tracktor/types";
+import { EIssueLayoutTypes } from "@tracktor/types";
+import { cn } from "@tracktor/utils";
 import type { GroupDropLocation } from "@/components/issues/issue-layouts/utils";
 import {
   highlightIssueOnDrop,

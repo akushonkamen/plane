@@ -7,9 +7,9 @@
 import { Fragment, forwardRef } from "react";
 import { range } from "lodash-es";
 // plane ui
-import { Row } from "@plane/ui";
+import { Row } from "@tracktor/ui";
 // plane utils
-import { cn } from "@plane/utils";
+import { cn } from "@tracktor/utils";
 import { getRandomInt, getRandomLength } from "../utils";
 
 export const ListLoaderItemRow = forwardRef(function ListLoaderItemRow(

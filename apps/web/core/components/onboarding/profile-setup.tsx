@@ -8,16 +8,16 @@ import { useMemo, useState } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { Eye, EyeOff } from "lucide-react";
-import { E_PASSWORD_STRENGTH } from "@plane/constants";
+import { E_PASSWORD_STRENGTH } from "@tracktor/constants";
 // types
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IUser, TUserProfile, TOnboardingSteps } from "@plane/types";
+import { useTranslation } from "@tracktor/i18n";
+import { Button } from "@tracktor/propel/button";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import type { IUser, TUserProfile, TOnboardingSteps } from "@tracktor/types";
 // ui
-import { Input, PasswordStrengthIndicator, Spinner } from "@plane/ui";
+import { Input, PasswordStrengthIndicator, Spinner } from "@tracktor/ui";
 // components
-import { cn, getFileURL, getPasswordStrength, validatePersonName } from "@plane/utils";
+import { cn, getFileURL, getPasswordStrength, validatePersonName } from "@tracktor/utils";
 import { UserImageUploadModal } from "@/components/core/modals/user-image-upload-modal";
 // hooks
 import { useUser, useUserProfile } from "@/hooks/store/user";

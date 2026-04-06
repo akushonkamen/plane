@@ -6,8 +6,8 @@
 
 import { orderBy } from "lodash-es";
 // plane imports
-import type { IPaymentProduct, TProductSubscriptionType, TSubscriptionPrice } from "@plane/types";
-import { EProductSubscriptionEnum } from "@plane/types";
+import type { IPaymentProduct, TProductSubscriptionType, TSubscriptionPrice } from "@tracktor/types";
+import { EProductSubscriptionEnum } from "@tracktor/types";
 
 /**
  * Calculates the yearly discount percentage when switching from monthly to yearly billing

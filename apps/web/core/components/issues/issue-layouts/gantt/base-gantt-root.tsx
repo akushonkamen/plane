@@ -8,12 +8,12 @@ import React, { useCallback, useEffect } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // plane imports
-import { ALL_ISSUES, EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { EIssuesStoreType, IBlockUpdateData, TIssue } from "@plane/types";
-import { EIssueLayoutTypes, GANTT_TIMELINE_TYPE } from "@plane/types";
-import { renderFormattedPayloadDate } from "@plane/utils";
+import { ALL_ISSUES, EUserPermissions, EUserPermissionsLevel } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import type { EIssuesStoreType, IBlockUpdateData, TIssue } from "@tracktor/types";
+import { EIssueLayoutTypes, GANTT_TIMELINE_TYPE } from "@tracktor/types";
+import { renderFormattedPayloadDate } from "@tracktor/utils";
 // components
 import { TimeLineTypeContext } from "@/components/gantt-chart/contexts";
 import { GanttChartRoot } from "@/components/gantt-chart/root";

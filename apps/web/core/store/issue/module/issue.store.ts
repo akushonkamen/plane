@@ -13,9 +13,9 @@ import type {
   IssuePaginationOptions,
   TIssuesResponse,
   TBulkOperationsPayload,
-} from "@plane/types";
+} from "@tracktor/types";
 // helpers
-import { getDistributionPathsPostUpdate } from "@plane/utils";
+import { getDistributionPathsPostUpdate } from "@tracktor/utils";
 import type { IBaseIssuesStore } from "../helpers/base-issues.store";
 import { BaseIssuesStore } from "../helpers/base-issues.store";
 //

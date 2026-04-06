@@ -9,8 +9,8 @@ import { Combobox } from "@headlessui/react";
 import React, { createContext, useCallback, useContext, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { usePopper } from "react-popper";
-import { useOutsideClickDetector } from "@plane/hooks";
-import { CheckIcon, ChevronDownIcon } from "@plane/propel/icons";
+import { useOutsideClickDetector } from "@tracktor/hooks";
+import { CheckIcon, ChevronDownIcon } from "@tracktor/propel/icons";
 // plane helpers
 // hooks
 import { useDropdownKeyDown } from "../hooks/use-dropdown-key-down";

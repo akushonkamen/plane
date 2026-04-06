@@ -13,9 +13,9 @@ import type {
   TFilterProperty,
   TMultiSelectFilterFieldConfig,
   TFilterConditionNodeForDisplay,
-} from "@plane/types";
-import { CustomSearchSelect } from "@plane/ui";
-import { toFilterArray, getFilterValueLength } from "@plane/utils";
+} from "@tracktor/types";
+import { CustomSearchSelect } from "@tracktor/ui";
+import { toFilterArray, getFilterValueLength } from "@tracktor/utils";
 // local imports
 import { SelectedOptionsDisplay } from "./selected-options-display";
 import { getCommonCustomSearchSelectProps, getFormattedOptions, loadOptions } from "./shared";

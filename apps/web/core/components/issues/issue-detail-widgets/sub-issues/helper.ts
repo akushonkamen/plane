@@ -6,11 +6,11 @@
 
 import { useMemo } from "react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TIssueServiceType, TSubIssueOperations } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
-import { copyUrlToClipboard } from "@plane/utils";
+import { useTranslation } from "@tracktor/i18n";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import type { TIssueServiceType, TSubIssueOperations } from "@tracktor/types";
+import { EIssueServiceType } from "@tracktor/types";
+import { copyUrlToClipboard } from "@tracktor/utils";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 

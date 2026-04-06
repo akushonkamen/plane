@@ -6,10 +6,10 @@
 
 import useSWR from "swr";
 // plane imports
-import { GROUP_CHOICES } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { IUserStateDistribution, TStateGroups } from "@plane/types";
-import { ContentWrapper } from "@plane/ui";
+import { GROUP_CHOICES } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import type { IUserStateDistribution, TStateGroups } from "@tracktor/types";
+import { ContentWrapper } from "@tracktor/ui";
 // components
 import { PageHead } from "@/components/core/page-title";
 import { ProfileActivity } from "@/components/profile/overview/activity";

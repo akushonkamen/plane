@@ -9,11 +9,11 @@ import { observer } from "mobx-react";
 import useSWR, { mutate } from "swr";
 import { MoveLeft, MoveRight, RefreshCw } from "lucide-react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { EmptyStateCompact } from "@plane/propel/empty-state";
-import type { IExportData } from "@plane/types";
-import { Table } from "@plane/ui";
+import { useTranslation } from "@tracktor/i18n";
+import { Button } from "@tracktor/propel/button";
+import { EmptyStateCompact } from "@tracktor/propel/empty-state";
+import type { IExportData } from "@tracktor/types";
+import { Table } from "@tracktor/ui";
 // components
 import { ImportExportSettingsLoader } from "@/components/ui/loader/settings/import-and-export";
 // constants

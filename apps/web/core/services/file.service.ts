@@ -6,10 +6,10 @@
 
 import type { AxiosRequestConfig } from "axios";
 // plane types
-import { API_BASE_URL } from "@plane/constants";
-import { getFileMetaDataForUpload, generateFileUploadPayload } from "@plane/services";
-import type { EFileAssetType, TFileEntityInfo, TFileSignedURLResponse } from "@plane/types";
-import { getAssetIdFromUrl } from "@plane/utils";
+import { API_BASE_URL } from "@tracktor/constants";
+import { getFileMetaDataForUpload, generateFileUploadPayload } from "@tracktor/services";
+import type { EFileAssetType, TFileEntityInfo, TFileSignedURLResponse } from "@tracktor/types";
+import { getAssetIdFromUrl } from "@tracktor/utils";
 // helpers
 // services
 import { APIService } from "@/services/api.service";

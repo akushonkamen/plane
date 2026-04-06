@@ -8,21 +8,21 @@ import { useCallback } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // plane constants
-import { EIssueFilterType, ISSUE_LAYOUTS, ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@plane/constants";
+import { EIssueFilterType, ISSUE_LAYOUTS, ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@tracktor/constants";
 // plane i18n
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@tracktor/i18n";
 // icons
-import { ChevronDownIcon } from "@plane/propel/icons";
+import { ChevronDownIcon } from "@tracktor/propel/icons";
 // types
 import type {
   IIssueDisplayFilterOptions,
   IIssueDisplayProperties,
   TIssueLayouts,
   EIssueLayoutTypes,
-} from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
+} from "@tracktor/types";
+import { EIssuesStoreType } from "@tracktor/types";
 // ui
-import { CustomMenu } from "@plane/ui";
+import { CustomMenu } from "@tracktor/ui";
 // components
 import { DisplayFiltersSelection, FiltersDropdown } from "@/components/issues/issue-layouts/filters";
 import { IssueLayoutIcon } from "@/components/issues/issue-layouts/layout-icon";

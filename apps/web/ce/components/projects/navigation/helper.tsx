@@ -5,8 +5,8 @@
  */
 
 // plane imports
-import { EUserPermissions, EProjectFeatureKey } from "@plane/constants";
-import { CycleIcon, IntakeIcon, ModuleIcon, PageIcon, ViewsIcon, WorkItemsIcon } from "@plane/propel/icons";
+import { EUserPermissions, EProjectFeatureKey } from "@tracktor/constants";
+import { CycleIcon, IntakeIcon, ModuleIcon, PageIcon, ViewsIcon, WorkItemsIcon } from "@tracktor/propel/icons";
 // components
 import type { TNavigationItem } from "@/components/workspace/sidebar/project-navigation";
 

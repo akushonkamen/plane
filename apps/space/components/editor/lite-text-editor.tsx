@@ -6,10 +6,10 @@
 
 import React from "react";
 // plane imports
-import { LiteTextEditorWithRef } from "@plane/editor";
-import type { EditorRefApi, ILiteTextEditorProps, TFileHandler } from "@plane/editor";
-import type { MakeOptional } from "@plane/types";
-import { cn, isCommentEmpty } from "@plane/utils";
+import { LiteTextEditorWithRef } from "@tracktor/editor";
+import type { EditorRefApi, ILiteTextEditorProps, TFileHandler } from "@tracktor/editor";
+import type { MakeOptional } from "@tracktor/types";
+import { cn, isCommentEmpty } from "@tracktor/utils";
 // helpers
 import { getEditorFileHandlers } from "@/helpers/editor.helper";
 // hooks

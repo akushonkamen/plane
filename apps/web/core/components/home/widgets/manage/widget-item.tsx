@@ -19,12 +19,12 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { createRoot } from "react-dom/client";
 // plane types
-import { useTranslation } from "@plane/i18n";
-import type { InstructionType } from "@plane/types";
+import { useTranslation } from "@tracktor/i18n";
+import type { InstructionType } from "@tracktor/types";
 // plane ui
-import { DropIndicator, ToggleSwitch } from "@plane/ui";
+import { DropIndicator, ToggleSwitch } from "@tracktor/ui";
 // plane utils
-import { cn } from "@plane/utils";
+import { cn } from "@tracktor/utils";
 // hooks
 import { useHome } from "@/hooks/store/use-home";
 import { HOME_WIDGETS_LIST } from "../../home-dashboard-widgets";

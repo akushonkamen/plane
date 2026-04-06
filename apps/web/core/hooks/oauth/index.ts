@@ -5,7 +5,7 @@
  */
 
 // plane imports
-import type { TOAuthConfigs } from "@plane/types";
+import type { TOAuthConfigs } from "@tracktor/types";
 // local imports
 import { useCoreOAuthConfig } from "./core";
 import { useExtendedOAuthConfig } from "./extended";

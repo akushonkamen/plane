@@ -9,10 +9,10 @@ import { observer } from "mobx-react";
 import { ListFilterPlus } from "lucide-react";
 import { Transition } from "@headlessui/react";
 // plane imports
-import { Button } from "@plane/propel/button";
-import type { IFilterInstance } from "@plane/shared-state";
-import type { TExternalFilter, TFilterProperty } from "@plane/types";
-import { cn, EHeaderVariant, Header, Loader } from "@plane/ui";
+import { Button } from "@tracktor/propel/button";
+import type { IFilterInstance } from "@tracktor/shared-state";
+import type { TExternalFilter, TFilterProperty } from "@tracktor/types";
+import { cn, EHeaderVariant, Header, Loader } from "@tracktor/ui";
 // local imports
 import type { TAddFilterButtonProps } from "./add-filters/button";
 import { AddFilterButton } from "./add-filters/button";

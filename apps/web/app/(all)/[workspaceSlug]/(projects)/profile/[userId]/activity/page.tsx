@@ -7,9 +7,9 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 // plane imports
-import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
+import { EUserPermissions, EUserPermissionsLevel } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { Button } from "@tracktor/propel/button";
 // components
 import { PageHead } from "@/components/core/page-title";
 import { DownloadActivityButton } from "@/components/profile/activity/download-button";

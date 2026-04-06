@@ -7,10 +7,10 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 // plane imports
-import { WORKSPACE_TRACKER_ELEMENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import type { IWorkspace } from "@plane/types";
+import { WORKSPACE_TRACKER_ELEMENTS } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { Button } from "@tracktor/propel/button";
+import type { IWorkspace } from "@tracktor/types";
 // components
 import { SettingsBoxedControlItem } from "@/components/settings/boxed-control-item";
 // local imports

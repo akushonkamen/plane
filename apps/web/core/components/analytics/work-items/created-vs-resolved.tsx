@@ -9,11 +9,11 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
 // plane package imports
-import { useTranslation } from "@plane/i18n";
-import { AreaChart } from "@plane/propel/charts/area-chart";
-import { EmptyStateCompact } from "@plane/propel/empty-state";
-import type { IChartResponse, TChartData } from "@plane/types";
-import { renderFormattedDate } from "@plane/utils";
+import { useTranslation } from "@tracktor/i18n";
+import { AreaChart } from "@tracktor/propel/charts/area-chart";
+import { EmptyStateCompact } from "@tracktor/propel/empty-state";
+import type { IChartResponse, TChartData } from "@tracktor/types";
+import { renderFormattedDate } from "@tracktor/utils";
 // hooks
 import { useAnalytics } from "@/hooks/store/use-analytics";
 // services

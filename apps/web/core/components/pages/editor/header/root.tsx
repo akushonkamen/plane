@@ -8,8 +8,8 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import { SmilePlus } from "lucide-react";
 // plane imports
-import { EmojiPicker, EmojiIconPickerTypes } from "@plane/propel/emoji-icon-picker";
-import { cn } from "@plane/utils";
+import { EmojiPicker, EmojiIconPickerTypes } from "@tracktor/propel/emoji-icon-picker";
+import { cn } from "@tracktor/utils";
 // store
 import type { TPageInstance } from "@/store/pages/base-page";
 // local imports

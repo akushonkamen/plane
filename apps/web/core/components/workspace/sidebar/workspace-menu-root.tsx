@@ -12,12 +12,12 @@ import { CirclePlus, LogOut, Mails } from "lucide-react";
 // ui
 import { Menu, Transition } from "@headlessui/react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { ChevronDownIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IWorkspace } from "@plane/types";
-import { Loader } from "@plane/ui";
-import { orderWorkspacesList, cn } from "@plane/utils";
+import { useTranslation } from "@tracktor/i18n";
+import { ChevronDownIcon } from "@tracktor/propel/icons";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import type { IWorkspace } from "@tracktor/types";
+import { Loader } from "@tracktor/ui";
+import { orderWorkspacesList, cn } from "@tracktor/utils";
 // helpers
 import { AppSidebarItem } from "@/components/sidebar/sidebar-item";
 // hooks

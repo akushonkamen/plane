@@ -7,10 +7,10 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // plane imports
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IWorkspaceView } from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
-import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import type { IWorkspaceView } from "@tracktor/types";
+import { EIssuesStoreType } from "@tracktor/types";
+import { EModalPosition, EModalWidth, ModalCore } from "@tracktor/ui";
 // hooks
 import { useGlobalView } from "@/hooks/store/use-global-view";
 import { useWorkItemFilters } from "@/hooks/store/work-item-filters/use-work-item-filters";

@@ -10,14 +10,14 @@ import { usePopper } from "react-popper";
 import { Loader } from "lucide-react";
 import { Combobox } from "@headlessui/react";
 // plane imports
-import { EUserPermissionsLevel, getRandomLabelColor } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { CheckIcon, SearchIcon, PlusIcon } from "@plane/propel/icons";
-import type { IIssueLabel } from "@plane/types";
-import { EUserProjectRoles } from "@plane/types";
+import { EUserPermissionsLevel, getRandomLabelColor } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { Button } from "@tracktor/propel/button";
+import { CheckIcon, SearchIcon, PlusIcon } from "@tracktor/propel/icons";
+import type { IIssueLabel } from "@tracktor/types";
+import { EUserProjectRoles } from "@tracktor/types";
 // helpers
-import { getTabIndex } from "@plane/utils";
+import { getTabIndex } from "@tracktor/utils";
 // hooks
 import { useLabel } from "@/hooks/store/use-label";
 import { useUserPermissions } from "@/hooks/store/user";

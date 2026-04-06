@@ -5,7 +5,7 @@
  */
 
 // FIXME: fix this!!!
-import type { ICustomSearchSelectOption } from "@plane/types";
+import type { ICustomSearchSelectOption } from "@tracktor/types";
 
 type Placement =
   | "top"

@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-import type { ISvgIcons } from "@plane/propel/icons";
-import type { TContextMenuItem } from "@plane/ui";
+import type { ISvgIcons } from "@tracktor/propel/icons";
+import type { TContextMenuItem } from "@tracktor/ui";
 
 export interface CopyMenuHelperProps {
   baseItem: {

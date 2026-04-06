@@ -6,10 +6,10 @@
 
 import { useCallback } from "react";
 // plane types
-import type { TSearchEntities } from "@plane/types";
+import type { TSearchEntities } from "@tracktor/types";
 // helpers
-import { getBase64Image, getEditorAssetSrc } from "@plane/utils";
-import type { TCustomComponentsMetaData } from "@plane/utils";
+import { getBase64Image, getEditorAssetSrc } from "@tracktor/utils";
+import type { TCustomComponentsMetaData } from "@tracktor/utils";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
 // plane web hooks

@@ -6,8 +6,8 @@
 
 import { isNil, orderBy } from "lodash-es";
 // plane imports
-import { SPACE_BASE_PATH, SPACE_BASE_URL } from "@plane/constants";
-import type { IProjectView, TViewFilterProps, TViewFiltersSortBy, TViewFiltersSortKey } from "@plane/types";
+import { SPACE_BASE_PATH, SPACE_BASE_URL } from "@tracktor/constants";
+import type { IProjectView, TViewFilterProps, TViewFiltersSortBy, TViewFiltersSortKey } from "@tracktor/types";
 // local imports
 import { getDate } from "./datetime";
 import { satisfiesDateFilter } from "./filter";

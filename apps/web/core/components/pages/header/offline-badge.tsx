@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 // plane imports
-import { Tooltip } from "@plane/propel/tooltip";
+import { Tooltip } from "@tracktor/propel/tooltip";
 // hooks
 import useOnlineStatus from "@/hooks/use-online-status";
 // store

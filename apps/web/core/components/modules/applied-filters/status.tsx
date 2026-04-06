@@ -6,9 +6,9 @@
 
 import { observer } from "mobx-react";
 // ui
-import { MODULE_STATUS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon, ModuleStatusIcon } from "@plane/propel/icons";
+import { MODULE_STATUS } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { CloseIcon, ModuleStatusIcon } from "@tracktor/propel/icons";
 // constants
 
 type Props = {

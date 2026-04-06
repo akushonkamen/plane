@@ -5,15 +5,15 @@
  */
 
 import { getWeekOfMonth, isValid } from "date-fns";
-import { CHART_X_AXIS_DATE_PROPERTIES, ChartXAxisDateGrouping, TO_CAPITALIZE_PROPERTIES } from "@plane/constants";
-import type { ChartXAxisProperty, TChart, TChartDatum } from "@plane/types";
+import { CHART_X_AXIS_DATE_PROPERTIES, ChartXAxisDateGrouping, TO_CAPITALIZE_PROPERTIES } from "@tracktor/constants";
+import type { ChartXAxisProperty, TChart, TChartDatum } from "@tracktor/types";
 import {
   capitalizeFirstLetter,
   hexToHsl,
   hslToHex,
   renderFormattedDate,
   renderFormattedDateWithoutYear,
-} from "@plane/utils";
+} from "@tracktor/utils";
 //
 
 const getDateGroupingName = (date: string, dateGrouping: ChartXAxisDateGrouping): string => {
@@ -131,7 +131,7 @@ export const generateExtendedColors = (baseColorSet: string[], targetCount: numb
   const avgLight = baseHSL.reduce((sum, hsl) => sum + hsl.l, 0) / baseHSL.length;
 
   // Sort base colors by hue for better distribution
-  const sortedBaseHSL = [...baseHSL].sort((a, b) => a.h - b.h);
+  const sortedBaseHSL = [...baseHSL].toSorted((a, b) => a.h - b.h);
 
   // Generate additional colors for each base color
   const colorsNeeded = targetCount - baseCount;

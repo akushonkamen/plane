@@ -12,13 +12,13 @@ import type { SubmitHandler } from "react-hook-form";
 import { useForm } from "react-hook-form";
 import { Combobox } from "@headlessui/react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { SearchIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { ISearchIssueResponse, IUser } from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
-import { Loader, EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
+import { useTranslation } from "@tracktor/i18n";
+import { Button } from "@tracktor/propel/button";
+import { SearchIcon } from "@tracktor/propel/icons";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import type { ISearchIssueResponse, IUser } from "@tracktor/types";
+import { EIssuesStoreType } from "@tracktor/types";
+import { Loader, EModalPosition, EModalWidth, ModalCore } from "@tracktor/ui";
 // assets
 import darkIssuesAsset from "@/app/assets/empty-state/search/issues-dark.webp?url";
 import lightIssuesAsset from "@/app/assets/empty-state/search/issues-light.webp?url";

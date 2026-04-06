@@ -7,7 +7,7 @@
 import { set } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 // plane imports
-import { SitesModuleService } from "@plane/services";
+import { SitesModuleService } from "@tracktor/services";
 // types
 import type { TPublicModule } from "@/types/modules";
 // root store

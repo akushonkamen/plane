@@ -8,15 +8,15 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 // constants
-import { ORGANIZATION_SIZE, RESTRICTED_URLS } from "@plane/constants";
+import { ORGANIZATION_SIZE, RESTRICTED_URLS } from "@tracktor/constants";
 // types
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IUser, IWorkspace, TOnboardingSteps } from "@plane/types";
+import { useTranslation } from "@tracktor/i18n";
+import { Button } from "@tracktor/propel/button";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import type { IUser, IWorkspace, TOnboardingSteps } from "@tracktor/types";
 // ui
-import { CustomSelect, Input, Spinner } from "@plane/ui";
-import { validateWorkspaceName, validateSlug } from "@plane/utils";
+import { CustomSelect, Input, Spinner } from "@tracktor/ui";
+import { validateWorkspaceName, validateSlug } from "@tracktor/utils";
 // hooks
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useUserProfile, useUserSettings } from "@/hooks/store/user";

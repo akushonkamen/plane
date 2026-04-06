@@ -5,7 +5,7 @@
  */
 
 import Redis from "ioredis";
-import { logger } from "@plane/logger";
+import { logger } from "@tracktor/logger";
 import { env } from "./env";
 
 export class RedisManager {

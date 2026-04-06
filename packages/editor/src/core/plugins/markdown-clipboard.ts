@@ -7,8 +7,8 @@
 import type { Editor } from "@tiptap/core";
 import { Plugin, PluginKey } from "@tiptap/pm/state";
 // plane imports
-import { convertHTMLToMarkdown } from "@plane/utils";
-import type { TCustomComponentsMetaData } from "@plane/utils";
+import { convertHTMLToMarkdown } from "@tracktor/utils";
+import type { TCustomComponentsMetaData } from "@tracktor/utils";
 
 type TArgs = {
   editor: Editor;

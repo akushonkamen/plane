@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-import type { EInboxIssueSource } from "@plane/types";
+import type { EInboxIssueSource } from "@tracktor/types";
 
 export type TInboxSourcePill = {
   source: EInboxIssueSource;

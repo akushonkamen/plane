@@ -9,10 +9,10 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
 // plane imports
-import type { IWorkspaceSidebarNavigationItem } from "@plane/constants";
-import { EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { joinUrlPath } from "@plane/utils";
+import type { IWorkspaceSidebarNavigationItem } from "@tracktor/constants";
+import { EUserPermissionsLevel } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { joinUrlPath } from "@tracktor/utils";
 // components
 import { SidebarNavItem } from "@/components/sidebar/sidebar-navigation";
 // hooks

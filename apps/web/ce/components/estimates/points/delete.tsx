@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-import type { TEstimatePointsObject, TEstimateSystemKeys, TEstimateTypeErrorObject } from "@plane/types";
+import type { TEstimatePointsObject, TEstimateSystemKeys, TEstimateTypeErrorObject } from "@tracktor/types";
 
 export type TEstimatePointDelete = {
   workspaceSlug: string;

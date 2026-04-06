@@ -11,15 +11,15 @@ import { useParams, usePathname, useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { Eye, ArrowRight, CalendarDays } from "lucide-react";
 // plane imports
-import { EUserPermissions, EUserPermissionsLevel, IS_FAVORITE_MENU_OPEN } from "@plane/constants";
-import { useLocalStorage } from "@plane/hooks";
-import { useTranslation } from "@plane/i18n";
-import { TransferIcon, WorkItemsIcon, MembersPropertyIcon } from "@plane/propel/icons";
-import { setPromiseToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { ICycle, TCycleGroups } from "@plane/types";
-import { Avatar, AvatarGroup, FavoriteStar } from "@plane/ui";
-import { getDate, getFileURL, generateQueryParams } from "@plane/utils";
+import { EUserPermissions, EUserPermissionsLevel, IS_FAVORITE_MENU_OPEN } from "@tracktor/constants";
+import { useLocalStorage } from "@tracktor/hooks";
+import { useTranslation } from "@tracktor/i18n";
+import { TransferIcon, WorkItemsIcon, MembersPropertyIcon } from "@tracktor/propel/icons";
+import { setPromiseToast } from "@tracktor/propel/toast";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import type { ICycle, TCycleGroups } from "@tracktor/types";
+import { Avatar, AvatarGroup, FavoriteStar } from "@tracktor/ui";
+import { getDate, getFileURL, generateQueryParams } from "@tracktor/utils";
 // components
 import { DateRangeDropdown } from "@/components/dropdowns/date-range";
 import { ButtonAvatars } from "@/components/dropdowns/member/avatar";

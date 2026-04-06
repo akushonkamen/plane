@@ -6,8 +6,8 @@
 
 import { useState } from "react";
 // ui
-import { Button } from "@plane/propel/button";
-import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
+import { Button } from "@tracktor/propel/button";
+import { EModalPosition, EModalWidth, ModalCore } from "@tracktor/ui";
 
 type Props = {
   isOpen: boolean;

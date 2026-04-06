@@ -4,14 +4,14 @@
  * See the LICENSE file for details.
  */
 
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { CopyIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { IApiToken } from "@plane/types";
+import { useTranslation } from "@tracktor/i18n";
+import { Button } from "@tracktor/propel/button";
+import { CopyIcon } from "@tracktor/propel/icons";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import type { IApiToken } from "@tracktor/types";
 // ui
-import { renderFormattedDate, renderFormattedTime, copyTextToClipboard } from "@plane/utils";
+import { renderFormattedDate, renderFormattedTime, copyTextToClipboard } from "@tracktor/utils";
 // helpers
 // types
 import { usePlatformOS } from "@/hooks/use-platform-os";

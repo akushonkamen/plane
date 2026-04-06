@@ -4,9 +4,9 @@
  * See the LICENSE file for details.
  */
 
-import { WEBSITE_URL } from "@plane/constants";
+import { WEBSITE_URL } from "@tracktor/constants";
 // assets
-import { PlaneLogo } from "@plane/propel/icons";
+import { PlaneLogo } from "@tracktor/propel/icons";
 
 type TPoweredBy = {
   disabled?: boolean;
@@ -27,7 +27,7 @@ export function PoweredBy(props: TPoweredBy) {
     >
       <PlaneLogo className="h-3 w-auto text-primary" />
       <div className="text-11">
-        Powered by <span className="font-semibold">Plane Publish</span>
+        Powered by <span className="font-semibold">Tracktor Publish</span>
       </div>
     </a>
   );

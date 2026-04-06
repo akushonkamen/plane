@@ -5,8 +5,8 @@
  */
 
 // type
-import { API_BASE_URL } from "@plane/constants";
-import type { IModule } from "@plane/types";
+import { API_BASE_URL } from "@tracktor/constants";
+import type { IModule } from "@tracktor/types";
 // helpers
 // services
 import { APIService } from "@/services/api.service";

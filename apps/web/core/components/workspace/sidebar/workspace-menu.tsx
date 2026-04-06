@@ -9,8 +9,8 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { Disclosure, Transition } from "@headlessui/react";
 // plane imports
-import { AnalyticsIcon, CycleIcon, ProjectIcon, ViewsIcon } from "@plane/propel/icons";
-import { EUserWorkspaceRoles } from "@plane/types";
+import { AnalyticsIcon, CycleIcon, ProjectIcon, ViewsIcon } from "@tracktor/propel/icons";
+import { EUserWorkspaceRoles } from "@tracktor/types";
 // hooks
 import useLocalStorage from "@/hooks/use-local-storage";
 // local imports

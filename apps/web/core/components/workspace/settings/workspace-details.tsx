@@ -8,14 +8,14 @@ import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 // Plane Imports
-import { ORGANIZATION_SIZE, EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { EditIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IWorkspace } from "@plane/types";
-import { CustomSelect, Input } from "@plane/ui";
-import { cn, copyUrlToClipboard, getFileURL, validateWorkspaceName } from "@plane/utils";
+import { ORGANIZATION_SIZE, EUserPermissions, EUserPermissionsLevel } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { Button } from "@tracktor/propel/button";
+import { EditIcon } from "@tracktor/propel/icons";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import type { IWorkspace } from "@tracktor/types";
+import { CustomSelect, Input } from "@tracktor/ui";
+import { cn, copyUrlToClipboard, getFileURL, validateWorkspaceName } from "@tracktor/utils";
 // components
 import { WorkspaceImageUploadModal } from "@/components/core/modals/workspace-image-upload-modal";
 import { TimezoneSelect } from "@/components/global/timezone-select";

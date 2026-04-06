@@ -9,11 +9,11 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { ArchiveX } from "lucide-react";
 // plane imports
-import { PROJECT_AUTOMATION_MONTHS, EUserPermissions, EUserPermissionsLevel, EIconSize } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { StateGroupIcon, StatePropertyIcon } from "@plane/propel/icons";
-import type { IProject } from "@plane/types";
-import { CustomSelect, CustomSearchSelect, ToggleSwitch, Loader } from "@plane/ui";
+import { PROJECT_AUTOMATION_MONTHS, EUserPermissions, EUserPermissionsLevel, EIconSize } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { StateGroupIcon, StatePropertyIcon } from "@tracktor/propel/icons";
+import type { IProject } from "@tracktor/types";
+import { CustomSelect, CustomSearchSelect, ToggleSwitch, Loader } from "@tracktor/ui";
 import { SelectMonthModal } from "@/components/automation";
 import { SettingsControlItem } from "@/components/settings/control-item";
 // hooks

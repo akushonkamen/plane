@@ -8,16 +8,16 @@ import type { MutableRefObject } from "react";
 import { useRef, useState } from "react";
 import type { LucideIcon } from "lucide-react";
 // plane helpers
-import { PROJECT_SETTINGS_TRACKER_ELEMENTS } from "@plane/constants";
-import { useOutsideClickDetector } from "@plane/hooks";
-import type { ISvgIcons } from "@plane/propel/icons";
-import { CloseIcon } from "@plane/propel/icons";
+import { PROJECT_SETTINGS_TRACKER_ELEMENTS } from "@tracktor/constants";
+import { useOutsideClickDetector } from "@tracktor/hooks";
+import type { ISvgIcons } from "@tracktor/propel/icons";
+import { CloseIcon } from "@tracktor/propel/icons";
 // types
-import type { IIssueLabel } from "@plane/types";
+import type { IIssueLabel } from "@tracktor/types";
 // ui
-import { CustomMenu, DragHandle } from "@plane/ui";
+import { CustomMenu, DragHandle } from "@tracktor/ui";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@tracktor/utils";
 // components
 import { LabelName } from "./label-name";
 

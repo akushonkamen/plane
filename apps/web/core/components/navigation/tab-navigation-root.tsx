@@ -7,10 +7,10 @@
 import React, { useEffect } from "react";
 import { observer } from "mobx-react";
 import { useParams, useLocation, Link, useNavigate } from "react-router";
-import { EUserPermissionsLevel, EUserPermissions } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { TabNavigationList, TabNavigationItem } from "@plane/propel/tab-navigation";
-import type { EUserProjectRoles } from "@plane/types";
+import { EUserPermissionsLevel, EUserPermissions } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { TabNavigationList, TabNavigationItem } from "@tracktor/propel/tab-navigation";
+import type { EUserProjectRoles } from "@tracktor/types";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useProject } from "@/hooks/store/use-project";
@@ -109,7 +109,7 @@ export const TabNavigationRoot = observer(function TabNavigationRoot(props: TTab
   // Filter and sort navigation items
   const allNavigationItems = navigationItems
     .filter((item) => item.shouldRender)
-    .sort((a, b) => a.sortOrder - b.sortOrder);
+    .toSorted((a, b) => a.sortOrder - b.sortOrder);
 
   // Split items into two categories:
   // 1. visibleNavigationItems: Items NOT user-hidden (may still overflow due to space)

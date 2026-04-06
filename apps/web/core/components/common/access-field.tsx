@@ -6,11 +6,11 @@
 
 import type { LucideIcon } from "lucide-react";
 // plane ui
-import { useTranslation } from "@plane/i18n";
-import type { ISvgIcons } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
+import { useTranslation } from "@tracktor/i18n";
+import type { ISvgIcons } from "@tracktor/propel/icons";
+import { Tooltip } from "@tracktor/propel/tooltip";
 // plane utils
-import { cn } from "@plane/utils";
+import { cn } from "@tracktor/utils";
 
 type Props = {
   onChange: (value: number) => void;

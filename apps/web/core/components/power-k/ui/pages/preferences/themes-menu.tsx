@@ -8,8 +8,8 @@ import React, { useEffect, useState } from "react";
 import { Command } from "cmdk";
 import { observer } from "mobx-react";
 // plane imports
-import { THEME_OPTIONS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
+import { THEME_OPTIONS } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
 // local imports
 import { PowerKModalCommandItem } from "../../modal/command-item";
 

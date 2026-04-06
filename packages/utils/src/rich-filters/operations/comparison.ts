@@ -12,8 +12,8 @@ import type {
   TFilterGroupNode,
   TFilterProperty,
   TFilterValue,
-} from "@plane/types";
-import { FILTER_NODE_TYPE } from "@plane/types";
+} from "@tracktor/types";
+import { FILTER_NODE_TYPE } from "@tracktor/types";
 // local imports
 import { isConditionNode, isGroupNode } from "../types/core";
 import { processGroupNode } from "../types/shared";

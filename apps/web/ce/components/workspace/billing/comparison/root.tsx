@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 // plane imports
-import type { EProductSubscriptionEnum, TBillingFrequency } from "@plane/types";
+import type { EProductSubscriptionEnum, TBillingFrequency } from "@tracktor/types";
 // components
 import { PlansComparisonBase, shouldRenderPlanDetail } from "@/components/workspace/billing/comparison/base";
 import type { TPlanePlans } from "@/constants/plans";

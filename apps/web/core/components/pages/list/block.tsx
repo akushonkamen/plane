@@ -6,10 +6,10 @@
 
 import { useRef } from "react";
 import { observer } from "mobx-react";
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { PageIcon } from "@plane/propel/icons";
+import { Logo } from "@tracktor/propel/emoji-icon-picker";
+import { PageIcon } from "@tracktor/propel/icons";
 // plane imports
-import { getPageName } from "@plane/utils";
+import { getPageName } from "@tracktor/utils";
 // components
 import { ListItem } from "@/components/core/list";
 import { BlockItemAction } from "@/components/pages/list/block-item-action";

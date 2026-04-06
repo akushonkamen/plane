@@ -7,11 +7,11 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 // plane imports
-import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IWorkspaceView } from "@plane/types";
-import { CustomMenu } from "@plane/ui";
-import { copyUrlToClipboard, cn } from "@plane/utils";
+import { EUserPermissions, EUserPermissionsLevel } from "@tracktor/constants";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import type { IWorkspaceView } from "@tracktor/types";
+import { CustomMenu } from "@tracktor/ui";
+import { copyUrlToClipboard, cn } from "@tracktor/utils";
 // helpers
 import { useViewMenuItems } from "@/components/common/quick-actions-helper";
 // hooks

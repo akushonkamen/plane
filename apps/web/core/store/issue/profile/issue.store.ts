@@ -14,7 +14,7 @@ import type {
   ViewFlags,
   TBulkOperationsPayload,
   TProfileViews,
-} from "@plane/types";
+} from "@tracktor/types";
 import { UserService } from "@/services/user.service";
 
 // services

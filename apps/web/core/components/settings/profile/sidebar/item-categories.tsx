@@ -10,10 +10,10 @@ import { Activity, Bell, CircleUser, KeyRound, LockIcon, Settings2 } from "lucid
 import { observer } from "mobx-react";
 import { useParams } from "react-router";
 // plane imports
-import { GROUPED_PROFILE_SETTINGS, PROFILE_SETTINGS_CATEGORIES } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { ISvgIcons } from "@plane/propel/icons";
-import type { TProfileSettingsTabs } from "@plane/types";
+import { GROUPED_PROFILE_SETTINGS, PROFILE_SETTINGS_CATEGORIES } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import type { ISvgIcons } from "@tracktor/propel/icons";
+import type { TProfileSettingsTabs } from "@tracktor/types";
 // local imports
 import { SettingsSidebarItem } from "../../sidebar/item";
 import { ProfileSettingsSidebarWorkspaceOptions } from "./workspace-options";

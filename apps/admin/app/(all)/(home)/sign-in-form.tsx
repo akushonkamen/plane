@@ -8,11 +8,11 @@ import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { Eye, EyeOff } from "lucide-react";
 // plane internal packages
-import type { EAdminAuthErrorCodes, TAdminAuthErrorInfo } from "@plane/constants";
-import { API_BASE_URL } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import { AuthService } from "@plane/services";
-import { Input, Spinner } from "@plane/ui";
+import type { EAdminAuthErrorCodes, TAdminAuthErrorInfo } from "@tracktor/constants";
+import { API_BASE_URL } from "@tracktor/constants";
+import { Button } from "@tracktor/propel/button";
+import { AuthService } from "@tracktor/services";
+import { Input, Spinner } from "@tracktor/ui";
 // components
 import { Banner } from "@/components/common/banner";
 // local components

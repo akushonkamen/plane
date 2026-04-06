@@ -6,7 +6,7 @@
 
 import React from "react";
 // ui
-import { Tooltip } from "@plane/propel/tooltip";
+import { Tooltip } from "@tracktor/propel/tooltip";
 // helpers
 import { cn } from "../utils";
 // types

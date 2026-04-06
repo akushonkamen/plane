@@ -9,12 +9,12 @@ import { intersection } from "lodash-es";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // types
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IUser, IImporterService } from "@plane/types";
+import { useTranslation } from "@tracktor/i18n";
+import { Button } from "@tracktor/propel/button";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import type { IUser, IImporterService } from "@tracktor/types";
 // ui
-import { Checkbox, CustomSearchSelect, EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
+import { Checkbox, CustomSearchSelect, EModalPosition, EModalWidth, ModalCore } from "@tracktor/ui";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
 import { useUser } from "@/hooks/store/user";

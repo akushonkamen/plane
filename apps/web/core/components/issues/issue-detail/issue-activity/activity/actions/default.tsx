@@ -6,10 +6,10 @@
 
 import { observer } from "mobx-react";
 // plane imports
-import { WorkItemsIcon } from "@plane/propel/icons";
-import { EInboxIssueSource } from "@plane/types";
+import { WorkItemsIcon } from "@tracktor/propel/icons";
+import { EInboxIssueSource } from "@tracktor/types";
 // hooks
-import { capitalizeFirstLetter } from "@plane/utils";
+import { capitalizeFirstLetter } from "@tracktor/utils";
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 // local imports
 import { IssueActivityBlockComponent } from "./";

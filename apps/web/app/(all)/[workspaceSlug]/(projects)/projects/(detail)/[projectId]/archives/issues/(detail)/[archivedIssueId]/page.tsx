@@ -8,10 +8,10 @@ import { observer } from "mobx-react";
 import { useRouter } from "next/navigation";
 import useSWR from "swr";
 // ui
-import { Banner } from "@plane/propel/banner";
-import { Button } from "@plane/propel/button";
-import { ArchiveIcon } from "@plane/propel/icons";
-import { Loader } from "@plane/ui";
+import { Banner } from "@tracktor/propel/banner";
+import { Button } from "@tracktor/propel/button";
+import { ArchiveIcon } from "@tracktor/propel/icons";
+import { Loader } from "@tracktor/ui";
 // components
 import { PageHead } from "@/components/core/page-title";
 import { IssueDetailRoot } from "@/components/issues/issue-detail";

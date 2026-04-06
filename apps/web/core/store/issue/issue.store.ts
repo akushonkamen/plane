@@ -8,9 +8,9 @@ import { set, update } from "lodash-es";
 import { action, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
 // types
-import type { TIssue } from "@plane/types";
+import type { TIssue } from "@tracktor/types";
 // helpers
-import { getCurrentDateTimeInISO } from "@plane/utils";
+import { getCurrentDateTimeInISO } from "@tracktor/utils";
 import { rootStore } from "@/lib/store-context";
 // services
 import { IssueService } from "@/services/issue";

@@ -5,8 +5,8 @@
  */
 
 // types
-import type { ICycle, IModule, IProjectView, IWorkspaceView } from "@plane/types";
-import type { TContextMenuItem } from "@plane/ui";
+import type { ICycle, IModule, IProjectView, IWorkspaceView } from "@tracktor/types";
+import type { TContextMenuItem } from "@tracktor/ui";
 // hooks
 import { useQuickActionsFactory } from "@/plane-web/components/common/quick-actions-factory";
 

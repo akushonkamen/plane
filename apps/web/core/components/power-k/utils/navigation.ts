@@ -5,7 +5,7 @@
  */
 
 // plane imports
-import { joinUrlPath } from "@plane/utils";
+import { joinUrlPath } from "@tracktor/utils";
 // local imports
 import type { TPowerKContext } from "../core/types";
 

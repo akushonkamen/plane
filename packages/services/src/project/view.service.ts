@@ -5,7 +5,7 @@
  */
 
 // plane imports
-import { API_BASE_URL } from "@plane/constants";
+import { API_BASE_URL } from "@tracktor/constants";
 // api services
 import { APIService } from "../api.service";
 

@@ -5,10 +5,10 @@
  */
 
 import { observer } from "mobx-react";
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@tracktor/i18n";
 // ui
-import { CycleIcon } from "@plane/propel/icons";
-import { Breadcrumbs, Header } from "@plane/ui";
+import { CycleIcon } from "@tracktor/propel/icons";
+import { Breadcrumbs, Header } from "@tracktor/ui";
 // components
 import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
 // plane web components

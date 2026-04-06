@@ -8,12 +8,12 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { ListFilter } from "lucide-react";
 // plane imports
-import { useOutsideClickDetector } from "@plane/hooks";
-import { IconButton } from "@plane/propel/icon-button";
-import { useTranslation } from "@plane/i18n";
-import { SearchIcon, CloseIcon } from "@plane/propel/icons";
-import type { TCycleFilters } from "@plane/types";
-import { cn, calculateTotalFilters } from "@plane/utils";
+import { useOutsideClickDetector } from "@tracktor/hooks";
+import { IconButton } from "@tracktor/propel/icon-button";
+import { useTranslation } from "@tracktor/i18n";
+import { SearchIcon, CloseIcon } from "@tracktor/propel/icons";
+import type { TCycleFilters } from "@tracktor/types";
+import { cn, calculateTotalFilters } from "@tracktor/utils";
 // components
 import { FiltersDropdown } from "@/components/issues/issue-layouts/filters";
 // hooks

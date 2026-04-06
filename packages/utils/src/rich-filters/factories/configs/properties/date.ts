@@ -5,7 +5,7 @@
  */
 
 // plane imports
-import type { TFilterProperty } from "@plane/types";
+import type { TFilterProperty } from "@tracktor/types";
 // local imports
 import type { TCreateDateFilterParams, TCreateFilterConfig } from "../shared";
 import { createFilterConfig } from "../shared";

@@ -6,11 +6,11 @@
 
 import { observer } from "mobx-react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { setPromiseToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { IProject } from "@plane/types";
-import { CycleIcon, IntakeIcon, ModuleIcon, PageIcon, ViewsIcon } from "@plane/propel/icons";
+import { useTranslation } from "@tracktor/i18n";
+import { setPromiseToast } from "@tracktor/propel/toast";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import type { IProject } from "@tracktor/types";
+import { CycleIcon, IntakeIcon, ModuleIcon, PageIcon, ViewsIcon } from "@tracktor/propel/icons";
 // components
 import { SettingsBoxedControlItem } from "@/components/settings/boxed-control-item";
 import { SettingsHeading } from "@/components/settings/heading";

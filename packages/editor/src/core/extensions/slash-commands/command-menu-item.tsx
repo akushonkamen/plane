@@ -5,7 +5,7 @@
  */
 
 // plane utils
-import { cn } from "@plane/utils";
+import { cn } from "@tracktor/utils";
 // types
 import type { ISlashCommandItem } from "@/types";
 

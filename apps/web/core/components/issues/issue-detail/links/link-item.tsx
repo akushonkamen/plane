@@ -6,15 +6,15 @@
 
 import { observer } from "mobx-react";
 
-import { useTranslation } from "@plane/i18n";
-import { LinkIcon, CopyIcon, EditIcon, TrashIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TIssueServiceType } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
+import { useTranslation } from "@tracktor/i18n";
+import { LinkIcon, CopyIcon, EditIcon, TrashIcon } from "@tracktor/propel/icons";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import type { TIssueServiceType } from "@tracktor/types";
+import { EIssueServiceType } from "@tracktor/types";
 // ui
-import { CustomMenu } from "@plane/ui";
-import { calculateTimeAgo, copyTextToClipboard } from "@plane/utils";
+import { CustomMenu } from "@tracktor/ui";
+import { calculateTimeAgo, copyTextToClipboard } from "@tracktor/utils";
 // helpers
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";

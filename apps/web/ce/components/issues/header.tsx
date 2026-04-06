@@ -15,13 +15,13 @@ import {
   SPACE_BASE_PATH,
   SPACE_BASE_URL,
   WORK_ITEM_TRACKER_ELEMENTS,
-} from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { NewTabIcon, WorkItemsIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import { EIssuesStoreType } from "@plane/types";
-import { Breadcrumbs, Header } from "@plane/ui";
+} from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { Button } from "@tracktor/propel/button";
+import { NewTabIcon, WorkItemsIcon } from "@tracktor/propel/icons";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import { EIssuesStoreType } from "@tracktor/types";
+import { Breadcrumbs, Header } from "@tracktor/ui";
 // components
 import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
 import { CountChip } from "@/components/common/count-chip";

@@ -6,11 +6,11 @@
 
 import { observer } from "mobx-react";
 // plane ui
-import { StateGroupIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TStateGroups } from "@plane/types";
+import { StateGroupIcon } from "@tracktor/propel/icons";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import type { TStateGroups } from "@tracktor/types";
 // plane utils
-import { cn } from "@plane/utils";
+import { cn } from "@tracktor/utils";
 //hooks
 import { useStates } from "@/hooks/store/use-state";
 

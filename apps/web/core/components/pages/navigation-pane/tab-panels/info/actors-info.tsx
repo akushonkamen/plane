@@ -8,9 +8,9 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { Avatar } from "@plane/ui";
-import { calculateTimeAgoShort, getFileURL, renderFormattedDate } from "@plane/utils";
+import { useTranslation } from "@tracktor/i18n";
+import { Avatar } from "@tracktor/ui";
+import { calculateTimeAgoShort, getFileURL, renderFormattedDate } from "@tracktor/utils";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
 // store

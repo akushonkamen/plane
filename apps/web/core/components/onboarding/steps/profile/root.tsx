@@ -9,12 +9,12 @@ import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { ImageIcon } from "lucide-react";
 // plane imports
-import { E_PASSWORD_STRENGTH } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IUser } from "@plane/types";
-import { EOnboardingSteps } from "@plane/types";
-import { cn, getFileURL, getPasswordStrength, validatePersonName } from "@plane/utils";
+import { E_PASSWORD_STRENGTH } from "@tracktor/constants";
+import { Button } from "@tracktor/propel/button";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import type { IUser } from "@tracktor/types";
+import { EOnboardingSteps } from "@tracktor/types";
+import { cn, getFileURL, getPasswordStrength, validatePersonName } from "@tracktor/utils";
 // components
 import { UserImageUploadModal } from "@/components/core/modals/user-image-upload-modal";
 // hooks

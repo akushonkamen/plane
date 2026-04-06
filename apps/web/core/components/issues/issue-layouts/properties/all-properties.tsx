@@ -12,10 +12,10 @@ import { useParams } from "next/navigation";
 // icons
 import { Paperclip } from "lucide-react";
 // i18n
-import { useTranslation } from "@plane/i18n";
-import { LinkIcon, StartDatePropertyIcon, ViewsIcon, DueDatePropertyIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TIssue, IIssueDisplayProperties, TIssuePriorities } from "@plane/types";
+import { useTranslation } from "@tracktor/i18n";
+import { LinkIcon, StartDatePropertyIcon, ViewsIcon, DueDatePropertyIcon } from "@tracktor/propel/icons";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import type { TIssue, IIssueDisplayProperties, TIssuePriorities } from "@tracktor/types";
 // ui
 import {
   cn,
@@ -23,7 +23,7 @@ import {
   renderFormattedPayloadDate,
   generateWorkItemLink,
   shouldHighlightIssueDueDate,
-} from "@plane/utils";
+} from "@tracktor/utils";
 // components
 import { CycleDropdown } from "@/components/dropdowns/cycle";
 import { DateDropdown } from "@/components/dropdowns/date";

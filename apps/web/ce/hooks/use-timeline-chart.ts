@@ -5,8 +5,8 @@
  */
 
 // types
-import type { TTimelineTypeCore } from "@plane/types";
-import { GANTT_TIMELINE_TYPE } from "@plane/types";
+import type { TTimelineTypeCore } from "@tracktor/types";
+import { GANTT_TIMELINE_TYPE } from "@tracktor/types";
 // Plane-web
 
 import type { IBaseTimelineStore } from "@/plane-web/store/timeline/base-timeline.store";

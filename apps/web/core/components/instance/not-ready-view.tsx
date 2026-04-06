@@ -4,14 +4,13 @@
  * See the LICENSE file for details.
  */
 
-import Link from "next/link";
-import { GOD_MODE_URL } from "@plane/constants";
+import { GOD_MODE_URL } from "@tracktor/constants";
 // assets
 import GradientLogo from "@/app/assets/auth/gradient-logo.webp?url";
 import GradientBgLogo from "@/app/assets/auth/gradient-bg-logo.webp?url";
 import DefaultLayout from "@/layouts/default-layout";
-import { PlaneLockup } from "@plane/propel/icons";
-import { Button } from "@plane/propel/button";
+import { PlaneLockup } from "@tracktor/propel/icons";
+import { Button } from "@tracktor/propel/button";
 
 export function InstanceNotReady() {
   return (

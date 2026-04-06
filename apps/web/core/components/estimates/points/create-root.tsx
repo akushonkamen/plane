@@ -8,11 +8,11 @@ import type { Dispatch, SetStateAction } from "react";
 import { useCallback, useState } from "react";
 import { observer } from "mobx-react";
 // plane imports
-import { estimateCount } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import { PlusIcon } from "@plane/propel/icons";
-import type { TEstimatePointsObject, TEstimateSystemKeys, TEstimateTypeError } from "@plane/types";
-import { Sortable } from "@plane/ui";
+import { estimateCount } from "@tracktor/constants";
+import { Button } from "@tracktor/propel/button";
+import { PlusIcon } from "@tracktor/propel/icons";
+import type { TEstimatePointsObject, TEstimateSystemKeys, TEstimateTypeError } from "@tracktor/types";
+import { Sortable } from "@tracktor/ui";
 // local imports
 import { EstimatePointCreate } from "./create";
 import { EstimatePointItemPreview } from "./preview";

@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-import { API_BASE_URL } from "@plane/constants";
-import type { TIssue, TWorkspaceDraftIssue, TWorkspaceDraftPaginationInfo } from "@plane/types";
+import { API_BASE_URL } from "@tracktor/constants";
+import type { TIssue, TWorkspaceDraftIssue, TWorkspaceDraftPaginationInfo } from "@tracktor/types";
 // helpers
 // services
 import { APIService } from "@/services/api.service";

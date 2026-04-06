@@ -6,8 +6,8 @@
 
 import { observer } from "mobx-react";
 import { Combobox } from "@headlessui/react";
-import { CheckIcon } from "@plane/propel/icons";
-import { cn } from "@plane/utils";
+import { CheckIcon } from "@tracktor/propel/icons";
+import { cn } from "@tracktor/utils";
 
 export type TStateOptionProps = {
   projectId: string | null | undefined;

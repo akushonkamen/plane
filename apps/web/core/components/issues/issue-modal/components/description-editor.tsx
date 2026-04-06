@@ -10,14 +10,14 @@ import type { Control } from "react-hook-form";
 import { Controller } from "react-hook-form";
 import { Sparkle } from "lucide-react";
 // plane imports
-import { ETabIndices } from "@plane/constants";
-import type { EditorRefApi } from "@plane/editor";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TIssue } from "@plane/types";
-import { EFileAssetType } from "@plane/types";
-import { Loader } from "@plane/ui";
-import { getDescriptionPlaceholderI18n, getTabIndex } from "@plane/utils";
+import { ETabIndices } from "@tracktor/constants";
+import type { EditorRefApi } from "@tracktor/editor";
+import { useTranslation } from "@tracktor/i18n";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import type { TIssue } from "@tracktor/types";
+import { EFileAssetType } from "@tracktor/types";
+import { Loader } from "@tracktor/ui";
+import { getDescriptionPlaceholderI18n, getTabIndex } from "@tracktor/utils";
 // components
 import { GptAssistantPopover } from "@/components/core/modals/gpt-assistant-popover";
 import { RichTextEditor } from "@/components/editor/rich-text";
@@ -222,7 +222,7 @@ export const IssueDescriptionEditor = observer(function IssueDescriptionEditor(p
                     return asset_id;
                   } catch (error) {
                     console.log("Error in uploading issue asset:", error);
-                    throw new Error("Asset upload failed. Please try again later.");
+                    throw new Error("Asset upload failed. Please try again later.", { cause: error });
                   }
                 }}
                 duplicateFile={async (assetId: string) => {

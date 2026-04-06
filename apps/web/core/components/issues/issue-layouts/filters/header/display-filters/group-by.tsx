@@ -6,8 +6,8 @@
 
 import React, { useState } from "react";
 import { observer } from "mobx-react";
-import { useTranslation } from "@plane/i18n";
-import type { IIssueDisplayFilterOptions, TIssueGroupByOptions } from "@plane/types";
+import { useTranslation } from "@tracktor/i18n";
+import type { IIssueDisplayFilterOptions, TIssueGroupByOptions } from "@tracktor/types";
 // components
 import { FilterHeader, FilterOption } from "@/components/issues/issue-layouts/filters";
 import { useGroupByOptions } from "@/plane-web/components/issues/issue-layouts/utils";
@@ -51,7 +51,7 @@ export const FilterGroupBy = observer(function FilterGroupBy(props: Props) {
             return (
               <FilterOption
                 key={groupBy?.key}
-                isChecked={selectedGroupBy === groupBy?.key ? true : false}
+                isChecked={selectedGroupBy === groupBy?.key}
                 onClick={() => handleUpdate(groupBy.key)}
                 title={t(groupBy.titleTranslationKey)}
                 multiple={false}

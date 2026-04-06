@@ -8,14 +8,14 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import type { Control } from "react-hook-form";
 import { Controller } from "react-hook-form";
-import { ETabIndices, EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { ParentPropertyIcon } from "@plane/propel/icons";
+import { ETabIndices, EUserPermissions, EUserPermissionsLevel } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { ParentPropertyIcon } from "@tracktor/propel/icons";
 // types
-import type { ISearchIssueResponse, TIssue } from "@plane/types";
+import type { ISearchIssueResponse, TIssue } from "@tracktor/types";
 // ui
-import { CustomMenu } from "@plane/ui";
-import { getDate, renderFormattedPayloadDate, getTabIndex } from "@plane/utils";
+import { CustomMenu } from "@tracktor/ui";
+import { getDate, renderFormattedPayloadDate, getTabIndex } from "@tracktor/utils";
 // components
 import { CycleDropdown } from "@/components/dropdowns/cycle";
 import { DateDropdown } from "@/components/dropdowns/date";

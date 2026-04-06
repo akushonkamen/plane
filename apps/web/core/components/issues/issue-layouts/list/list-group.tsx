@@ -10,9 +10,9 @@ import { combine } from "@atlaskit/pragmatic-drag-and-drop/combine";
 import { dropTargetForElements } from "@atlaskit/pragmatic-drag-and-drop/element/adapter";
 import { observer } from "mobx-react";
 // plane imports
-import { DRAG_ALLOWED_GROUPS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
+import { DRAG_ALLOWED_GROUPS } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
 import type {
   IGroupByColumn,
   TIssueMap,
@@ -21,10 +21,10 @@ import type {
   TIssue,
   IIssueDisplayProperties,
   TIssueKanbanFilters,
-} from "@plane/types";
-import { EIssueLayoutTypes } from "@plane/types";
-import { Row } from "@plane/ui";
-import { cn } from "@plane/utils";
+} from "@tracktor/types";
+import { EIssueLayoutTypes } from "@tracktor/types";
+import { Row } from "@tracktor/ui";
+import { cn } from "@tracktor/utils";
 // components
 import { ListLoaderItemRow } from "@/components/ui/loader/layouts/list-layout-loader";
 // hooks
@@ -236,15 +236,7 @@ export const ListGroup = observer(function ListGroup(props: Props) {
         },
       })
     );
-  }, [
-    groupRef?.current,
-    group,
-    orderBy,
-    getGroupIndex,
-    setDragColumnOrientation,
-    setIsDraggingOverColumn,
-    isWorkflowDropDisabled,
-  ]);
+  }, [group, orderBy, getGroupIndex, setDragColumnOrientation, setIsDraggingOverColumn, isWorkflowDropDisabled]);
 
   const isDragAllowed = group_by ? DRAG_ALLOWED_GROUPS.includes(group_by) : true;
   const canOverlayBeVisible = isWorkflowDropDisabled || orderBy !== "sort_order" || !!group.isDropDisabled;

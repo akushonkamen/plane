@@ -10,8 +10,8 @@ import { forwardRef, useCallback, useEffect, useImperativeHandle, useLayoutEffec
 import { v4 as uuidv4 } from "uuid";
 import { debounce } from "lodash-es";
 // plane utils
-import { useOutsideClickDetector } from "@plane/hooks";
-import { cn } from "@plane/utils";
+import { useOutsideClickDetector } from "@tracktor/hooks";
+import { cn } from "@tracktor/utils";
 // helpers
 import { DROPDOWN_NAVIGATION_KEYS, getNextValidIndex } from "@/helpers/tippy";
 // types

@@ -1,0 +1,204 @@
+# Quality Gates Configuration - Tracktor Project
+# pnpm monorepo (Turborepo) with React 18 + Django 4.2
+
+gates:
+  # ===========================
+  # Command-based Gates (all enabled)
+  # ===========================
+
+  test:
+    enabled: true
+    command: "pnpm test"
+    fail_action: "block"
+
+  lint:
+    enabled: true
+    command: "pnpm check:lint"
+    fail_action: "block"
+
+  type_check:
+    enabled: true
+    command: "pnpm check:types"
+    fail_action: "block"
+
+  format:
+    enabled: true
+    command: "pnpm check:format"
+    fail_action: "block"
+
+  coverage:
+    enabled: false
+    command: ""
+    min_coverage: 60.0
+    fail_action: "warn"
+
+  security:
+    enabled: true
+    command: "pnpm check:lint"
+    fail_action: "block"
+
+  complexity:
+    enabled: true
+    max_complexity: 10
+    fail_action: "warn"
+
+  duplication:
+    enabled: true
+    min_lines: 6
+    fail_action: "warn"
+
+  dead_code:
+    enabled: true
+    fail_action: "warn"
+
+  dependencies:
+    enabled: true
+    fail_action: "block"
+
+  import_validation:
+    enabled: true
+    fail_action: "block"
+
+  coverage_delta:
+    enabled: false
+    min_delta_coverage: 80.0
+    fail_action: "block"
+
+  model_consistency:
+    enabled: false
+    history_dir: ".claude/model_history"
+    max_diff_ratio: 0.5
+    fail_action: "warn"
+
+  # ===========================
+  # Static Analysis Gates (all enabled)
+  # ===========================
+
+  scope:
+    enabled: true
+    max_files: 20
+    max_lines: 500
+    fail_action: "block"
+
+  todo:
+    enabled: true
+    patterns: ["TODO", "FIXME", "HACK", "XXX", "PLACEHOLDER"]
+    exclude: ["*.md", "*.txt", "*.yml", "*.yaml"]
+    fail_action: "block"
+
+  file_permissions:
+    enabled: true
+    blocked_patterns:
+      - ".git/"
+      - "__pycache__/"
+      - "node_modules/"
+      - ".env"
+      - "*.pem"
+      - "*.key"
+      - "/etc/"
+      - "/usr/bin/"
+      - "/var/"
+      - "package-lock.json"
+      - "poetry.lock"
+      - ".DS_Store"
+      - "Thumbs.db"
+      - "*.swp"
+      - "*.swo"
+    fail_action: "block"
+
+  debug_code:
+    enabled: true
+    patterns:
+      - "\\bprint\\s*\\("
+      - "\\bconsole\\.log\\s*\\("
+      - "\\bdebugger\\b"
+      - "\\bbreakpoint\\s*\\("
+      - "\\bimport\\s+pdb\\b"
+      - "\\bimport\\s+ipdb\\b"
+    exclude:
+      - "test_"
+      - "_test."
+      - "spec_"
+      - "_spec."
+      - "__mocks__/"
+      - ".test."
+      - ".spec."
+    fail_action: "block"
+
+  hardcoding:
+    enabled: true
+    suspicious_patterns:
+      - "password\\s*=\\s*[\"']+[\"']"
+      - "api_key\\s*=\\s*[\"']+[\"']"
+      - "secret\\s*=\\s*[\"']+[\"']"
+      - "token\\s*=\\s*[\"']+[\"']"
+      - "http://127\\.0\\.0\\.1"
+      - "http://localhost"
+      - "/tmp/"
+      - "AKIA[0-9A-Z]{16}"
+    fail_action: "block"
+
+  core_files:
+    enabled: true
+    protected_files:
+      - "turbo.json"
+      - "pnpm-workspace.yaml"
+      - ".oxlintrc.json"
+      - ".oxfmtrc.json"
+      - "docker-compose*.yml"
+      - "apps/api/plane/settings/"
+      - "apps/api/plane/asgi.py"
+      - "apps/api/plane/wsgi.py"
+      - "apps/api/manage.py"
+    fail_action: "warn"
+
+  documentation:
+    enabled: true
+    doc_files:
+      - "README.md"
+      - "CHANGELOG.md"
+      - "docs/"
+    fail_action: "warn"
+
+  exception_handling:
+    enabled: true
+    broad_patterns:
+      - "except\\s*:"
+      - "except\\s+Exception\\s*:"
+      - "except\\s+BaseException\\s*:"
+      - "catch\\s*\\(\\s*\\)"
+      - "catch\\s*\\(\\s*Error\\s*\\)"
+    fail_action: "warn"
+
+  performance:
+    enabled: true
+    nesting_threshold: 5
+    fail_action: "warn"
+
+  naming:
+    enabled: true
+    bad_names:
+      - "\\bvar\\d+\\b"
+      - "\\btemp\\d+\\b"
+      - "\\btmp\\d+\\b"
+      - "\\bobj\\d+\\b"
+      - "\\bitem\\d+\\b"
+      - "\\bval\\d+\\b"
+      - "\\bparam\\d+\\b"
+      - "\\barg\\d+\\b"
+      - "\\bflag\\d+\\b"
+      - "\\bfoo\\b"
+      - "\\bbar\\b"
+      - "\\bbaz\\b"
+    fail_action: "warn"
+
+  commit:
+    enabled: true
+    pattern: "^(feat|fix|docs|style|refactor|test|chore|perf|ci|build|revert|INFRA|WEB): .+"
+    fail_action: "block"
+
+  pr:
+    enabled: true
+    title_pattern: ".+"
+    require_body: true
+    fail_action: "block"

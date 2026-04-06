@@ -7,11 +7,11 @@
 import { observer } from "mobx-react";
 import { useParams, useSearchParams } from "next/navigation";
 // components
-import { EUserPermissionsLevel, MODULE_TRACKER_ELEMENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { EmptyStateDetailed } from "@plane/propel/empty-state";
-import { EUserProjectRoles } from "@plane/types";
-import { ContentWrapper, Row, ERowVariant } from "@plane/ui";
+import { EUserPermissionsLevel, MODULE_TRACKER_ELEMENTS } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { EmptyStateDetailed } from "@tracktor/propel/empty-state";
+import { EUserProjectRoles } from "@tracktor/types";
+import { ContentWrapper, Row, ERowVariant } from "@tracktor/ui";
 // components
 import { ListLayout } from "@/components/core/list";
 import { ModuleCardItem, ModuleListItem, ModulePeekOverview, ModulesListGanttChartView } from "@/components/modules";

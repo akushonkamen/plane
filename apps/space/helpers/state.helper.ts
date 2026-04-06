@@ -4,13 +4,13 @@
  * See the LICENSE file for details.
  */
 
-import { STATE_GROUPS } from "@plane/constants";
-import type { IState } from "@plane/types";
+import { STATE_GROUPS } from "@tracktor/constants";
+import type { IState } from "@tracktor/types";
 
 export const sortStates = (states: IState[]) => {
   if (!states || states.length === 0) return;
 
-  return states.sort((stateA, stateB) => {
+  return states.toSorted((stateA, stateB) => {
     if (stateA.group === stateB.group) {
       return stateA.sequence - stateB.sequence;
     }

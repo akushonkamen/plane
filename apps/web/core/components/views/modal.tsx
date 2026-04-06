@@ -6,11 +6,11 @@
 
 import { observer } from "mobx-react";
 // types
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IProjectView } from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import type { IProjectView } from "@tracktor/types";
+import { EIssuesStoreType } from "@tracktor/types";
 // ui
-import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
+import { EModalPosition, EModalWidth, ModalCore } from "@tracktor/ui";
 // hooks
 import { useIssues } from "@/hooks/store/use-issues";
 import { useProjectView } from "@/hooks/store/use-project-view";

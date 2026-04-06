@@ -8,14 +8,14 @@ import type { FormEvent } from "react";
 import { useState } from "react";
 import { observer } from "mobx-react";
 import { Info } from "lucide-react";
-import { EEstimateSystem, MAX_ESTIMATE_POINT_INPUT_LENGTH } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { CheckIcon, CloseIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TEstimatePointsObject, TEstimateSystemKeys, TEstimateTypeErrorObject } from "@plane/types";
-import { Spinner } from "@plane/ui";
-import { cn, isEstimatePointValuesRepeated } from "@plane/utils";
+import { EEstimateSystem, MAX_ESTIMATE_POINT_INPUT_LENGTH } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { CheckIcon, CloseIcon } from "@tracktor/propel/icons";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import type { TEstimatePointsObject, TEstimateSystemKeys, TEstimateTypeErrorObject } from "@tracktor/types";
+import { Spinner } from "@tracktor/ui";
+import { cn, isEstimatePointValuesRepeated } from "@tracktor/utils";
 import { EstimateInputRoot } from "@/components/estimates/inputs/root";
 // helpers
 // hooks
