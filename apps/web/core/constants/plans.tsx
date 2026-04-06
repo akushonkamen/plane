@@ -98,7 +98,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       },
       {
         title: "Comments",
-        description: "Respond to work items, @mention members, and brainstorm\ntogether without leaving Plane.",
+        description: "Respond to work items, @mention members, and brainstorm\ntogether without leaving Tracktor.",
         cloud: {
           free: true,
           one: true,
@@ -537,7 +537,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       {
         title: "Progress Charts",
         description:
-          "Track progress in cycles, modules, and overviews\nthroughout Plane without switching to dashboards\nor Analytics.",
+          "Track progress in cycles, modules, and overviews\nthroughout Tracktor without switching to dashboards\nor Analytics.",
         cloud: {
           free: false,
           one: false,
@@ -613,7 +613,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
     features: [
       {
         title: "Power K",
-        description: "Access a keyboard-first gateway to almost anything\nin Plane.",
+        description: "Access a keyboard-first gateway to almost anything\nin Tracktor.",
         cloud: {
           free: true,
           one: true,
@@ -979,7 +979,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       },
       {
         title: "Slack",
-        description: "Get Plane activity in Slack and use / commands in\nSlack to make changes in Plane.",
+        description: "Get Plane activity in Slack and use / commands in\nSlack to make changes in Tracktor.",
         cloud: {
           free: false,
           one: false,

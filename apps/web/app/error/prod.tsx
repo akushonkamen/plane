@@ -17,16 +17,16 @@ const linkMap = [
   {
     key: "mail_to",
     label: "Contact Support",
-    value: "mailto:support@plane.so",
+    value: "mailto:support@tracktor.so",
   },
   {
     key: "status",
     label: "Status Page",
-    value: "https://status.plane.so/",
+    value: "https://status.tracktor.so/",
   },
   {
     key: "twitter_handle",
-    label: "@planepowers",
+    label: "@tracktorapp",
     value: "https://x.com/planepowers",
   },
 ];

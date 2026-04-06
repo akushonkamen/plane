@@ -25,7 +25,7 @@ import icon512 from "@/app/assets/icons/icon-512x512.png?url";
 import { AppProvider } from "./provider";
 
 export const meta = () => [
-  { title: "Plane | Simple, extensible, open-source project management tool." },
+  { title: "Tracktor | Simple, extensible, open-source project management tool." },
   { name: "description", content: SITE_DESCRIPTION },
   {
     name: "keywords",
@@ -37,19 +37,19 @@ export const meta = () => [
     content:
       "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover",
   },
-  { property: "og:title", content: "Plane | Simple, extensible, open-source project management tool." },
+  { property: "og:title", content: "Tracktor | Simple, extensible, open-source project management tool." },
   {
     property: "og:description",
     content: "Open-source project management tool to manage work items, cycles, and product roadmaps easily",
   },
-  { property: "og:url", content: "https://app.plane.so/" },
-  { property: "og:image", content: "https://app.plane.so/og-image.png" },
+  { property: "og:url", content: "https://app.tracktor.so/" },
+  { property: "og:image", content: "https://app.tracktor.so/og-image.png" },
   { property: "og:image:width", content: "1200" },
   { property: "og:image:height", content: "630" },
   { property: "og:image:alt", content: "Plane - Modern project management" },
-  { name: "twitter:site", content: "@planepowers" },
+  { name: "twitter:site", content: "@tracktorapp" },
   { name: "twitter:card", content: "summary_large_image" },
-  { name: "twitter:image", content: "https://app.plane.so/og-image.png" },
+  { name: "twitter:image", content: "https://app.tracktor.so/og-image.png" },
   { name: "twitter:image:width", content: "1200" },
   { name: "twitter:image:height", content: "630" },
   { name: "twitter:image:alt", content: "Plane - Modern project management" },
