@@ -6,14 +6,14 @@
 
 import { observer } from "mobx-react";
 
-import { MODULE_TRACKER_ELEMENTS } from "@plane/constants";
-import { CopyIcon, EditIcon, TrashIcon } from "@plane/propel/icons";
+import { MODULE_TRACKER_ELEMENTS } from "@tracktor/constants";
+import { CopyIcon, EditIcon, TrashIcon } from "@tracktor/propel/icons";
 // plane types
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { ILinkDetails } from "@plane/types";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import type { ILinkDetails } from "@tracktor/types";
 // plane ui
-import { getIconForLink, copyTextToClipboard, calculateTimeAgo } from "@plane/utils";
+import { getIconForLink, copyTextToClipboard, calculateTimeAgo } from "@tracktor/utils";
 // helpers
 //
 // hooks

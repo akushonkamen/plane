@@ -9,9 +9,9 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 // plane imports
-import { EditIcon, TrashIcon } from "@plane/propel/icons";
-import { CustomMenu } from "@plane/ui";
-import { truncateText } from "@plane/utils";
+import { EditIcon, TrashIcon } from "@tracktor/propel/icons";
+import { CustomMenu } from "@tracktor/ui";
+import { truncateText } from "@tracktor/utils";
 // hooks
 import { useGlobalView } from "@/hooks/store/use-global-view";
 // local imports

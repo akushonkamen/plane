@@ -5,7 +5,7 @@
  */
 
 import React, { useState } from "react";
-import { cn } from "@plane/utils";
+import { cn } from "@tracktor/utils";
 import { AuthInput } from "./auth-input";
 
 export type TAuthConfirmPasswordInputProps = React.InputHTMLAttributes<HTMLInputElement> & {

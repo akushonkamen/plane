@@ -9,9 +9,9 @@ import { combine } from "@atlaskit/pragmatic-drag-and-drop/combine";
 import { draggable, dropTargetForElements } from "@atlaskit/pragmatic-drag-and-drop/element/adapter";
 import { attachInstruction, extractInstruction } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
 import { observer } from "mobx-react";
-import { useOutsideClickDetector } from "@plane/hooks";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { DropIndicator } from "@plane/ui";
+import { useOutsideClickDetector } from "@tracktor/hooks";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import { DropIndicator } from "@tracktor/ui";
 import { HIGHLIGHT_WITH_LINE, highlightIssueOnDrop } from "@/components/issues/issue-layouts/utils";
 
 type Props = {
@@ -94,7 +94,7 @@ export const GanttDnDHOC = observer(function GanttDnDHOC(props: Props) {
         },
       })
     );
-  }, [blockRef?.current, isLastChild, onDrop]);
+  }, [isLastChild, onDrop]);
 
   useOutsideClickDetector(blockRef, () => blockRef?.current?.classList?.remove(HIGHLIGHT_WITH_LINE));
 

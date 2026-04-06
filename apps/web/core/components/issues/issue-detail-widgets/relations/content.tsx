@@ -7,10 +7,10 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import type { TIssue, TIssueServiceType } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
-import { Collapsible } from "@plane/ui";
+import { useTranslation } from "@tracktor/i18n";
+import type { TIssue, TIssueServiceType } from "@tracktor/types";
+import { EIssueServiceType } from "@tracktor/types";
+import { Collapsible } from "@tracktor/ui";
 // components
 import { CreateUpdateIssueModal } from "@/components/issues/issue-modal/modal";
 // hooks

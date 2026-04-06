@@ -9,13 +9,13 @@ import { add } from "date-fns";
 import { Controller, useForm } from "react-hook-form";
 import { Calendar } from "lucide-react";
 // types
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IApiToken } from "@plane/types";
+import { useTranslation } from "@tracktor/i18n";
+import { Button } from "@tracktor/propel/button";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import type { IApiToken } from "@tracktor/types";
 // ui
-import { CustomSelect, Input, TextArea, ToggleSwitch } from "@plane/ui";
-import { cn, renderFormattedDate, renderFormattedTime } from "@plane/utils";
+import { CustomSelect, Input, TextArea, ToggleSwitch } from "@tracktor/ui";
+import { cn, renderFormattedDate, renderFormattedTime } from "@tracktor/utils";
 // components
 import { DateDropdown } from "@/components/dropdowns/date";
 // helpers

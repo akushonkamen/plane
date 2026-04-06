@@ -10,11 +10,11 @@ import { observer } from "mobx-react";
 // icons
 import { CircleAlert, XCircle } from "lucide-react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import type { IEmailCheckData } from "@plane/types";
-import { Input, Spinner } from "@plane/ui";
-import { cn, checkEmailValidity } from "@plane/utils";
+import { useTranslation } from "@tracktor/i18n";
+import { Button } from "@tracktor/propel/button";
+import type { IEmailCheckData } from "@tracktor/types";
+import { Input, Spinner } from "@tracktor/ui";
+import { cn, checkEmailValidity } from "@tracktor/utils";
 // helpers
 type TAuthEmailForm = {
   defaultEmail: string;

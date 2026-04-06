@@ -5,9 +5,9 @@
  */
 
 // plane types
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@tracktor/i18n";
 // hooks
-import type { IUser } from "@plane/types";
+import type { IUser } from "@tracktor/types";
 import { useCurrentTime } from "@/hooks/use-current-time";
 // types
 

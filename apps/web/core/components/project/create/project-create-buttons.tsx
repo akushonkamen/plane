@@ -6,13 +6,13 @@
 
 import { useFormContext } from "react-hook-form";
 // plane imports
-import { ETabIndices } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import type { IProject } from "@plane/types";
+import { ETabIndices } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { Button } from "@tracktor/propel/button";
+import type { IProject } from "@tracktor/types";
 // ui
 // helpers
-import { getTabIndex } from "@plane/utils";
+import { getTabIndex } from "@tracktor/utils";
 
 type Props = {
   handleClose: () => void;

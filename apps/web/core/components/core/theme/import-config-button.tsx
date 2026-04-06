@@ -8,10 +8,10 @@ import { useRef } from "react";
 import { observer } from "mobx-react";
 import type { UseFormSetValue } from "react-hook-form";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { setToast, TOAST_TYPE } from "@plane/propel/toast";
-import type { IUserTheme } from "@plane/types";
+import { useTranslation } from "@tracktor/i18n";
+import { Button } from "@tracktor/propel/button";
+import { setToast, TOAST_TYPE } from "@tracktor/propel/toast";
+import type { IUserTheme } from "@tracktor/types";
 
 type Props = {
   handleUpdateTheme: (formData: IUserTheme) => Promise<void>;

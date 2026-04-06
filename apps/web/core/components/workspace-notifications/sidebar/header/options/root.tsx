@@ -7,17 +7,17 @@
 import { observer } from "mobx-react";
 import { CheckCheck, RefreshCw } from "lucide-react";
 // plane imports
-import { ENotificationLoader, ENotificationQueryParamType } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Tooltip } from "@plane/propel/tooltip";
-import { Spinner } from "@plane/ui";
+import { ENotificationLoader, ENotificationQueryParamType } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import { Spinner } from "@tracktor/ui";
 // hooks
 import { useWorkspaceNotifications } from "@/hooks/store/notifications";
 import { usePlatformOS } from "@/hooks/use-platform-os";
 // local imports
 import { NotificationFilter } from "../../filters/menu";
 import { NotificationHeaderMenuOption } from "./menu-option";
-import { IconButton } from "@plane/propel/icon-button";
+import { IconButton } from "@tracktor/propel/icon-button";
 
 type TNotificationSidebarHeaderOptions = {
   workspaceSlug: string;

@@ -5,11 +5,11 @@
  */
 
 // plane imports
-import type { I_THEME_OPTION } from "@plane/constants";
-import { THEME_OPTIONS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
+import type { I_THEME_OPTION } from "@tracktor/constants";
+import { THEME_OPTIONS } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
 // constants
-import { CustomSelect } from "@plane/ui";
+import { CustomSelect } from "@tracktor/ui";
 // ui
 
 type Props = {

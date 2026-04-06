@@ -10,11 +10,11 @@ import type { Control, UseFormSetValue } from "react-hook-form";
 import { Controller } from "react-hook-form";
 import { SlidersHorizontal } from "lucide-react";
 // plane package imports
-import { ANALYTICS_X_AXIS_VALUES, ANALYTICS_Y_AXIS_VALUES } from "@plane/constants";
-import { CalendarLayoutIcon } from "@plane/propel/icons";
-import type { IAnalyticsParams } from "@plane/types";
-import { ChartYAxisMetric } from "@plane/types";
-import { cn } from "@plane/utils";
+import { ANALYTICS_X_AXIS_VALUES, ANALYTICS_Y_AXIS_VALUES } from "@tracktor/constants";
+import { CalendarLayoutIcon } from "@tracktor/propel/icons";
+import type { IAnalyticsParams } from "@tracktor/types";
+import { ChartYAxisMetric } from "@tracktor/types";
+import { cn } from "@tracktor/utils";
 // plane web components
 import { SelectXAxis } from "./select-x-axis";
 import { SelectYAxis } from "./select-y-axis";

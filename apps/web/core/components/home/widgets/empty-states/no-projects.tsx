@@ -11,11 +11,11 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import { Hotel } from "lucide-react";
 // plane ui
-import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import { useLocalStorage } from "@plane/hooks";
-import { useTranslation } from "@plane/i18n";
-import { MembersPropertyIcon, CheckIcon, ProjectIcon, CloseIcon } from "@plane/propel/icons";
-import { cn, getFileURL } from "@plane/utils";
+import { EUserPermissions, EUserPermissionsLevel } from "@tracktor/constants";
+import { useLocalStorage } from "@tracktor/hooks";
+import { useTranslation } from "@tracktor/i18n";
+import { MembersPropertyIcon, CheckIcon, ProjectIcon, CloseIcon } from "@tracktor/propel/icons";
+import { cn, getFileURL } from "@tracktor/utils";
 // hooks
 import { useCommandPalette } from "@/hooks/store/use-command-palette";
 import { useProject } from "@/hooks/store/use-project";

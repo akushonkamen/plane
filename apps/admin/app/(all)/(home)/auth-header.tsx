@@ -5,7 +5,7 @@
  */
 
 import Link from "next/link";
-import { PlaneLockup } from "@plane/propel/icons";
+import { PlaneLockup } from "@tracktor/propel/icons";
 
 export function AuthHeader() {
   return (

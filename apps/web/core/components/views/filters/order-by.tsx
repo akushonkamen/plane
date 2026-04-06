@@ -6,12 +6,12 @@
 
 import { ArrowDownWideNarrow, ArrowUpWideNarrow } from "lucide-react";
 // plane imports
-import { VIEW_SORT_BY_OPTIONS, VIEW_SORTING_KEY_OPTIONS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { getButtonStyling } from "@plane/propel/button";
-import { CheckIcon } from "@plane/propel/icons";
-import type { TViewFiltersSortBy, TViewFiltersSortKey } from "@plane/types";
-import { CustomMenu } from "@plane/ui";
+import { VIEW_SORT_BY_OPTIONS, VIEW_SORTING_KEY_OPTIONS } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { getButtonStyling } from "@tracktor/propel/button";
+import { CheckIcon } from "@tracktor/propel/icons";
+import type { TViewFiltersSortBy, TViewFiltersSortKey } from "@tracktor/types";
+import { CustomMenu } from "@tracktor/ui";
 
 type Props = {
   onChange: (value: { key?: TViewFiltersSortKey; order?: TViewFiltersSortBy }) => void;

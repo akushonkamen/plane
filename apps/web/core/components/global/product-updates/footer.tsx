@@ -4,13 +4,13 @@
  * See the LICENSE file for details.
  */
 
-import { USER_TRACKER_ELEMENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
+import { USER_TRACKER_ELEMENTS } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
 // ui
-import { getButtonStyling } from "@plane/propel/button";
-import { PlaneLogo } from "@plane/propel/icons";
+import { getButtonStyling } from "@tracktor/propel/button";
+import { PlaneLogo } from "@tracktor/propel/icons";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@tracktor/utils";
 
 export function ProductUpdatesFooter() {
   const { t } = useTranslation();

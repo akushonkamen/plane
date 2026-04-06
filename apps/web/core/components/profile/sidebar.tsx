@@ -9,15 +9,15 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { Disclosure, Transition } from "@headlessui/react";
 // plane imports
-import { useOutsideClickDetector } from "@plane/hooks";
-import { useTranslation } from "@plane/i18n";
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { IconButton } from "@plane/propel/icon-button";
-import { EditIcon, ChevronDownIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { IUserProfileProjectSegregation } from "@plane/types";
-import { Loader } from "@plane/ui";
-import { cn, renderFormattedDate, getFileURL } from "@plane/utils";
+import { useOutsideClickDetector } from "@tracktor/hooks";
+import { useTranslation } from "@tracktor/i18n";
+import { Logo } from "@tracktor/propel/emoji-icon-picker";
+import { IconButton } from "@tracktor/propel/icon-button";
+import { EditIcon, ChevronDownIcon } from "@tracktor/propel/icons";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import type { IUserProfileProjectSegregation } from "@tracktor/types";
+import { Loader } from "@tracktor/ui";
+import { cn, renderFormattedDate, getFileURL } from "@tracktor/utils";
 // components
 import { CoverImage } from "@/components/common/cover-image";
 // hooks

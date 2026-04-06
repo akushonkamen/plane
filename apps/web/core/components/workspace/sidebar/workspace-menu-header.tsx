@@ -10,13 +10,13 @@ import { useParams, useRouter } from "next/navigation";
 import { MoreHorizontal, ArchiveIcon, Settings } from "lucide-react";
 import { Disclosure } from "@headlessui/react";
 // plane imports
-import { EUserPermissionsLevel } from "@plane/constants";
-import { useOutsideClickDetector } from "@plane/hooks";
-import { useTranslation } from "@plane/i18n";
-import { ChevronRightIcon } from "@plane/propel/icons";
-import { EUserWorkspaceRoles } from "@plane/types";
-import { CustomMenu } from "@plane/ui";
-import { cn } from "@plane/utils";
+import { EUserPermissionsLevel } from "@tracktor/constants";
+import { useOutsideClickDetector } from "@tracktor/hooks";
+import { useTranslation } from "@tracktor/i18n";
+import { ChevronRightIcon } from "@tracktor/propel/icons";
+import { EUserWorkspaceRoles } from "@tracktor/types";
+import { CustomMenu } from "@tracktor/ui";
+import { cn } from "@tracktor/utils";
 // store hooks
 import { useUserPermissions } from "@/hooks/store/user";
 

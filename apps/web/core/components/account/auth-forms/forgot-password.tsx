@@ -11,11 +11,11 @@ import { Controller, useForm } from "react-hook-form";
 // icons
 import { CircleCheck } from "lucide-react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { Button, getButtonStyling } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Input } from "@plane/ui";
-import { cn, checkEmailValidity } from "@plane/utils";
+import { useTranslation } from "@tracktor/i18n";
+import { Button, getButtonStyling } from "@tracktor/propel/button";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import { Input } from "@tracktor/ui";
+import { cn, checkEmailValidity } from "@tracktor/utils";
 // hooks
 import useTimer from "@/hooks/use-timer";
 // services

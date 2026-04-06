@@ -7,16 +7,16 @@
 import { observer } from "mobx-react";
 import { ListFilter } from "lucide-react";
 // plane imports
-import type { ENotificationFilterType } from "@plane/constants";
-import { FILTER_TYPE_OPTIONS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Tooltip } from "@plane/propel/tooltip";
-import { PopoverMenu } from "@plane/ui";
+import type { ENotificationFilterType } from "@tracktor/constants";
+import { FILTER_TYPE_OPTIONS } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import { PopoverMenu } from "@tracktor/ui";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
 // local imports
 import { NotificationFilterOptionItem } from "./menu-option-item";
-import { IconButton } from "@plane/propel/icon-button";
+import { IconButton } from "@tracktor/propel/icon-button";
 
 export const NotificationFilter = observer(function NotificationFilter() {
   // hooks

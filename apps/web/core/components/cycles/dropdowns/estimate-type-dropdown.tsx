@@ -6,9 +6,9 @@
 
 import React from "react";
 import { observer } from "mobx-react";
-import type { TCycleEstimateType } from "@plane/types";
-import { EEstimateSystem } from "@plane/types";
-import { CustomSelect } from "@plane/ui";
+import type { TCycleEstimateType } from "@tracktor/types";
+import { EEstimateSystem } from "@tracktor/types";
+import { CustomSelect } from "@tracktor/ui";
 import { useProjectEstimates } from "@/hooks/store/estimates";
 import { useCycle } from "@/hooks/store/use-cycle";
 // local imports

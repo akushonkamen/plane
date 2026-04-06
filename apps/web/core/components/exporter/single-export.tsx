@@ -6,10 +6,10 @@
 
 import { useState } from "react";
 // ui
-import { Button } from "@plane/propel/button";
-import type { IExportData } from "@plane/types";
+import { Button } from "@tracktor/propel/button";
+import type { IExportData } from "@tracktor/types";
 // helpers
-import { getDate, renderFormattedDate } from "@plane/utils";
+import { getDate, renderFormattedDate } from "@tracktor/utils";
 // types
 
 type Props = {

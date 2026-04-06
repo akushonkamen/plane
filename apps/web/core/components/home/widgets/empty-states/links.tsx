@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-import { useTranslation } from "@plane/i18n";
-import { EmptyStateCompact } from "@plane/propel/empty-state";
+import { useTranslation } from "@tracktor/i18n";
+import { EmptyStateCompact } from "@tracktor/propel/empty-state";
 
 export function LinksEmptyState() {
   const { t } = useTranslation();

@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-import { CheckIcon } from "@plane/propel/icons";
+import { CheckIcon } from "@tracktor/propel/icons";
 
 type Props = {
   isChecked: boolean;

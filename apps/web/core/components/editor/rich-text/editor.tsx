@@ -6,10 +6,10 @@
 
 import { forwardRef } from "react";
 // plane imports
-import { RichTextEditorWithRef } from "@plane/editor";
-import type { EditorRefApi, IRichTextEditorProps, TFileHandler } from "@plane/editor";
-import type { MakeOptional, TSearchEntityRequestPayload, TSearchResponse } from "@plane/types";
-import { cn } from "@plane/utils";
+import { RichTextEditorWithRef } from "@tracktor/editor";
+import type { EditorRefApi, IRichTextEditorProps, TFileHandler } from "@tracktor/editor";
+import type { MakeOptional, TSearchEntityRequestPayload, TSearchResponse } from "@tracktor/types";
+import { cn } from "@tracktor/utils";
 // components
 import { EditorMentionsRoot } from "@/components/editor/embeds/mentions";
 // hooks

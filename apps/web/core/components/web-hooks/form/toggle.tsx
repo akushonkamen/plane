@@ -7,9 +7,9 @@
 import type { Control } from "react-hook-form";
 import { Controller } from "react-hook-form";
 // constants
-import type { IWebhook } from "@plane/types";
+import type { IWebhook } from "@tracktor/types";
 // ui
-import { ToggleSwitch } from "@plane/ui";
+import { ToggleSwitch } from "@tracktor/ui";
 
 interface IWebHookToggle {
   control: Control<IWebhook, any>;

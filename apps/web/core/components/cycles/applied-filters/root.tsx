@@ -6,12 +6,12 @@
 
 import { observer } from "mobx-react";
 // plane imports
-import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
-import type { TCycleFilters } from "@plane/types";
-import { Tag } from "@plane/ui";
-import { replaceUnderscoreIfSnakeCase } from "@plane/utils";
+import { EUserPermissions, EUserPermissionsLevel } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { CloseIcon } from "@tracktor/propel/icons";
+import type { TCycleFilters } from "@tracktor/types";
+import { Tag } from "@tracktor/ui";
+import { replaceUnderscoreIfSnakeCase } from "@tracktor/utils";
 // hooks
 import { useUserPermissions } from "@/hooks/store/user";
 // local imports
@@ -25,7 +25,7 @@ type Props = {
   alwaysAllowEditing?: boolean;
 };
 
-const DATE_FILTERS = ["start_date", "end_date"];
+const DATE_FILTERS = new Set(["start_date", "end_date"]);
 
 export const CycleAppliedFiltersList = observer(function CycleAppliedFiltersList(props: Props) {
   const { appliedFilters, handleClearAllFilters, handleRemoveFilter, alwaysAllowEditing } = props;
@@ -60,7 +60,7 @@ export const CycleAppliedFiltersList = observer(function CycleAppliedFiltersList
                   values={value}
                 />
               )}
-              {DATE_FILTERS.includes(filterKey) && (
+              {DATE_FILTERS.has(filterKey) && (
                 <AppliedDateFilters
                   editable={isEditingAllowed}
                   handleRemove={(val) => handleRemoveFilter(filterKey, val)}

@@ -5,9 +5,9 @@
  */
 
 import * as React from "react";
-import { TimelineLayoutIcon, GridLayoutIcon, ListLayoutIcon } from "@plane/propel/icons";
-import type { TModuleLayoutOptions } from "@plane/types";
-import { cn } from "@plane/utils";
+import { TimelineLayoutIcon, GridLayoutIcon, ListLayoutIcon } from "@tracktor/propel/icons";
+import type { TModuleLayoutOptions } from "@tracktor/types";
+import { cn } from "@tracktor/utils";
 
 interface ILayoutIcon {
   className?: string;

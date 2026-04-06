@@ -7,8 +7,8 @@
 import { observer } from "mobx-react";
 import { Outlet } from "react-router";
 // plane imports
-import { Header, Row } from "@plane/ui";
-import { cn } from "@plane/utils";
+import { Header, Row } from "@tracktor/ui";
+import { cn } from "@tracktor/utils";
 // components
 import { TabNavigationRoot } from "@/components/navigation/tab-navigation-root";
 import { AppSidebarToggleButton } from "@/components/sidebar/sidebar-toggle-button";

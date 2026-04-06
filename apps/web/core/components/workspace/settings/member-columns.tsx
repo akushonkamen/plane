@@ -10,15 +10,15 @@ import { Controller, useForm } from "react-hook-form";
 
 import { Disclosure } from "@headlessui/react";
 // plane imports
-import { ROLE, EUserPermissions, EUserPermissionsLevel, MEMBER_TRACKER_ELEMENTS } from "@plane/constants";
-import { TrashIcon, SuspendedUserIcon } from "@plane/propel/icons";
-import { Pill, EPillVariant, EPillSize } from "@plane/propel/pill";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IUser, IWorkspaceMember } from "@plane/types";
+import { ROLE, EUserPermissions, EUserPermissionsLevel, MEMBER_TRACKER_ELEMENTS } from "@tracktor/constants";
+import { TrashIcon, SuspendedUserIcon } from "@tracktor/propel/icons";
+import { Pill, EPillVariant, EPillSize } from "@tracktor/propel/pill";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import type { IUser, IWorkspaceMember } from "@tracktor/types";
 // plane ui
-import { CustomSelect, PopoverMenu } from "@plane/ui";
+import { CustomSelect, PopoverMenu } from "@tracktor/ui";
 // helpers
-import { getFileURL } from "@plane/utils";
+import { getFileURL } from "@tracktor/utils";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
 import { useUser, useUserPermissions } from "@/hooks/store/user";

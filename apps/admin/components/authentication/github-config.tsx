@@ -9,10 +9,10 @@ import Link from "next/link";
 // icons
 import { Settings2 } from "lucide-react";
 // plane internal packages
-import { getButtonStyling } from "@plane/propel/button";
-import type { TInstanceAuthenticationMethodKeys } from "@plane/types";
-import { ToggleSwitch } from "@plane/ui";
-import { cn } from "@plane/utils";
+import { getButtonStyling } from "@tracktor/propel/button";
+import type { TInstanceAuthenticationMethodKeys } from "@tracktor/types";
+import { ToggleSwitch } from "@tracktor/ui";
+import { cn } from "@tracktor/utils";
 // hooks
 import { useInstance } from "@/hooks/store";
 

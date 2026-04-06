@@ -10,9 +10,9 @@ import { useParams } from "next/navigation";
 import useSWR from "swr";
 import { Disclosure } from "@headlessui/react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { ChevronDownIcon } from "@plane/propel/icons";
-import { Collapsible } from "@plane/ui";
+import { useTranslation } from "@tracktor/i18n";
+import { ChevronDownIcon } from "@tracktor/propel/icons";
+import { Collapsible } from "@tracktor/ui";
 // components
 import { CountChip } from "@/components/common/count-chip";
 import { MembersSettingsLoader } from "@/components/ui/loader/settings/members";
@@ -64,7 +64,7 @@ export const WorkspaceMembersList = observer(function WorkspaceMembersList(props
   const searchedInvitationsIds = getSearchedWorkspaceInvitationIds(searchQuery);
   const memberDetails = searchedMemberIds
     ?.map((memberId) => getWorkspaceMemberDetails(memberId))
-    .sort((a, b) => {
+    .toSorted((a, b) => {
       if (a?.is_active && !b?.is_active) return -1;
       if (!a?.is_active && b?.is_active) return 1;
       return 0;

@@ -5,9 +5,9 @@
  */
 
 // plane imports
-import type { TDraggableData } from "@plane/constants";
-import { STATE_GROUPS } from "@plane/constants";
-import type { IState, IStateResponse } from "@plane/types";
+import type { TDraggableData } from "@tracktor/constants";
+import { STATE_GROUPS } from "@tracktor/constants";
+import type { IState, IStateResponse } from "@tracktor/types";
 
 export const orderStateGroups = (unorderedStateGroups: IStateResponse | undefined): IStateResponse | undefined => {
   if (!unorderedStateGroups) return undefined;
@@ -17,7 +17,7 @@ export const orderStateGroups = (unorderedStateGroups: IStateResponse | undefine
 export const sortStates = (states: IState[]) => {
   if (!states || states.length === 0) return;
 
-  return states.sort((stateA, stateB) => {
+  return states.toSorted((stateA, stateB) => {
     if (stateA.group === stateB.group) {
       return stateA.sequence - stateB.sequence;
     }

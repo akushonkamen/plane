@@ -6,9 +6,9 @@
 
 import { forwardRef } from "react";
 // plane imports
-import { RichTextEditorWithRef } from "@plane/editor";
-import type { EditorRefApi, IRichTextEditorProps, TFileHandler } from "@plane/editor";
-import type { MakeOptional } from "@plane/types";
+import { RichTextEditorWithRef } from "@tracktor/editor";
+import type { EditorRefApi, IRichTextEditorProps, TFileHandler } from "@tracktor/editor";
+import type { MakeOptional } from "@tracktor/types";
 // helpers
 import { getEditorFileHandlers } from "@/helpers/editor.helper";
 // hooks

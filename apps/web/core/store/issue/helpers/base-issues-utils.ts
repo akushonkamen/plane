@@ -5,7 +5,7 @@
  */
 
 import { uniq, orderBy, isEmpty, indexOf, groupBy, cloneDeep, set } from "lodash-es";
-import { ALL_ISSUES, EIssueFilterType, FILTER_TO_ISSUE_MAP, ISSUE_PRIORITIES } from "@plane/constants";
+import { ALL_ISSUES, EIssueFilterType, FILTER_TO_ISSUE_MAP, ISSUE_PRIORITIES } from "@tracktor/constants";
 import type {
   IIssueDisplayFilterOptions,
   IIssueDisplayProperties,
@@ -14,8 +14,8 @@ import type {
   TIssue,
   TIssueGroupByOptions,
   TIssueOrderByOptions,
-} from "@plane/types";
-import { checkDateCriteria, convertToISODateString, parseDateFilter } from "@plane/utils";
+} from "@tracktor/types";
+import { checkDateCriteria, convertToISODateString, parseDateFilter } from "@tracktor/utils";
 import { store } from "@/lib/store-context";
 import { EIssueGroupedAction, ISSUE_GROUP_BY_KEY } from "./base-issues.store";
 
@@ -336,7 +336,7 @@ export const getGroupedWorkItemIds = (
     if (Array.isArray(value)) {
       if (value.length === 0) return "None";
       // Sort & join to build deterministic set-like key
-      return value.slice().sort().join(",");
+      return value.slice().toSorted().join(",");
     }
     return value ?? "None";
   });

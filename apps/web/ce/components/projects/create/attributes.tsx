@@ -6,11 +6,11 @@
 
 import { Controller, useFormContext } from "react-hook-form";
 // plane imports
-import { NETWORK_CHOICES, ETabIndices } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { IProject } from "@plane/types";
-import { CustomSelect } from "@plane/ui";
-import { getTabIndex } from "@plane/utils";
+import { NETWORK_CHOICES, ETabIndices } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import type { IProject } from "@tracktor/types";
+import { CustomSelect } from "@tracktor/ui";
+import { getTabIndex } from "@tracktor/utils";
 // components
 import { MemberDropdown } from "@/components/dropdowns/member/dropdown";
 import { ProjectNetworkIcon } from "@/components/project/project-network-icon";

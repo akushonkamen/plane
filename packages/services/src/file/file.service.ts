@@ -5,9 +5,9 @@
  */
 
 // plane imports
-import { API_BASE_URL } from "@plane/constants";
+import { API_BASE_URL } from "@tracktor/constants";
 // api service
-import type { TDuplicateAssetData, TDuplicateAssetResponse } from "@plane/types";
+import type { TDuplicateAssetData, TDuplicateAssetResponse } from "@tracktor/types";
 import { APIService } from "../api.service";
 // helpers
 import { getAssetIdFromUrl } from "./helper";

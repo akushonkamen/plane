@@ -7,9 +7,9 @@
 import { forwardRef } from "react";
 import { range } from "lodash-es";
 // plane ui
-import { ContentWrapper } from "@plane/ui";
+import { ContentWrapper } from "@tracktor/ui";
 // plane utils
-import { cn } from "@plane/utils";
+import { cn } from "@tracktor/utils";
 
 export const KanbanIssueBlockLoader = forwardRef(function KanbanIssueBlockLoader(
   { cardHeight = 100, shouldAnimate = true }: { cardHeight?: number; shouldAnimate?: boolean },

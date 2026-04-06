@@ -7,8 +7,8 @@
 import { observer } from "mobx-react";
 import { MessageSquare } from "lucide-react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
+import { useTranslation } from "@tracktor/i18n";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
 // store
 import type { INotification } from "@/store/notifications/notification";
 // local imports

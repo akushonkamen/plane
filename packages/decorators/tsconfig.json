@@ -1,5 +1,5 @@
 {
-  "extends": "@plane/typescript-config/node-library.json",
+  "extends": "@tracktor/typescript-config/node-library.json",
   "compilerOptions": {
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,

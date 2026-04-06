@@ -6,14 +6,14 @@
 
 import { observer } from "mobx-react";
 import { Link as Loader } from "lucide-react";
-import { useTranslation } from "@plane/i18n";
-import { LinkIcon, EditIcon, TrashIcon, CloseIcon, ChevronRightIcon } from "@plane/propel/icons";
+import { useTranslation } from "@tracktor/i18n";
+import { LinkIcon, EditIcon, TrashIcon, CloseIcon, ChevronRightIcon } from "@tracktor/propel/icons";
 // plane imports
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TIssue, TIssueServiceType, TSubIssueOperations } from "@plane/types";
-import { EIssueServiceType, EIssuesStoreType } from "@plane/types";
-import { ControlLink, CustomMenu } from "@plane/ui";
-import { cn, generateWorkItemLink } from "@plane/utils";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import type { TIssue, TIssueServiceType, TSubIssueOperations } from "@tracktor/types";
+import { EIssueServiceType, EIssuesStoreType } from "@tracktor/types";
+import { ControlLink, CustomMenu } from "@tracktor/ui";
+import { cn, generateWorkItemLink } from "@tracktor/utils";
 // helpers
 import { useSubIssueOperations } from "@/components/issues/issue-detail-widgets/sub-issues/helper";
 import { WithDisplayPropertiesHOC } from "@/components/issues/issue-layouts/properties/with-display-properties-HOC";
@@ -88,7 +88,7 @@ export const SubIssuesListItem = observer(function SubIssuesListItem(props: Prop
   const displayProperties = subIssueFilters?.displayProperties ?? {};
 
   //
-  const handleIssuePeekOverview = (issue: TIssue) => handleRedirection(workspaceSlug, issue, isMobile);
+  const handleIssuePeekOverview = (issueItem: TIssue) => handleRedirection(workspaceSlug, issueItem, isMobile);
 
   if (!issue) return <></>;
 
@@ -125,8 +125,9 @@ export const SubIssuesListItem = observer(function SubIssuesListItem(props: Prop
                       <Loader width={14} strokeWidth={2} className="animate-spin" />
                     </div>
                   ) : (
-                    <div
-                      className="flex h-full w-full cursor-pointer items-center justify-center text-placeholder hover:text-tertiary"
+                    <button
+                      type="button"
+                      className="flex h-full w-full cursor-pointer items-center justify-center border-0 bg-transparent p-0 text-placeholder hover:text-tertiary"
                       onClick={async (e) => {
                         e.preventDefault();
                         e.stopPropagation();
@@ -144,7 +145,7 @@ export const SubIssuesListItem = observer(function SubIssuesListItem(props: Prop
                         })}
                         strokeWidth={2.5}
                       />
-                    </div>
+                    </button>
                   )}
                 </>
               )}
@@ -170,8 +171,9 @@ export const SubIssuesListItem = observer(function SubIssuesListItem(props: Prop
               </Tooltip>
             </div>
 
-            <div
-              className="flex-shrink-0 text-13"
+            <button
+              type="button"
+              className="flex-shrink-0 border-0 bg-transparent p-0 text-13"
               onClick={(e) => {
                 e.preventDefault();
                 e.stopPropagation();
@@ -186,7 +188,7 @@ export const SubIssuesListItem = observer(function SubIssuesListItem(props: Prop
                 displayProperties={displayProperties}
                 issue={issue}
               />
-            </div>
+            </button>
 
             <div className="flex-shrink-0 text-13">
               <CustomMenu placement="bottom-end" ellipsis>

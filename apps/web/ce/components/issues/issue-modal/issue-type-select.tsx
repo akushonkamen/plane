@@ -6,9 +6,9 @@
 
 import type { Control } from "react-hook-form";
 // plane imports
-import type { EditorRefApi } from "@plane/editor";
+import type { EditorRefApi } from "@tracktor/editor";
 // types
-import type { TBulkIssueProperties, TIssue } from "@plane/types";
+import type { TBulkIssueProperties, TIssue } from "@tracktor/types";
 
 export type TIssueFields = TIssue & TBulkIssueProperties;
 

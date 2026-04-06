@@ -6,9 +6,9 @@
 
 import { CalendarDays } from "lucide-react";
 // plane imports
-import { DueDatePropertyIcon, StartDatePropertyIcon } from "@plane/propel/icons";
-import type { TStateGroups } from "@plane/types";
-import { cn, renderFormattedDate, shouldHighlightIssueDueDate } from "@plane/utils";
+import { DueDatePropertyIcon, StartDatePropertyIcon } from "@tracktor/propel/icons";
+import type { TStateGroups } from "@tracktor/types";
+import { cn, renderFormattedDate, shouldHighlightIssueDueDate } from "@tracktor/utils";
 
 type Props = {
   startDate: string | null;

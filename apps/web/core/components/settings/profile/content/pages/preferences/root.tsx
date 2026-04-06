@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@tracktor/i18n";
 // components
 import { ProfileSettingsHeading } from "@/components/settings/profile/heading";
 // hooks

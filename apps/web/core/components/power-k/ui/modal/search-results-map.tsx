@@ -6,15 +6,15 @@
 
 import { Briefcase, FileText, Layers, LayoutGrid } from "lucide-react";
 // plane imports
-import { ContrastIcon, DiceIcon } from "@plane/propel/icons";
+import { ContrastIcon, DiceIcon } from "@tracktor/propel/icons";
 import type {
   IWorkspaceDefaultSearchResult,
   IWorkspaceIssueSearchResult,
   IWorkspacePageSearchResult,
   IWorkspaceProjectSearchResult,
   IWorkspaceSearchResult,
-} from "@plane/types";
-import { generateWorkItemLink } from "@plane/utils";
+} from "@tracktor/types";
+import { generateWorkItemLink } from "@tracktor/utils";
 // components
 import type { TPowerKSearchResultsKeys } from "@/components/power-k/core/types";
 // plane web imports

@@ -6,11 +6,11 @@
 
 import { useState } from "react";
 // plane imports
-import { ROLE } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import type { IWorkspaceMemberInvitation } from "@plane/types";
-import { Checkbox, Spinner } from "@plane/ui";
-import { truncateText } from "@plane/utils";
+import { ROLE } from "@tracktor/constants";
+import { Button } from "@tracktor/propel/button";
+import type { IWorkspaceMemberInvitation } from "@tracktor/types";
+import { Checkbox, Spinner } from "@tracktor/ui";
+import { truncateText } from "@tracktor/utils";
 // constants
 import { WorkspaceLogo } from "@/components/workspace/logo";
 // hooks

@@ -7,9 +7,9 @@
 import { useState } from "react";
 import { CircleArrowUp, CornerDownRight, RefreshCcw, Sparkles } from "lucide-react";
 // ui
-import { Tooltip } from "@plane/propel/tooltip";
+import { Tooltip } from "@tracktor/propel/tooltip";
 // components
-import { cn } from "@plane/utils";
+import { cn } from "@tracktor/utils";
 import { RichTextEditor } from "@/components/editor/rich-text";
 // helpers
 // hooks

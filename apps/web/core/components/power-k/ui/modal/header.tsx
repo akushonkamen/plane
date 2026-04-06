@@ -7,9 +7,9 @@
 import React from "react";
 import { Command } from "cmdk";
 import { X } from "lucide-react";
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@tracktor/i18n";
 // plane imports
-import { SearchIcon } from "@plane/propel/icons";
+import { SearchIcon } from "@tracktor/propel/icons";
 // local imports
 import type { TPowerKContext, TPowerKPageType } from "../../core/types";
 import { POWER_K_MODAL_PAGE_DETAILS } from "./constants";

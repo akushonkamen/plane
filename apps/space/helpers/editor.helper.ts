@@ -5,10 +5,10 @@
  */
 
 // plane imports
-import { MAX_FILE_SIZE } from "@plane/constants";
-import type { TFileHandler } from "@plane/editor";
-import { SitesFileService } from "@plane/services";
-import { getFileURL } from "@plane/utils";
+import { MAX_FILE_SIZE } from "@tracktor/constants";
+import type { TFileHandler } from "@tracktor/editor";
+import { SitesFileService } from "@tracktor/services";
+import { getFileURL } from "@tracktor/utils";
 // services
 const sitesFileService = new SitesFileService();
 

@@ -7,10 +7,10 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // plane imports
-import { PageIcon } from "@plane/propel/icons";
-import type { ICustomSearchSelectOption } from "@plane/types";
-import { Breadcrumbs, Header, BreadcrumbNavigationSearchDropdown } from "@plane/ui";
-import { getPageName } from "@plane/utils";
+import { PageIcon } from "@tracktor/propel/icons";
+import type { ICustomSearchSelectOption } from "@tracktor/types";
+import { Breadcrumbs, Header, BreadcrumbNavigationSearchDropdown } from "@tracktor/ui";
+import { getPageName } from "@tracktor/utils";
 // components
 import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
 import { PageAccessIcon } from "@/components/common/page-access-icon";

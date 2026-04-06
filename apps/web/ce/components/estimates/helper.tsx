@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-import type { TEstimateSystemKeys } from "@plane/types";
-import { EEstimateSystem } from "@plane/types";
+import type { TEstimateSystemKeys } from "@tracktor/types";
+import { EEstimateSystem } from "@tracktor/types";
 
 export const isEstimateSystemEnabled = (key: TEstimateSystemKeys) => {
   switch (key) {

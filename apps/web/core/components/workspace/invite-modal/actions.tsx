@@ -7,10 +7,10 @@
 import { observer } from "mobx-react";
 
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { PlusIcon } from "@plane/propel/icons";
-import { cn } from "@plane/utils";
+import { useTranslation } from "@tracktor/i18n";
+import { Button } from "@tracktor/propel/button";
+import { PlusIcon } from "@tracktor/propel/icons";
+import { cn } from "@tracktor/utils";
 
 type TInvitationModalActionsProps = {
   isInviteDisabled?: boolean;

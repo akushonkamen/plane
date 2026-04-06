@@ -5,8 +5,8 @@
  */
 
 // plane imports
-import type { ICalendarDate, ICalendarPayload } from "@plane/types";
-import { EStartOfTheWeek } from "@plane/types";
+import type { ICalendarDate, ICalendarPayload } from "@tracktor/types";
+import { EStartOfTheWeek } from "@tracktor/types";
 // local imports
 import { getWeekNumberOfDate, renderFormattedPayloadDate } from "./datetime";
 
@@ -86,7 +86,7 @@ export const getOrderedDays = <T>(
   getDayIndex: (item: T) => number,
   startOfWeek: EStartOfTheWeek = EStartOfTheWeek.SUNDAY
 ): T[] =>
-  [...items].sort((a, b) => {
+  [...items].toSorted((a, b) => {
     const dayA = (7 + getDayIndex(a) - startOfWeek) % 7;
     const dayB = (7 + getDayIndex(b) - startOfWeek) % 7;
     return dayA - dayB;

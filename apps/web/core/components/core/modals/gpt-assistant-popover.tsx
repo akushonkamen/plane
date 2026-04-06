@@ -12,10 +12,10 @@ import { usePopper } from "react-popper";
 import { AlertCircle } from "lucide-react";
 import { Popover, Transition } from "@headlessui/react";
 // plane imports
-import type { EditorRefApi } from "@plane/editor";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Input } from "@plane/ui";
+import type { EditorRefApi } from "@tracktor/editor";
+import { Button } from "@tracktor/propel/button";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import { Input } from "@tracktor/ui";
 // components
 import { RichTextEditor } from "@/components/editor/rich-text";
 // services

@@ -8,8 +8,8 @@ import React from "react";
 import { observer } from "mobx-react";
 import { Disclosure } from "@headlessui/react";
 // components
-import { useTranslation } from "@plane/i18n";
-import { ContentWrapper, ERowVariant } from "@plane/ui";
+import { useTranslation } from "@tracktor/i18n";
+import { ContentWrapper, ERowVariant } from "@tracktor/ui";
 import { ListLayout } from "@/components/core/list";
 import { ActiveCycleRoot } from "@/plane-web/components/cycles";
 // local imports

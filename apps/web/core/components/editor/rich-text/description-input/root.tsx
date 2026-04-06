@@ -9,10 +9,10 @@ import { debounce } from "lodash-es";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 // plane imports
-import type { EditorRefApi, TExtensions } from "@plane/editor";
-import { useTranslation } from "@plane/i18n";
-import type { EFileAssetType, TNameDescriptionLoader } from "@plane/types";
-import { getDescriptionPlaceholderI18n } from "@plane/utils";
+import type { EditorRefApi, TExtensions } from "@tracktor/editor";
+import { useTranslation } from "@tracktor/i18n";
+import type { EFileAssetType, TNameDescriptionLoader } from "@tracktor/types";
+import { getDescriptionPlaceholderI18n } from "@tracktor/utils";
 // components
 import { RichTextEditor } from "@/components/editor/rich-text";
 // hooks
@@ -274,7 +274,7 @@ export const DescriptionInput = observer(function DescriptionInput(props: Props)
               return asset_id;
             } catch (error) {
               console.log("Error in uploading asset:", error);
-              throw new Error("Asset upload failed. Please try again later.");
+              throw new Error("Asset upload failed. Please try again later.", { cause: error });
             }
           }}
           duplicateFile={async (assetId: string) => {

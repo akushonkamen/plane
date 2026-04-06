@@ -5,7 +5,7 @@
  */
 
 // types
-import type { TIssuesListTypes } from "@plane/types";
+import type { TIssuesListTypes } from "@tracktor/types";
 
 export enum EDurationFilters {
   NONE = "none",

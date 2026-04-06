@@ -7,8 +7,8 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // plane imports
-import { Header, Row } from "@plane/ui";
-import { cn } from "@plane/utils";
+import { Header, Row } from "@tracktor/ui";
+import { cn } from "@tracktor/utils";
 // components
 import { AppHeader } from "@/components/core/app-header";
 import { TabNavigationRoot } from "@/components/navigation";

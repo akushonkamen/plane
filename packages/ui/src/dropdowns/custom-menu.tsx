@@ -9,8 +9,8 @@ import { MoreHorizontal } from "lucide-react";
 import * as React from "react";
 import ReactDOM from "react-dom";
 import { usePopper } from "react-popper";
-import { useOutsideClickDetector } from "@plane/hooks";
-import { ChevronDownIcon, ChevronRightIcon } from "@plane/propel/icons";
+import { useOutsideClickDetector } from "@tracktor/hooks";
+import { ChevronDownIcon, ChevronRightIcon } from "@tracktor/propel/icons";
 // plane helpers
 // helpers
 import { useDropdownKeyDown } from "../hooks/use-dropdown-key-down";

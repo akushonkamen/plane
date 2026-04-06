@@ -6,11 +6,11 @@
 
 import { observer } from "mobx-react";
 // plane imports
-import { PlaneLockup, ChevronLeftIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TOnboardingStep } from "@plane/types";
-import { EOnboardingSteps } from "@plane/types";
-import { cn } from "@plane/utils";
+import { PlaneLockup, ChevronLeftIcon } from "@tracktor/propel/icons";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import type { TOnboardingStep } from "@tracktor/types";
+import { EOnboardingSteps } from "@tracktor/types";
+import { cn } from "@tracktor/utils";
 // hooks
 import { useUser } from "@/hooks/store/user";
 // local imports

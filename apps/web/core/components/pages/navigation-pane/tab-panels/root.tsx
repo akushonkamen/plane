@@ -15,7 +15,7 @@ import type { TPageInstance } from "@/store/pages/base-page";
 import { PageNavigationPaneAssetsTabPanel } from "./assets";
 import { PageNavigationPaneInfoTabPanel } from "./info/root";
 import { PageNavigationPaneOutlineTabPanel } from "./outline";
-import { Tabs } from "@plane/propel/tabs";
+import { Tabs } from "@tracktor/propel/tabs";
 
 type Props = {
   page: TPageInstance;

@@ -7,8 +7,8 @@
 import React from "react";
 import { useTheme } from "next-themes";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import type { ISearchIssueResponse } from "@plane/types";
+import { useTranslation } from "@tracktor/i18n";
+import type { ISearchIssueResponse } from "@tracktor/types";
 // assets
 import darkIssuesAsset from "@/app/assets/empty-state/search/issues-dark.webp?url";
 import lightIssuesAsset from "@/app/assets/empty-state/search/issues-light.webp?url";

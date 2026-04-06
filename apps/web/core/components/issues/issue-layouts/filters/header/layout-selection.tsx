@@ -5,11 +5,11 @@
  */
 
 // plane imports
-import { ISSUE_LAYOUTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { EIssueLayoutTypes } from "@plane/types";
-import { cn } from "@plane/utils";
+import { ISSUE_LAYOUTS } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import type { EIssueLayoutTypes } from "@tracktor/types";
+import { cn } from "@tracktor/utils";
 // components
 import { IssueLayoutIcon } from "@/components/issues/issue-layouts/layout-icon";
 // hooks

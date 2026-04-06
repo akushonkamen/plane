@@ -6,8 +6,8 @@
 
 import { useState, useRef, useEffect } from "react";
 import { observer } from "mobx-react";
-import { SearchIcon, CloseIcon } from "@plane/propel/icons";
-import type { TPageFilterProps, TPageFilters } from "@plane/types";
+import { SearchIcon, CloseIcon } from "@tracktor/propel/icons";
+import type { TPageFilterProps, TPageFilters } from "@tracktor/types";
 // components
 import { FilterCreatedDate } from "@/components/common/filters/created-at";
 import { FilterCreatedBy } from "@/components/common/filters/created-by";

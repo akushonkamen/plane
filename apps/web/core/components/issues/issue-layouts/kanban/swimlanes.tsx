@@ -18,8 +18,8 @@ import type {
   TIssueKanbanFilters,
   TIssueGroupByOptions,
   TIssueOrderByOptions,
-} from "@plane/types";
-import { Row } from "@plane/ui";
+} from "@tracktor/types";
+import { Row } from "@tracktor/ui";
 // hooks
 import { useIssueStoreType } from "@/hooks/use-issue-layout-store";
 // plane web imports

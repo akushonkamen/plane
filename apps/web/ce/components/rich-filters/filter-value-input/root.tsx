@@ -7,7 +7,7 @@
 import React from "react";
 import { observer } from "mobx-react";
 // plane imports
-import type { TFilterValue, TFilterProperty } from "@plane/types";
+import type { TFilterValue, TFilterProperty } from "@tracktor/types";
 // local imports
 import type { TFilterValueInputProps } from "@/components/rich-filters/shared";
 

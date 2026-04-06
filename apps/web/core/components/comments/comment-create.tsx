@@ -8,10 +8,10 @@ import { useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { useForm, Controller } from "react-hook-form";
 // plane imports
-import { EIssueCommentAccessSpecifier } from "@plane/constants";
-import type { EditorRefApi } from "@plane/editor";
-import type { TIssueComment, TCommentsOperations } from "@plane/types";
-import { cn, isCommentEmpty } from "@plane/utils";
+import { EIssueCommentAccessSpecifier } from "@tracktor/constants";
+import type { EditorRefApi } from "@tracktor/editor";
+import type { TIssueComment, TCommentsOperations } from "@tracktor/types";
+import { cn, isCommentEmpty } from "@tracktor/utils";
 // components
 import { LiteTextEditor } from "@/components/editor/lite-text";
 // hooks

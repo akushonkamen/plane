@@ -8,7 +8,7 @@ import React from "react";
 import { observer } from "mobx-react";
 import { Layers } from "lucide-react";
 // plane imports
-import type { IProjectView } from "@plane/types";
+import type { IProjectView } from "@tracktor/types";
 // local imports
 import { PowerKMenuBuilder } from "./builder";
 

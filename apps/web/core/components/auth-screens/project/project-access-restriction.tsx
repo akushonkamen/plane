@@ -6,8 +6,8 @@
 
 import { observer } from "mobx-react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { EmptyStateDetailed } from "@plane/propel/empty-state";
+import { useTranslation } from "@tracktor/i18n";
+import { EmptyStateDetailed } from "@tracktor/propel/empty-state";
 
 type TProps = {
   isWorkspaceAdmin: boolean;

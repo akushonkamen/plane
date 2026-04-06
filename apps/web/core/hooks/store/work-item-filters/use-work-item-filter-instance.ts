@@ -5,8 +5,8 @@
  */
 
 // plane imports
-import type { IWorkItemFilterInstance } from "@plane/shared-state";
-import type { EIssuesStoreType } from "@plane/types";
+import type { IWorkItemFilterInstance } from "@tracktor/shared-state";
+import type { EIssuesStoreType } from "@tracktor/types";
 // local imports
 import { useWorkItemFilters } from "./use-work-item-filters";
 

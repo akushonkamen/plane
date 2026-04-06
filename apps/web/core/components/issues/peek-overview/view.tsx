@@ -8,10 +8,10 @@ import { useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { createPortal } from "react-dom";
 // plane imports
-import type { EditorRefApi } from "@plane/editor";
-import type { TNameDescriptionLoader } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
-import { cn } from "@plane/utils";
+import type { EditorRefApi } from "@tracktor/editor";
+import type { TNameDescriptionLoader } from "@tracktor/types";
+import { EIssueServiceType } from "@tracktor/types";
+import { cn } from "@tracktor/utils";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import useKeypress from "@/hooks/use-keypress";

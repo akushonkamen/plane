@@ -5,11 +5,11 @@
  */
 
 import { observer } from "mobx-react";
-import { CloseIcon } from "@plane/propel/icons";
+import { CloseIcon } from "@tracktor/propel/icons";
 // plane ui
-import { Avatar } from "@plane/ui";
+import { Avatar } from "@tracktor/ui";
 // helpers
-import { getFileURL } from "@plane/utils";
+import { getFileURL } from "@tracktor/utils";
 // types
 import { useMember } from "@/hooks/store/use-member";
 

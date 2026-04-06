@@ -5,8 +5,8 @@
  */
 
 import type { Hocuspocus } from "@hocuspocus/server";
-import type { BroadcastedEvent } from "@plane/editor";
-import { logger } from "@plane/logger";
+import type { BroadcastedEvent } from "@tracktor/editor";
+import { logger } from "@tracktor/logger";
 import { Redis } from "@/extensions/redis";
 import { AppError } from "@/lib/errors";
 

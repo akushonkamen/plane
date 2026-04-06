@@ -5,7 +5,7 @@
  */
 
 // types
-import type { TDeDupeIssue } from "@plane/types";
+import type { TDeDupeIssue } from "@tracktor/types";
 
 type TDuplicateModalRootProps = {
   workspaceSlug: string;

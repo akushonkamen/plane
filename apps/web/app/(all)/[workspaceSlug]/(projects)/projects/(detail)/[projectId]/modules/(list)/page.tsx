@@ -8,11 +8,11 @@ import { useCallback } from "react";
 import { observer } from "mobx-react";
 import { useTheme } from "next-themes";
 // plane imports
-import { EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { TModuleFilters } from "@plane/types";
-import { EUserProjectRoles } from "@plane/types";
-import { calculateTotalFilters } from "@plane/utils";
+import { EUserPermissionsLevel } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import type { TModuleFilters } from "@tracktor/types";
+import { EUserProjectRoles } from "@tracktor/types";
+import { calculateTotalFilters } from "@tracktor/utils";
 // assets
 import darkModulesAsset from "@/app/assets/empty-state/disabled-feature/modules-dark.webp?url";
 import lightModulesAsset from "@/app/assets/empty-state/disabled-feature/modules-light.webp?url";

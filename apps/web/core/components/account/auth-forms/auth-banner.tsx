@@ -6,8 +6,8 @@
 
 import { Info } from "lucide-react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
+import { useTranslation } from "@tracktor/i18n";
+import { CloseIcon } from "@tracktor/propel/icons";
 // helpers
 import type React from "react";
 

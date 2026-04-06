@@ -6,8 +6,8 @@
 
 import { observer } from "mobx-react";
 // plane imports
-import { ArchiveIcon } from "@plane/propel/icons";
-import { renderFormattedDate } from "@plane/utils";
+import { ArchiveIcon } from "@tracktor/propel/icons";
+import { renderFormattedDate } from "@tracktor/utils";
 // store
 import type { TPageInstance } from "@/store/pages/base-page";
 

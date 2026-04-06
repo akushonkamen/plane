@@ -4,10 +4,10 @@
  * See the LICENSE file for details.
  */
 
-import { setToast, TOAST_TYPE } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TIdentifierTextProps, TIdentifierTextVariant, TIssueIdentifierSize } from "@plane/types";
-import { cn } from "@plane/utils";
+import { setToast, TOAST_TYPE } from "@tracktor/propel/toast";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import type { TIdentifierTextProps, TIdentifierTextVariant, TIssueIdentifierSize } from "@tracktor/types";
+import { cn } from "@tracktor/utils";
 
 const SIZE_MAP: Record<TIssueIdentifierSize, string> = {
   xs: "text-caption-sm-regular",

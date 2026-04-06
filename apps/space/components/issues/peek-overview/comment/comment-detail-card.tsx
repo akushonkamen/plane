@@ -10,10 +10,10 @@ import { Controller, useForm } from "react-hook-form";
 import { MessageSquare, MoreVertical } from "lucide-react";
 import { Menu, Transition } from "@headlessui/react";
 // plane imports
-import type { EditorRefApi } from "@plane/editor";
-import { CheckIcon, CloseIcon } from "@plane/propel/icons";
-import type { TIssuePublicComment } from "@plane/types";
-import { getFileURL } from "@plane/utils";
+import type { EditorRefApi } from "@tracktor/editor";
+import { CheckIcon, CloseIcon } from "@tracktor/propel/icons";
+import type { TIssuePublicComment } from "@tracktor/types";
+import { getFileURL } from "@tracktor/utils";
 // components
 import { LiteTextEditor } from "@/components/editor/lite-text-editor";
 import { CommentReactions } from "@/components/issues/peek-overview/comment/comment-reactions";

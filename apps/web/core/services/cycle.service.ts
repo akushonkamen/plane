@@ -5,7 +5,7 @@
  */
 
 // services
-import { API_BASE_URL } from "@plane/constants";
+import { API_BASE_URL } from "@tracktor/constants";
 import type {
   CycleDateCheckData,
   ICycle,
@@ -14,7 +14,7 @@ import type {
   TCycleDistribution,
   TProgressSnapshot,
   TCycleEstimateDistribution,
-} from "@plane/types";
+} from "@tracktor/types";
 import { APIService } from "@/services/api.service";
 
 export class CycleService extends APIService {

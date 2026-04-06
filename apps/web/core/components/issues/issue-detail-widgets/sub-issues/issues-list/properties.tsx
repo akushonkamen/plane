@@ -8,10 +8,10 @@
 import type { SyntheticEvent } from "react";
 import { useMemo } from "react";
 import { observer } from "mobx-react";
-import { useTranslation } from "@plane/i18n";
-import { StartDatePropertyIcon, DueDatePropertyIcon } from "@plane/propel/icons";
-import type { IIssueDisplayProperties, TIssue } from "@plane/types";
-import { getDate, renderFormattedPayloadDate, shouldHighlightIssueDueDate } from "@plane/utils";
+import { useTranslation } from "@tracktor/i18n";
+import { StartDatePropertyIcon, DueDatePropertyIcon } from "@tracktor/propel/icons";
+import type { IIssueDisplayProperties, TIssue } from "@tracktor/types";
+import { getDate, renderFormattedPayloadDate, shouldHighlightIssueDueDate } from "@tracktor/utils";
 // components
 import { DateDropdown } from "@/components/dropdowns/date";
 import { DateRangeDropdown } from "@/components/dropdowns/date-range";
@@ -39,15 +39,22 @@ type Props = {
   issue: TIssue;
 };
 
+const handleEventPropagation = (e: SyntheticEvent) => {
+  e.stopPropagation();
+  e.preventDefault();
+};
+
+const handleKeyDown = (e: React.KeyboardEvent) => {
+  if (e.key === "Enter" || e.key === " ") {
+    e.preventDefault();
+    e.stopPropagation();
+  }
+};
+
 export const SubIssuesListItemProperties = observer(function SubIssuesListItemProperties(props: Props) {
   const { workspaceSlug, parentIssueId, issueId, canEdit, updateSubIssue, displayProperties, issue } = props;
   const { t } = useTranslation();
   const { getStateById } = useProjectState();
-
-  const handleEventPropagation = (e: SyntheticEvent<HTMLDivElement>) => {
-    e.stopPropagation();
-    e.preventDefault();
-  };
 
   const handleStartDate = (date: Date | null) => {
     if (issue.project_id) {
@@ -133,7 +140,13 @@ export const SubIssuesListItemProperties = observer(function SubIssuesListItemPr
         displayPropertyKey={["start_date", "due_date"]}
         shouldRenderProperty={() => isDateRangeEnabled}
       >
-        <div className="h-5" onFocus={handleEventPropagation} onClick={handleEventPropagation}>
+        <button
+          type="button"
+          className="h-5 border-0 bg-transparent p-0"
+          onFocus={handleEventPropagation}
+          onClick={handleEventPropagation}
+          onKeyDown={handleKeyDown}
+        >
           <DateRangeDropdown
             value={{
               from: getDate(issue.start_date) || undefined,
@@ -157,7 +170,7 @@ export const SubIssuesListItemProperties = observer(function SubIssuesListItemPr
             renderPlaceholder={false}
             renderInPortal
           />
-        </div>
+        </button>
       </WithDisplayPropertiesHOC>
 
       {/* start date */}

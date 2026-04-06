@@ -8,14 +8,14 @@ import { unset, set } from "lodash-es";
 import { action, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
 // plane imports
-import type { TUserPermissions, TUserPermissionsLevel } from "@plane/constants";
+import type { TUserPermissions, TUserPermissionsLevel } from "@tracktor/constants";
 import {
   EUserPermissions,
   EUserPermissionsLevel,
   WORKSPACE_SIDEBAR_DYNAMIC_NAVIGATION_ITEMS_LINKS,
-} from "@plane/constants";
-import type { EUserProjectRoles, IUserProjectsRole, IWorkspaceMemberMe, TProjectMembership } from "@plane/types";
-import { EUserWorkspaceRoles } from "@plane/types";
+} from "@tracktor/constants";
+import type { EUserProjectRoles, IUserProjectsRole, IWorkspaceMemberMe, TProjectMembership } from "@tracktor/types";
+import { EUserWorkspaceRoles } from "@tracktor/types";
 // plane web imports
 import { WorkspaceService } from "@/services/workspace.service";
 import type { RootStore } from "@/plane-web/store/root.store";

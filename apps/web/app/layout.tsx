@@ -9,10 +9,10 @@ import Script from "next/script";
 // styles
 import "@/styles/globals.css";
 
-import { SITE_DESCRIPTION, SITE_NAME } from "@plane/constants";
+import { SITE_DESCRIPTION, SITE_NAME } from "@tracktor/constants";
 
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@tracktor/utils";
 
 // assets
 import favicon16 from "@/app/assets/favicon/favicon-16x16.png?url";

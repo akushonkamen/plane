@@ -8,9 +8,9 @@ import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { useSearchParams } from "next/navigation";
 // plane imports
-import { SitesAuthService } from "@plane/services";
-import type { IEmailCheckData } from "@plane/types";
-import { OAuthOptions } from "@plane/ui";
+import { SitesAuthService } from "@tracktor/services";
+import type { IEmailCheckData } from "@tracktor/types";
+import { OAuthOptions } from "@tracktor/ui";
 // helpers
 import type { TAuthErrorInfo } from "@/helpers/authentication.helper";
 import { EErrorAlertType, authErrorHandler, EAuthenticationErrorCodes } from "@/helpers/authentication.helper";

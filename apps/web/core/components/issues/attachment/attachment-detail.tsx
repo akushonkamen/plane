@@ -8,9 +8,9 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
 import { AlertCircle } from "lucide-react";
-import { CloseIcon } from "@plane/propel/icons";
+import { CloseIcon } from "@tracktor/propel/icons";
 // ui
-import { Tooltip } from "@plane/propel/tooltip";
+import { Tooltip } from "@tracktor/propel/tooltip";
 import {
   convertBytesToSize,
   getFileExtension,
@@ -18,7 +18,7 @@ import {
   getFileURL,
   renderFormattedDate,
   truncateText,
-} from "@plane/utils";
+} from "@tracktor/utils";
 // icons
 //
 import { getFileIcon } from "@/components/icons";

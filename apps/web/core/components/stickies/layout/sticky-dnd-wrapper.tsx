@@ -19,7 +19,7 @@ import { observer } from "mobx-react";
 import { usePathname } from "next/navigation";
 import { createRoot } from "react-dom/client";
 // plane types
-import type { InstructionType } from "@plane/types";
+import type { InstructionType } from "@tracktor/types";
 // components
 import { StickyNote } from "../sticky";
 // helpers

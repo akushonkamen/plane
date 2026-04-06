@@ -7,9 +7,9 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 
-import { SearchIcon, CloseIcon } from "@plane/propel/icons";
-import type { TViewFilterProps, TViewFilters } from "@plane/types";
-import { EViewAccess } from "@plane/types";
+import { SearchIcon, CloseIcon } from "@tracktor/propel/icons";
+import type { TViewFilterProps, TViewFilters } from "@tracktor/types";
+import { EViewAccess } from "@tracktor/types";
 // components
 import { FilterCreatedDate } from "@/components/common/filters/created-at";
 import { FilterCreatedBy } from "@/components/common/filters/created-by";

@@ -5,8 +5,8 @@
  */
 
 // plane types
-import { API_BASE_URL } from "@plane/constants";
-import type { TPageVersion } from "@plane/types";
+import { API_BASE_URL } from "@tracktor/constants";
+import type { TPageVersion } from "@tracktor/types";
 // helpers
 // services
 import { APIService } from "@/services/api.service";

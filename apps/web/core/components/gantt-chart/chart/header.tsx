@@ -6,12 +6,12 @@
 
 import { observer } from "mobx-react";
 import { Expand, Shrink } from "lucide-react";
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@tracktor/i18n";
 // plane
-import type { TGanttViews } from "@plane/types";
-import { Row } from "@plane/ui";
+import type { TGanttViews } from "@tracktor/types";
+import { Row } from "@tracktor/ui";
 // components
-import { cn } from "@plane/utils";
+import { cn } from "@tracktor/utils";
 import { VIEWS_LIST } from "@/components/gantt-chart/data";
 // helpers
 // hooks

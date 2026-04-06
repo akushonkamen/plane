@@ -10,15 +10,15 @@ import { combine } from "@atlaskit/pragmatic-drag-and-drop/combine";
 import { draggable } from "@atlaskit/pragmatic-drag-and-drop/element/adapter";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-import { ChevronRightIcon } from "@plane/propel/icons";
+import { ChevronRightIcon } from "@tracktor/propel/icons";
 // types
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TIssue, IIssueDisplayProperties, TIssueMap } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import type { TIssue, IIssueDisplayProperties, TIssueMap } from "@tracktor/types";
+import { EIssueServiceType } from "@tracktor/types";
 // ui
-import { Spinner, ControlLink, Row } from "@plane/ui";
-import { cn, generateWorkItemLink } from "@plane/utils";
+import { Spinner, ControlLink, Row } from "@tracktor/ui";
+import { cn, generateWorkItemLink } from "@tracktor/utils";
 // components
 import { MultipleSelectEntityAction } from "@/components/core/multiple-select";
 import { IssueProperties } from "@/components/issues/issue-layouts/properties";

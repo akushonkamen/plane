@@ -5,8 +5,8 @@
  */
 
 // plane imports
-import type { TSupportedFilterFieldConfigs, IFilterOption, TFilterValue } from "@plane/types";
-import { cn } from "@plane/utils";
+import type { TSupportedFilterFieldConfigs, IFilterOption, TFilterValue } from "@tracktor/types";
+import { cn } from "@tracktor/utils";
 // local imports
 import { COMMON_FILTER_ITEM_BORDER_CLASSNAME } from "../../shared";
 

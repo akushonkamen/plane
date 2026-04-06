@@ -8,11 +8,11 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
-import type { IInsightField } from "@plane/constants";
-import { ANALYTICS_INSIGHTS_FIELDS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { IAnalyticsResponse, TAnalyticsTabsBase } from "@plane/types";
-import { cn } from "@plane/utils";
+import type { IInsightField } from "@tracktor/constants";
+import { ANALYTICS_INSIGHTS_FIELDS } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import type { IAnalyticsResponse, TAnalyticsTabsBase } from "@tracktor/types";
+import { cn } from "@tracktor/utils";
 // hooks
 import { useAnalytics } from "@/hooks/store/use-analytics";
 // services

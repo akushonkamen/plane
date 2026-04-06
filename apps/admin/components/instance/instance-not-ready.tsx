@@ -5,7 +5,7 @@
  */
 
 import Link from "next/link";
-import { Button } from "@plane/propel/button";
+import { Button } from "@tracktor/propel/button";
 // assets
 import PlaneTakeOffImage from "@/app/assets/images/plane-takeoff.png?url";
 

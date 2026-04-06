@@ -1,5 +1,5 @@
 {
-  "name": "@plane/constants",
+  "name": "@tracktor/constants",
   "version": "1.3.0",
   "private": true,
   "license": "AGPL-3.0",
@@ -22,10 +22,10 @@
     "clean": "rm -rf .turbo && rm -rf .next && rm -rf node_modules && rm -rf dist"
   },
   "dependencies": {
-    "@plane/types": "workspace:*"
+    "@tracktor/types": "workspace:*"
   },
   "devDependencies": {
-    "@plane/typescript-config": "workspace:*",
+    "@tracktor/typescript-config": "workspace:*",
     "@types/node": "catalog:",
     "@types/react": "catalog:",
     "tsdown": "catalog:",

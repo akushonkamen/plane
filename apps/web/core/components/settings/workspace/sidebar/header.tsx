@@ -7,9 +7,9 @@
 import { ArrowLeft } from "lucide-react";
 import { observer } from "mobx-react";
 // plane imports
-import { ROLE_DETAILS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { IconButton } from "@plane/propel/icon-button";
+import { ROLE_DETAILS } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { IconButton } from "@tracktor/propel/icon-button";
 // components
 import { WorkspaceLogo } from "@/components/workspace/logo";
 // hooks

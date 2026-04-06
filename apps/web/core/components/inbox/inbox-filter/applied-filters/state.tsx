@@ -5,9 +5,9 @@
  */
 
 import { observer } from "mobx-react";
-import { EIconSize } from "@plane/constants";
-import { StateGroupIcon, CloseIcon } from "@plane/propel/icons";
-import { Tag } from "@plane/ui";
+import { EIconSize } from "@tracktor/constants";
+import { StateGroupIcon, CloseIcon } from "@tracktor/propel/icons";
+import { Tag } from "@tracktor/ui";
 // hooks
 import { useProjectInbox } from "@/hooks/store/use-project-inbox";
 import { useProjectState } from "@/hooks/store/use-project-state";

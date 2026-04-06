@@ -31,9 +31,9 @@ import {
   Underline,
 } from "lucide-react";
 // plane imports
-import type { TCommandExtraProps, TEditorCommands, TEditorFontStyle } from "@plane/editor";
-import { MonospaceIcon, SansSerifIcon, SerifIcon } from "@plane/propel/icons";
-import { convertRemToPixel } from "@plane/utils";
+import type { TCommandExtraProps, TEditorCommands, TEditorFontStyle } from "@tracktor/editor";
+import { MonospaceIcon, SansSerifIcon, SerifIcon } from "@tracktor/propel/icons";
+import { convertRemToPixel } from "@tracktor/utils";
 
 type TEditorTypes = "lite" | "document" | "sticky";
 

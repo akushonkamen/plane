@@ -11,11 +11,11 @@ import { useParams } from "next/navigation";
 import type { UseFormRegister } from "react-hook-form";
 import { useForm } from "react-hook-form";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { PlusIcon } from "@plane/propel/icons";
-import { setPromiseToast } from "@plane/propel/toast";
-import type { IProject, TIssue, EIssueLayoutTypes } from "@plane/types";
-import { cn, createIssuePayload } from "@plane/utils";
+import { useTranslation } from "@tracktor/i18n";
+import { PlusIcon } from "@tracktor/propel/icons";
+import { setPromiseToast } from "@tracktor/propel/toast";
+import type { IProject, TIssue, EIssueLayoutTypes } from "@tracktor/types";
+import { cn, createIssuePayload } from "@tracktor/utils";
 // plane web imports
 import { QuickAddIssueFormRoot } from "@/plane-web/components/issues/quick-add";
 // local imports
@@ -103,7 +103,7 @@ export const QuickAddIssueRoot = observer(function QuickAddIssueRoot(props: TQui
     reset({ ...defaultValues });
 
     const payload = createIssuePayload(projectId.toString(), {
-      ...(prePopulatedData ?? {}),
+      ...prePopulatedData,
       ...formData,
     });
 

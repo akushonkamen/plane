@@ -6,8 +6,8 @@
 
 import { observer } from "mobx-react";
 // plane types
-import type { ICycle, TIssue } from "@plane/types";
-import { Spinner } from "@plane/ui";
+import type { ICycle, TIssue } from "@tracktor/types";
+import { Spinner } from "@tracktor/ui";
 // components
 import { PowerKCyclesMenu } from "@/components/power-k/menus/cycles";
 // hooks

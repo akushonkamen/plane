@@ -7,8 +7,8 @@
 import type { Dispatch, ReactElement, SetStateAction } from "react";
 import React, { useCallback, useEffect, useState, useRef } from "react";
 // helpers
-import { usePlatformOS } from "@plane/hooks";
-import { cn } from "@plane/utils";
+import { usePlatformOS } from "@tracktor/hooks";
+import { cn } from "@tracktor/utils";
 
 interface ResizableSidebarProps {
   showPeek?: boolean;

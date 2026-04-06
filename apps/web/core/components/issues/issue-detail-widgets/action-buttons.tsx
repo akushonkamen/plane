@@ -6,10 +6,10 @@
 
 import React from "react";
 import { Paperclip } from "lucide-react";
-import { useTranslation } from "@plane/i18n";
-import { LinkIcon, ViewsIcon, RelationPropertyIcon } from "@plane/propel/icons";
+import { useTranslation } from "@tracktor/i18n";
+import { LinkIcon, ViewsIcon, RelationPropertyIcon } from "@tracktor/propel/icons";
 // plane imports
-import type { TIssueServiceType, TWorkItemWidgets } from "@plane/types";
+import type { TIssueServiceType, TWorkItemWidgets } from "@tracktor/types";
 // plane web imports
 import { WorkItemAdditionalWidgetActionButtons } from "@/plane-web/components/issues/issue-detail-widgets/action-buttons";
 // local imports

@@ -4,15 +4,15 @@
  * See the LICENSE file for details.
  */
 
-import { useMemo } from "react";
+import { useMemo, useCallback } from "react";
 import { XCircle, ArchiveRestoreIcon } from "lucide-react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { LinkIcon, CopyIcon, NewTabIcon, EditIcon, ArchiveIcon, TrashIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { EIssuesStoreType, TIssue } from "@plane/types";
-import type { TContextMenuItem } from "@plane/ui";
-import { copyUrlToClipboard, generateWorkItemLink } from "@plane/utils";
+import { useTranslation } from "@tracktor/i18n";
+import { LinkIcon, CopyIcon, NewTabIcon, EditIcon, ArchiveIcon, TrashIcon } from "@tracktor/propel/icons";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import type { EIssuesStoreType, TIssue } from "@tracktor/types";
+import type { TContextMenuItem } from "@tracktor/ui";
+import { copyUrlToClipboard, generateWorkItemLink } from "@tracktor/utils";
 // types
 import { createCopyMenuWithDuplication } from "@/plane-web/components/issues/issue-layouts/quick-action-dropdowns";
 
@@ -112,21 +112,20 @@ export const useIssueActionHandlers = (props: MenuItemFactoryProps) => {
       handleOptionalAction(handleRestore, "Restore");
       return;
     }
-    await handleRestore()
-      .then(() => {
-        setToast({
-          type: TOAST_TYPE.SUCCESS,
-          title: "Restore success",
-          message: "Your work item can be found in project work items.",
-        });
-      })
-      .catch(() => {
-        setToast({
-          type: TOAST_TYPE.ERROR,
-          title: "Error!",
-          message: "Work item could not be restored. Please try again.",
-        });
+    try {
+      await handleRestore();
+      setToast({
+        type: TOAST_TYPE.SUCCESS,
+        title: "Restore success",
+        message: "Your work item can be found in project work items.",
       });
+    } catch {
+      setToast({
+        type: TOAST_TYPE.ERROR,
+        title: "Error!",
+        message: "Work item could not be restored. Please try again.",
+      });
+    }
   };
 
   return {
@@ -293,7 +292,7 @@ export const useWorkItemDetailMenuItems = (props: MenuItemFactoryProps): TContex
       factory.createRestoreMenuItem(),
       factory.createDeleteMenuItem(),
     ],
-    [factory]
+    [factory, props.workspaceSlug]
   );
 };
 
@@ -316,13 +315,13 @@ export const useAllIssueMenuItems = (props: MenuItemFactoryProps): TContextMenuI
 export const useCycleIssueMenuItems = (props: MenuItemFactoryProps): TContextMenuItem[] => {
   const factory = useMenuItemFactory(props);
 
-  const customEditAction = () => {
+  const customEditAction = useCallback(() => {
     props.setIssueToEdit({
       ...props.issue,
       cycle_id: props.cycleId ?? null,
     });
     props.setCreateUpdateIssueModal(true);
-  };
+  }, [props]);
 
   return useMemo(
     () => [
@@ -334,20 +333,20 @@ export const useCycleIssueMenuItems = (props: MenuItemFactoryProps): TContextMen
       factory.createArchiveMenuItem(),
       factory.createDeleteMenuItem(),
     ],
-    [factory, props.cycleId]
+    [factory, customEditAction]
   );
 };
 
 export const useModuleIssueMenuItems = (props: MenuItemFactoryProps): TContextMenuItem[] => {
   const factory = useMenuItemFactory(props);
 
-  const customEditAction = () => {
+  const customEditAction = useCallback(() => {
     props.setIssueToEdit({
       ...props.issue,
       module_ids: props.moduleId ? [props.moduleId] : [],
     });
     props.setCreateUpdateIssueModal(true);
-  };
+  }, [props]);
 
   return useMemo(
     () => [
@@ -359,7 +358,7 @@ export const useModuleIssueMenuItems = (props: MenuItemFactoryProps): TContextMe
       factory.createArchiveMenuItem(),
       factory.createDeleteMenuItem(),
     ],
-    [factory, props.moduleId]
+    [factory, customEditAction]
   );
 };
 

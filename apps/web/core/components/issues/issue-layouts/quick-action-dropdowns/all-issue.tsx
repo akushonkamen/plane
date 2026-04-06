@@ -9,11 +9,11 @@ import { omit } from "lodash-es";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // plane imports
-import { ARCHIVABLE_STATE_GROUPS } from "@plane/constants";
-import type { TIssue } from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
-import { ContextMenu, CustomMenu } from "@plane/ui";
-import { cn } from "@plane/utils";
+import { ARCHIVABLE_STATE_GROUPS } from "@tracktor/constants";
+import type { TIssue } from "@tracktor/types";
+import { EIssuesStoreType } from "@tracktor/types";
+import { ContextMenu, CustomMenu } from "@tracktor/ui";
+import { cn } from "@tracktor/utils";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
 import { useProjectState } from "@/hooks/store/use-project-state";

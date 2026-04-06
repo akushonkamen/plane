@@ -10,10 +10,10 @@ import { Controller, useForm } from "react-hook-form";
 import { usePopper } from "react-popper";
 import { Loader } from "lucide-react";
 import { Popover } from "@headlessui/react";
-import { PlusIcon, CloseIcon } from "@plane/propel/icons";
-import type { IIssueLabel } from "@plane/types";
+import { PlusIcon, CloseIcon } from "@tracktor/propel/icons";
+import type { IIssueLabel } from "@tracktor/types";
 // hooks
-import { Input } from "@plane/ui";
+import { Input } from "@tracktor/ui";
 // ui
 // types
 import type { TLabelOperations } from "./root";

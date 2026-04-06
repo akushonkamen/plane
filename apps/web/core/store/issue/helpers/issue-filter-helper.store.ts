@@ -6,12 +6,12 @@
 
 import { isEmpty } from "lodash-es";
 // plane constants
-import type { EIssueFilterType } from "@plane/constants";
+import type { EIssueFilterType } from "@tracktor/constants";
 import {
   EIssueGroupByToServerOptions,
   EServerGroupByToFilterOptions,
   ENABLE_ISSUE_DEPENDENCIES,
-} from "@plane/constants";
+} from "@tracktor/constants";
 import type {
   EIssuesStoreType,
   IIssueDisplayFilterOptions,
@@ -24,10 +24,10 @@ import type {
   TIssueParams,
   TStaticViewTypes,
   TWorkItemFilterExpression,
-} from "@plane/types";
-import { EIssueLayoutTypes } from "@plane/types";
+} from "@tracktor/types";
+import { EIssueLayoutTypes } from "@tracktor/types";
 // helpers
-import { getComputedDisplayFilters, getComputedDisplayProperties } from "@plane/utils";
+import { getComputedDisplayFilters, getComputedDisplayProperties } from "@tracktor/utils";
 // lib
 import { storage } from "@/lib/local-storage";
 import { getEnabledDisplayFilters } from "@/plane-web/store/issue/helpers/filter-utils";
@@ -68,8 +68,6 @@ export interface IIssueFilterHelperStore {
 }
 
 export class IssueFilterHelperStore implements IIssueFilterHelperStore {
-  constructor() {}
-
   /**
    * @description This method is used to apply the display filters on the issues
    * @param {IIssueFilters} filters

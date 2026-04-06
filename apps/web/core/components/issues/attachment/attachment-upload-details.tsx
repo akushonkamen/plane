@@ -5,9 +5,9 @@
  */
 
 import { observer } from "mobx-react";
-import { Tooltip } from "@plane/propel/tooltip";
-import { CircularProgressIndicator } from "@plane/ui";
-import { getFileExtension, truncateText } from "@plane/utils";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import { CircularProgressIndicator } from "@tracktor/ui";
+import { getFileExtension, truncateText } from "@tracktor/utils";
 // ui
 // icons
 import { getFileIcon } from "@/components/icons";

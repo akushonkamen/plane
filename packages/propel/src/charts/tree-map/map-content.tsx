@@ -6,7 +6,7 @@
 
 import React, { useMemo } from "react";
 // plane imports
-import type { TBottomSectionConfig, TContentVisibility, TTopSectionConfig } from "@plane/types";
+import type { TBottomSectionConfig, TContentVisibility, TTopSectionConfig } from "@tracktor/types";
 import { cn } from "../../utils/classname";
 
 const LAYOUT = {

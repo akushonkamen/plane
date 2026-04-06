@@ -7,8 +7,8 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 // plane imports
-import type { IState, TStateGroups, TStateOperationsCallbacks } from "@plane/types";
-import { cn } from "@plane/utils";
+import type { IState, TStateGroups, TStateOperationsCallbacks } from "@tracktor/types";
+import { cn } from "@tracktor/utils";
 // components
 import { GroupItem } from "@/components/project-states";
 

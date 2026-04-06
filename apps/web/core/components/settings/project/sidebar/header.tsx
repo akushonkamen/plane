@@ -7,10 +7,10 @@
 import { ArrowLeft } from "lucide-react";
 import { observer } from "mobx-react";
 // plane imports
-import { ROLE_DETAILS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { IconButton } from "@plane/propel/icon-button";
+import { ROLE_DETAILS } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { Logo } from "@tracktor/propel/emoji-icon-picker";
+import { IconButton } from "@tracktor/propel/icon-button";
 // hooks
 import { useUserPermissions } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";

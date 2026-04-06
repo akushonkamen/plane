@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-import type { IProjectView } from "@plane/types";
+import type { IProjectView } from "@tracktor/types";
 
 type Props = {
   isOpen: boolean;

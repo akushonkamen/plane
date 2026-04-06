@@ -7,10 +7,10 @@
 import React from "react";
 import { observer } from "mobx-react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
-import { PlusIcon, WorkItemsIcon } from "@plane/propel/icons";
-import type { TIssue, TIssueServiceType } from "@plane/types";
-import { CustomMenu } from "@plane/ui";
+import { useTranslation } from "@tracktor/i18n";
+import { PlusIcon, WorkItemsIcon } from "@tracktor/propel/icons";
+import type { TIssue, TIssueServiceType } from "@tracktor/types";
+import { CustomMenu } from "@tracktor/ui";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 
@@ -43,14 +43,14 @@ export const SubIssuesActionButton = observer(function SubIssuesActionButton(pro
   const handleIssueCrudState = (
     key: "create" | "existing",
     _parentIssueId: string | null,
-    issue: TIssue | null = null
+    issueData: TIssue | null = null
   ) => {
     setIssueCrudOperationState({
       ...issueCrudOperationState,
       [key]: {
         toggle: !issueCrudOperationState[key].toggle,
         parentIssueId: _parentIssueId,
-        issue: issue,
+        issue: issueData,
       },
     });
   };
@@ -84,9 +84,9 @@ export const SubIssuesActionButton = observer(function SubIssuesActionButton(pro
 
   return (
     <CustomMenu customButton={customButtonElement} placement="bottom-start" disabled={disabled} closeOnSelect>
-      {optionItems.map((item, index) => (
+      {optionItems.map((item) => (
         <CustomMenu.MenuItem
-          key={index}
+          key={item.i18n_label}
           onClick={() => {
             item.onClick();
           }}

@@ -8,11 +8,11 @@ import { useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { GripVertical } from "lucide-react";
 // plane imports
-import { EEstimateSystem, estimateCount } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { EditIcon, TrashIcon } from "@plane/propel/icons";
-import type { TEstimatePointsObject, TEstimateSystemKeys, TEstimateTypeErrorObject } from "@plane/types";
-import { convertMinutesToHoursMinutesString } from "@plane/utils";
+import { EEstimateSystem, estimateCount } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { EditIcon, TrashIcon } from "@tracktor/propel/icons";
+import type { TEstimatePointsObject, TEstimateSystemKeys, TEstimateTypeErrorObject } from "@tracktor/types";
+import { convertMinutesToHoursMinutesString } from "@tracktor/utils";
 // plane web imports
 import { EstimatePointDelete } from "@/plane-web/components/estimates";
 // local imports

@@ -5,7 +5,7 @@
  */
 
 import { createContext, useContext } from "react";
-import type { TTimelineType } from "@plane/types";
+import type { TTimelineType } from "@tracktor/types";
 
 export const TimeLineTypeContext = createContext<TTimelineType | undefined>(undefined);
 

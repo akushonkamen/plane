@@ -8,10 +8,10 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 // plane package imports
-import { useTranslation } from "@plane/i18n";
-import type { IAnalyticsParams } from "@plane/types";
-import { ChartXAxisProperty, ChartYAxisMetric } from "@plane/types";
-import { cn } from "@plane/utils";
+import { useTranslation } from "@tracktor/i18n";
+import type { IAnalyticsParams } from "@tracktor/types";
+import { ChartXAxisProperty, ChartYAxisMetric } from "@tracktor/types";
+import { cn } from "@tracktor/utils";
 // plane web components
 import AnalyticsSectionWrapper from "../analytics-section-wrapper";
 import { AnalyticsSelectParams } from "../select/analytics-params";

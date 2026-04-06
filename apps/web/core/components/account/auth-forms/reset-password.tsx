@@ -10,12 +10,12 @@ import { useSearchParams } from "next/navigation";
 // icons
 import { Eye, EyeOff } from "lucide-react";
 // ui
-import { API_BASE_URL, E_PASSWORD_STRENGTH } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { Input, PasswordStrengthIndicator } from "@plane/ui";
+import { API_BASE_URL, E_PASSWORD_STRENGTH } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { Button } from "@tracktor/propel/button";
+import { Input, PasswordStrengthIndicator } from "@tracktor/ui";
 // components
-import { getPasswordStrength } from "@plane/utils";
+import { getPasswordStrength } from "@tracktor/utils";
 // helpers
 import type { EAuthenticationErrorCodes, TAuthErrorInfo } from "@/helpers/authentication.helper";
 import { EErrorAlertType, authErrorHandler } from "@/helpers/authentication.helper";

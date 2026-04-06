@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-import type { TAnalyticsTabsBase } from "@plane/types";
-import { ChartXAxisProperty, ChartYAxisMetric } from "@plane/types";
+import type { TAnalyticsTabsBase } from "@tracktor/types";
+import { ChartXAxisProperty, ChartYAxisMetric } from "@tracktor/types";
 
 export interface IInsightField {
   key: string;

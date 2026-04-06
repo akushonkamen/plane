@@ -6,8 +6,8 @@
 
 // plane imports
 import type { IncomingHttpHeaders } from "http";
-import type { TUserDetails } from "@plane/editor";
-import { logger } from "@plane/logger";
+import type { TUserDetails } from "@tracktor/editor";
+import { logger } from "@tracktor/logger";
 import { AppError } from "@/lib/errors";
 // services
 import { UserService } from "@/services/user.service";

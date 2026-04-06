@@ -7,10 +7,10 @@
 import { endOfMonth, endOfWeek, endOfYear, startOfMonth, startOfWeek, startOfYear } from "date-fns";
 // helpers
 // types
-import { DURATION_FILTER_OPTIONS, EDurationFilters } from "@plane/constants";
-import type { TIssuesListTypes } from "@plane/types";
+import { DURATION_FILTER_OPTIONS, EDurationFilters } from "@tracktor/constants";
+import type { TIssuesListTypes } from "@tracktor/types";
 // constants
-import { renderFormattedDate, renderFormattedPayloadDate } from "@plane/utils";
+import { renderFormattedDate, renderFormattedPayloadDate } from "@tracktor/utils";
 
 // -------------------- DEPRECATED --------------------
 

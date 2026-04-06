@@ -5,7 +5,7 @@
  */
 
 // types
-import type { ILinkDetails, ModuleLink } from "@plane/types";
+import type { ILinkDetails, ModuleLink } from "@tracktor/types";
 // services
 import { APIService } from "../api.service";
 

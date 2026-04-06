@@ -5,9 +5,9 @@
  */
 
 // types
-import type { TLogoProps } from "@plane/types";
+import type { TLogoProps } from "@tracktor/types";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@tracktor/utils";
 
 type Props = {
   className?: string;

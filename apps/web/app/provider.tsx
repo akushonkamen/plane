@@ -8,11 +8,11 @@ import { lazy, Suspense } from "react";
 import { useTheme } from "next-themes";
 import { SWRConfig } from "swr";
 // Plane Imports
-import { WEB_SWR_CONFIG } from "@plane/constants";
-import { TranslationProvider } from "@plane/i18n";
-import { Toast } from "@plane/propel/toast";
+import { WEB_SWR_CONFIG } from "@tracktor/constants";
+import { TranslationProvider } from "@tracktor/i18n";
+import { Toast } from "@tracktor/propel/toast";
 // helpers
-import { resolveGeneralTheme } from "@plane/utils";
+import { resolveGeneralTheme } from "@tracktor/utils";
 // mobx store provider
 import { StoreProvider } from "@/lib/store-context";
 

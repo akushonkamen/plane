@@ -6,10 +6,10 @@
 
 import { useCallback, useMemo } from "react";
 // plane imports
-import type { EventToPayloadMap } from "@plane/editor";
-import { setToast, TOAST_TYPE } from "@plane/propel/toast";
+import type { EventToPayloadMap } from "@tracktor/editor";
+import { setToast, TOAST_TYPE } from "@tracktor/propel/toast";
 // types
-import type { IUserLite } from "@plane/types";
+import type { IUserLite } from "@tracktor/types";
 // components
 import type { TEditorBodyHandlers } from "@/components/pages/editor/editor-body";
 // hooks

@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-import { API_BASE_URL } from "@plane/constants";
-import type { TIssueRelation, TIssue } from "@plane/types";
+import { API_BASE_URL } from "@tracktor/constants";
+import type { TIssueRelation, TIssue } from "@tracktor/types";
 // helpers
 // Plane-web
 import type { TIssueRelationTypes } from "@/plane-web/types";

@@ -6,8 +6,8 @@
 
 import React from "react";
 import { observer } from "mobx-react";
-import { useTranslation } from "@plane/i18n";
-import type { IIssueDisplayFilterOptions, TIssueExtraOptions } from "@plane/types";
+import { useTranslation } from "@tracktor/i18n";
+import type { IIssueDisplayFilterOptions, TIssueExtraOptions } from "@tracktor/types";
 // components
 import { FilterOption } from "@/components/issues/issue-layouts/filters";
 

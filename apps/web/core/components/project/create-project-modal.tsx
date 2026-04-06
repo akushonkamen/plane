@@ -5,8 +5,8 @@
  */
 
 import { useEffect, useState } from "react";
-import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
-import { getAssetIdFromUrl, checkURLValidity } from "@plane/utils";
+import { EModalPosition, EModalWidth, ModalCore } from "@tracktor/ui";
+import { getAssetIdFromUrl, checkURLValidity } from "@tracktor/utils";
 // plane ui
 // helpers
 // hooks

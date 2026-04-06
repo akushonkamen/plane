@@ -8,12 +8,12 @@ import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // types
-import { PROJECT_ERROR_MESSAGES, EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TDeDupeIssue, TIssue } from "@plane/types";
+import { PROJECT_ERROR_MESSAGES, EUserPermissions, EUserPermissionsLevel } from "@tracktor/constants";
+import { useTranslation } from "@tracktor/i18n";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import type { TDeDupeIssue, TIssue } from "@tracktor/types";
 // ui
-import { AlertModalCore } from "@plane/ui";
+import { AlertModalCore } from "@tracktor/ui";
 // constants
 // hooks
 import { useIssues } from "@/hooks/store/use-issues";

@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"set -a && source .env && set +a && source venv/bin/activate && DJANGO_SETTINGS_MODULE=plane.settings.local python manage.py shell -c \\\"\\nfrom plane.db.models import Project, State, Label, ...",
+  "error": "Exit code 1\nProject: Test Project\n  network: 2\n  cover_image: None\nTraceback (most recent call last):\n  File \"/Users/yp1017/projects/plane/apps/api/manage.py\", line 19, in <module>\n    execute_from_command_line(sys.argv)\n  File \"/Users/yp1017/projects/plane/apps/api/venv/lib/python3.12/site-packages/django/core/management/__init__.py\", line 442, in execute_from_command_line\n    utility.execute()\n  File \"/Users/yp1017/projects/plane/apps/api/venv/lib/python3.12/site-packages/django/core/managemen...",
+  "timestamp": "2026-04-05T10:48:13.143Z",
+  "retry_count": 4
+}

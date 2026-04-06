@@ -5,7 +5,7 @@
  */
 
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import type { TIssueGroupByOptions } from "@plane/types";
+import type { TIssueGroupByOptions } from "@tracktor/types";
 
 export const useWorkFlowFDragNDrop = (
   groupBy: TIssueGroupByOptions | undefined,

@@ -7,7 +7,7 @@
 // plane package imports
 import React from "react";
 import { TrendingDown, TrendingUp } from "lucide-react";
-import { cn } from "@plane/utils";
+import { cn } from "@tracktor/utils";
 // plane web components
 
 type Props = {

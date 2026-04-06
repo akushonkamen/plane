@@ -6,10 +6,10 @@
 
 import { action, observable, runInAction, makeObservable } from "mobx";
 // plane internal packages
-import type { TUserStatus } from "@plane/constants";
-import { EUserStatus } from "@plane/constants";
-import { AuthService, UserService } from "@plane/services";
-import type { IUser } from "@plane/types";
+import type { TUserStatus } from "@tracktor/constants";
+import { EUserStatus } from "@tracktor/constants";
+import { AuthService, UserService } from "@tracktor/services";
+import type { IUser } from "@tracktor/types";
 // root store
 import type { RootStore } from "@/store/root.store";
 

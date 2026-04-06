@@ -6,9 +6,9 @@
 
 import { Info } from "lucide-react";
 // plane constants
-import type { TAdminAuthErrorInfo } from "@plane/constants";
+import type { TAdminAuthErrorInfo } from "@tracktor/constants";
 // icons
-import { CloseIcon } from "@plane/propel/icons";
+import { CloseIcon } from "@tracktor/propel/icons";
 
 type TAuthBanner = {
   bannerData: TAdminAuthErrorInfo | undefined;

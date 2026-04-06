@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-import type { ChartDataType, IGanttBlock } from "@plane/types";
-import { addDaysToDate, findTotalDaysInRange, getDate } from "@plane/utils";
+import type { ChartDataType, IGanttBlock } from "@tracktor/types";
+import { addDaysToDate, findTotalDaysInRange, getDate } from "@tracktor/utils";
 import { DEFAULT_BLOCK_WIDTH } from "../constants";
 
 /**

@@ -7,9 +7,9 @@
 import type { Dispatch, SetStateAction } from "react";
 import { useState } from "react";
 import { useParams } from "next/navigation";
-import { EditIcon, CloseIcon } from "@plane/propel/icons";
+import { EditIcon, CloseIcon } from "@tracktor/propel/icons";
 // types
-import type { IIssueLabel } from "@plane/types";
+import type { IIssueLabel } from "@tracktor/types";
 // hooks
 import { useLabel } from "@/hooks/store/use-label";
 // components

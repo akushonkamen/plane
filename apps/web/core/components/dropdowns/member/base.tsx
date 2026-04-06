@@ -7,13 +7,13 @@
 import { useRef, useState } from "react";
 import { observer } from "mobx-react";
 import type { LucideIcon } from "lucide-react";
-import { useTranslation } from "@plane/i18n";
-import { ChevronDownIcon } from "@plane/propel/icons";
+import { useTranslation } from "@tracktor/i18n";
+import { ChevronDownIcon } from "@tracktor/propel/icons";
 // plane imports
-import type { IUserLite } from "@plane/types";
-import { ComboDropDown } from "@plane/ui";
+import type { IUserLite } from "@tracktor/types";
+import { ComboDropDown } from "@tracktor/ui";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@tracktor/utils";
 // hooks
 import { useDropdown } from "@/hooks/use-dropdown";
 // local imports

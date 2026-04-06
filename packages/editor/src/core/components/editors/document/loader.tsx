@@ -5,8 +5,8 @@
  */
 
 // plane imports
-import { Loader } from "@plane/ui";
-import { cn } from "@plane/utils";
+import { Loader } from "@tracktor/ui";
+import { cn } from "@tracktor/utils";
 
 type Props = {
   className?: string;

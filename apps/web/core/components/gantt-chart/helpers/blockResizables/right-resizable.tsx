@@ -7,7 +7,7 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 // plane utils
-import { cn, renderFormattedDate } from "@plane/utils";
+import { cn, renderFormattedDate } from "@tracktor/utils";
 //helpers
 //
 //hooks

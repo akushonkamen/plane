@@ -5,9 +5,9 @@
  */
 
 // plane imports
-import { ScrollArea } from "@plane/propel/scrollarea";
-import type { TProfileSettingsTabs } from "@plane/types";
-import { cn } from "@plane/utils";
+import { ScrollArea } from "@tracktor/propel/scrollarea";
+import type { TProfileSettingsTabs } from "@tracktor/types";
+import { cn } from "@tracktor/utils";
 // local imports
 import { ProfileSettingsSidebarHeader } from "./header";
 import { ProfileSettingsSidebarItemCategories } from "./item-categories";

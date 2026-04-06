@@ -8,10 +8,10 @@ import { useCallback, useMemo } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // icons
-import { DueDatePropertyIcon, StartDatePropertyIcon } from "@plane/propel/icons";
+import { DueDatePropertyIcon, StartDatePropertyIcon } from "@tracktor/propel/icons";
 // types
-import type { TIssuePriorities, TWorkspaceDraftIssue } from "@plane/types";
-import { getDate, renderFormattedPayloadDate, shouldHighlightIssueDueDate } from "@plane/utils";
+import type { TIssuePriorities, TWorkspaceDraftIssue } from "@tracktor/types";
+import { getDate, renderFormattedPayloadDate, shouldHighlightIssueDueDate } from "@tracktor/utils";
 // components
 import { CycleDropdown } from "@/components/dropdowns/cycle";
 import { DateDropdown } from "@/components/dropdowns/date";

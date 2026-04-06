@@ -5,8 +5,8 @@
  */
 
 // plane imports
-import { CycleIcon, ModuleIcon, PageIcon, ViewsIcon, WorkItemsIcon } from "@plane/propel/icons";
-import type { ISvgIcons } from "@plane/propel/icons";
+import { CycleIcon, ModuleIcon, PageIcon, ViewsIcon, WorkItemsIcon } from "@tracktor/propel/icons";
+import type { ISvgIcons } from "@tracktor/propel/icons";
 // types
 import type { TTourSteps } from "./root";
 

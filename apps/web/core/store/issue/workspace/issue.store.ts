@@ -13,7 +13,7 @@ import type {
   TIssuesResponse,
   TLoader,
   ViewFlags,
-} from "@plane/types";
+} from "@tracktor/types";
 // services
 import { WorkspaceService } from "@/services/workspace.service";
 // types

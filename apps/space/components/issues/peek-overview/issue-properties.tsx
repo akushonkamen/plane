@@ -8,16 +8,16 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { LinkIcon } from "lucide-react";
 // plane imports
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@tracktor/i18n";
 import {
   StatePropertyIcon,
   StateGroupIcon,
   PriorityPropertyIcon,
   DueDatePropertyIcon,
   PriorityIcon,
-} from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { cn, getIssuePriorityFilters } from "@plane/utils";
+} from "@tracktor/propel/icons";
+import { TOAST_TYPE, setToast } from "@tracktor/propel/toast";
+import { cn, getIssuePriorityFilters } from "@tracktor/utils";
 // helpers
 import { renderFormattedDate } from "@/helpers/date-time.helper";
 import { shouldHighlightIssueDueDate } from "@/helpers/issue.helper";

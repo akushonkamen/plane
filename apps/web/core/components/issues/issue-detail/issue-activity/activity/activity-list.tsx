@@ -6,7 +6,7 @@
 
 import { observer } from "mobx-react";
 // helpers
-import { getValidKeysFromObject } from "@plane/utils";
+import { getValidKeysFromObject } from "@tracktor/utils";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 // plane web components

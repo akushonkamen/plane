@@ -7,12 +7,12 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import { CircleDashed } from "lucide-react";
-import { ALL_ISSUES } from "@plane/constants";
-import { ChevronRightIcon } from "@plane/propel/icons";
-import type { IGroupByColumn, TIssue, TIssueServiceType, TSubIssueOperations } from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
-import { Collapsible } from "@plane/ui";
-import { cn } from "@plane/utils";
+import { ALL_ISSUES } from "@tracktor/constants";
+import { ChevronRightIcon } from "@tracktor/propel/icons";
+import type { IGroupByColumn, TIssue, TIssueServiceType, TSubIssueOperations } from "@tracktor/types";
+import { EIssuesStoreType } from "@tracktor/types";
+import { Collapsible } from "@tracktor/ui";
+import { cn } from "@tracktor/utils";
 import { SubIssuesListItem } from "./list-item";
 
 interface TSubIssuesListGroupProps {
