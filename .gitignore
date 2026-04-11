@@ -101,7 +101,7 @@ dev-editor
 
 storybook-static
 
-CLAUDE.md
+# CLAUDE.md - now tracked in repo
 
 build/
 .react-router/
@@ -109,4 +109,5 @@ build/
 build/
 .react-router/
 temp/
-scripts/
+# scripts/ - deployment scripts are tracked; only ignore generated scripts
+scripts/*.generated.*
